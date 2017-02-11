@@ -9,3 +9,7 @@ You need a working installation :
 
 This app can work in Linux and Windows environnement. It can launch Arma 3 under the Linux system and windows system
 
+- Open GOSLauncherA3.e4p with Eric6
+
+
+
