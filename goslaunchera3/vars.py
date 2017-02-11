@@ -89,7 +89,7 @@ def OSpec_ArmaName():
 
 def CreatelisteModsLaunch(self):
     allModsListed = ""
-    allListWidget = [self.listWidget_Template, self.listWidget_Framework, self.listWidget_Islands, self.listWidget_Materiel,  self.listWidget_Units,  self.listWidget_Client, self.listWidget_Test,  self.listWidget_Arma3]
+
     # @TEMPLATE
     allModsListed +=  getListMods(self,self.listWidget_Template, "@GOS/@TEMPLATE/" )
     if (self.comboBox_ChoixApparence.currentText() != ""): #Ajout choix de l'apparence
@@ -105,8 +105,7 @@ def CreatelisteModsLaunch(self):
     # @TEST
     allModsListed +=  getListMods(self,self.listWidget_Test, "@GOS/@TEST/" )
     # @ARMA3
-    allModsListed +=  getListMods(self,self.listWidget_Arma3, "/" )
-   
+    allModsListed +=  getListMods(self,self.listWidget_Arma3, "/" )   
     return allModsListed
             
 def getListMods (self, listWidget, directory):

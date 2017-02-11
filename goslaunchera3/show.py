@@ -54,5 +54,6 @@ def genereListMods(self, repertoire):
                       (SearchedDir.lower() != "addons")):
                        listeMods.append(SearchedDir[0: (len(SearchedDir)-7)]) 
     return listeMods
+    
 def LogoGosSkin(self, name) :
     self.label_GFX_Template.setPixmap(QtGui.QPixmap("gfx/camo_image/"+name.replace(" ", "_")+".jpg"))

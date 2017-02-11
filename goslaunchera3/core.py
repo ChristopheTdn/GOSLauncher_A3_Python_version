@@ -5,7 +5,7 @@
 from PyQt5 import QtWidgets
 from . import show
 from . import vars
-import pickle, gzip
+import pickle
 
 def initApplication(self):
     # Définition Constantes
@@ -14,11 +14,11 @@ def initApplication(self):
     show.initOuverture(self)
 
 def infoDialogWindows(self, titre, message, iconMessagebox):
-    msg = PyQt5.QMessageBox()
+    msg = QtWidgets.QMessageBox()
     msg.setIcon(iconMessagebox)
     msg.setText(message)
     msg.setWindowTitle(titre)
-    msg.setStandardButtons(PyQt5.QMessageBox.Ok) 
+    msg.setStandardButtons(QtWidgets.QMessageBox.Ok) 
     msg.exec_()
     exit()
 

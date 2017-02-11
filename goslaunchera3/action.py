@@ -36,13 +36,4 @@ def launchArma3(self):
         fichier.write('"'+self.var_Arma3Path+'/arma3.exe'+'" "-MOD='+vars.CreatelisteModsLaunch(self)+' " '+newLine)
         fichier.close()
         os.system('runArma3.bat')
-    '''  
-    #    os.system("powershell.exe .\runArma3")
-    execut="."+self.var_Arma3Path+'/arma3'
-    #output = os.system(execut); 
-    print (execut)
-    from subprocess import run
-    execut='"'+self.var_Arma3Path+'/arma3"'
-    run(["sh", execut], shell=True)
-    '''
 
