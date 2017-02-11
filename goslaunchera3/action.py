@@ -4,8 +4,9 @@
 # Module Interface Action
 
 from PyQt5.QtCore import *
-import os, stat, subprocess
+import os, stat
 from . import vars
+from . import language
 
 def selectionTousMods(self,listeWidgetMods):
     for index in range(listeWidgetMods.count()):
@@ -18,6 +19,9 @@ def invSelectionTousMods(self,listeWidgetMods):
         else:
             listeWidgetMods.item(index).setCheckState(Qt.Checked)
 
+def modifLangue(self, langue):
+    language.changeLangage(self, langue)
+
 def launchArma3(self):
     newLine='\n'
     #Linux version
@@ -27,6 +31,7 @@ def launchArma3(self):
         fichier.write('./arma3'+' "-MOD='+vars.CreatelisteModsLaunch(self)+' " ')
         fichier.close()
         os.chmod('runArma3', stat.S_IRWXU)
+        # TODO: change os.system Obsolete
         os.system('./runArma3')
         
     #Windows version

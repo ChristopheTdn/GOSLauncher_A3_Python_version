@@ -21,10 +21,6 @@ def infoDialogWindows(self, titre, message, iconMessagebox):
     msg.setStandardButtons(QtWidgets.QMessageBox.Ok) 
     msg.exec_()
     exit()
-
-def changeLangage(self, langue):
-    self.close()
-    exit()
     
 def serialize(self):
     fichier= open("save.mydata", "wb")
