@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file '/home/tof/Documents/Developpement/python/GOSLauncher_A3_Python_version/principale.ui'
+# Form implementation generated from reading ui file 'H:\home\tof\Documents\Developpement\python\GOSLauncher_A3_Python_version\principale.ui'
 #
 # Created by: PyQt5 UI code generator 5.7.1
 #
@@ -375,11 +375,13 @@ class Ui_Fenetre_Principale(object):
         self.checkBox_noLogs.setLocale(QtCore.QLocale(QtCore.QLocale.French, QtCore.QLocale.France))
         self.checkBox_noLogs.setObjectName("checkBox_noLogs")
         self.checkBox_customCommand = QtWidgets.QCheckBox(self.groupBox_Parametre)
-        self.checkBox_customCommand.setGeometry(QtCore.QRect(10, 180, 191, 17))
+        self.checkBox_customCommand.setGeometry(QtCore.QRect(10, 180, 61, 17))
         self.checkBox_customCommand.setLocale(QtCore.QLocale(QtCore.QLocale.French, QtCore.QLocale.France))
         self.checkBox_customCommand.setObjectName("checkBox_customCommand")
         self.lineEdit_customCommand = QtWidgets.QLineEdit(self.groupBox_Parametre)
+        self.lineEdit_customCommand.setEnabled(False)
         self.lineEdit_customCommand.setGeometry(QtCore.QRect(80, 180, 141, 20))
+        self.lineEdit_customCommand.setReadOnly(False)
         self.lineEdit_customCommand.setObjectName("lineEdit_customCommand")
         self.tabWidget_options = QtWidgets.QTabWidget(self.tab_Options)
         self.tabWidget_options.setGeometry(QtCore.QRect(10, 290, 491, 161))
