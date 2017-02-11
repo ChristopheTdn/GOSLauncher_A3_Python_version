@@ -214,9 +214,6 @@ class Fenetre_Principale(QMainWindow, Ui_Fenetre_Principale):
     def on_comboBox_ChoixApparence_currentIndexChanged(self, p0):
         """
         Slot documentation goes here.
-        
-        @param p0 DESCRIPTION
-        @type str
         """
         # TODO: not implemented yet
         goslaunchera3.show.LogoGosSkin(self, p0)
@@ -226,15 +223,18 @@ class Fenetre_Principale(QMainWindow, Ui_Fenetre_Principale):
         """
         Slot documentation goes here.
         """
-        
-        # TODO: not implemented yet
-        #goslaunchera3.core.changeLangage(self, "languages/principale_fr.qm")
-        goslaunchera3.core.serialize(self)
+        goslaunchera3.action. optionModifLangue(self, "fr")
     
     @pyqtSlot()
     def on_radioButton_language_English_clicked(self):
         """
         Slot documentation goes here.
         """
-        # TODO: not implemented yet
-        goslaunchera3.core.deserialize(self)
+        goslaunchera3.action. optionModifLangue(self, "en")
+    
+    @pyqtSlot()
+    def on_checkBox_customCommand_clicked(self):
+        """
+        Slot documentation goes here.
+        """
+        goslaunchera3.action. optionCustomCommand(self)
