@@ -1066,7 +1066,7 @@ liste</string>
         <rect>
          <x>10</x>
          <y>180</y>
-         <width>191</width>
+         <width>61</width>
          <height>17</height>
         </rect>
        </property>
@@ -1078,6 +1078,9 @@ liste</string>
        </property>
       </widget>
       <widget class="QLineEdit" name="lineEdit_customCommand">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
        <property name="geometry">
         <rect>
          <x>80</x>
@@ -1085,6 +1088,9 @@ liste</string>
          <width>141</width>
          <height>20</height>
         </rect>
+       </property>
+       <property name="readOnly">
+        <bool>false</bool>
        </property>
        <property name="placeholderText">
         <string>ligne de commande...</string>
