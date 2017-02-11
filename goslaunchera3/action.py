@@ -8,6 +8,10 @@ import os, stat
 from . import vars
 from . import language
 
+# 
+#  Action Interface : LISTE MODS
+#
+
 def selectionTousMods(self,listeWidgetMods):
     for index in range(listeWidgetMods.count()):
         listeWidgetMods.item(index).setCheckState(Qt.Checked)
@@ -19,8 +23,23 @@ def invSelectionTousMods(self,listeWidgetMods):
         else:
             listeWidgetMods.item(index).setCheckState(Qt.Checked)
 
-def modifLangue(self, langue):
+# 
+#  Action Interface : OPTIONS
+#
+
+def optionModifLangue(self, langue):
     language.changeLangage(self, langue)
+
+def optionCustomCommand(self):
+    if (self.checkBox_customCommand.checkState() == Qt.Checked):
+        self.lineEdit_customCommand.setEnabled(True)
+    else:
+        self.lineEdit_customCommand.setEnabled(False)
+        
+
+# 
+#  Action Interface : GENERAL
+#
 
 def launchArma3(self):
     newLine='\n'
