@@ -69,7 +69,7 @@
        <bool>false</bool>
       </property>
       <property name="currentIndex">
-       <number>5</number>
+       <number>0</number>
       </property>
       <property name="elideMode">
        <enum>Qt::ElideNone</enum>
@@ -926,7 +926,7 @@ liste</string>
        <rect>
         <x>10</x>
         <y>10</y>
-        <width>221</width>
+        <width>241</width>
         <height>271</height>
        </rect>
       </property>
@@ -938,7 +938,7 @@ liste</string>
         <rect>
          <x>10</x>
          <y>20</y>
-         <width>191</width>
+         <width>211</width>
          <height>17</height>
         </rect>
        </property>
@@ -970,7 +970,7 @@ liste</string>
         <rect>
          <x>10</x>
          <y>60</y>
-         <width>191</width>
+         <width>211</width>
          <height>17</height>
         </rect>
        </property>
@@ -986,7 +986,7 @@ liste</string>
         <rect>
          <x>10</x>
          <y>80</y>
-         <width>191</width>
+         <width>211</width>
          <height>17</height>
         </rect>
        </property>
@@ -1018,7 +1018,7 @@ liste</string>
         <rect>
          <x>10</x>
          <y>120</y>
-         <width>191</width>
+         <width>221</width>
          <height>17</height>
         </rect>
        </property>
@@ -1034,7 +1034,7 @@ liste</string>
         <rect>
          <x>10</x>
          <y>140</y>
-         <width>191</width>
+         <width>211</width>
          <height>17</height>
         </rect>
        </property>
@@ -1080,7 +1080,7 @@ liste</string>
       <widget class="QLineEdit" name="lineEdit_customCommand">
        <property name="geometry">
         <rect>
-         <x>70</x>
+         <x>80</x>
          <y>180</y>
          <width>141</width>
          <height>20</height>
@@ -1181,11 +1181,49 @@ liste</string>
          <bool>true</bool>
         </property>
        </widget>
+       <widget class="QLabel" name="label_GFX_Langage">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>20</y>
+          <width>101</width>
+          <height>101</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string notr="true"/>
+        </property>
+        <property name="pixmap">
+         <pixmap>gfx/globe.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
       </widget>
       <widget class="QWidget" name="tab_aPropos">
        <attribute name="title">
         <string>A propos</string>
        </attribute>
+       <widget class="QLabel" name="label_GFX_aPropos">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>20</y>
+          <width>101</width>
+          <height>101</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string notr="true"/>
+        </property>
+        <property name="pixmap">
+         <pixmap>gfx/logo-gos.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
       </widget>
      </widget>
     </widget>
