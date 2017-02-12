@@ -5,7 +5,6 @@
 from PyQt5 import QtWidgets
 from . import show
 from . import vars
-import pickle
 
 def initApplication(self):
     # Définition Constantes
@@ -22,10 +21,4 @@ def infoDialogWindows(self, titre, message, iconMessagebox):
     msg.exec_()
     exit()
     
-def serialize(self):
-    fichier= open("save.mydata", "wb")
-    pickle.dump(self.checkBox_noCB, fichier) 
-    
-def deserialize(self):
-    fichier= open("save.mydata", "rb")
-    self.checkBox_noCB=pickle.load(fichier)
+

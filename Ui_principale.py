@@ -16,6 +16,7 @@ class Ui_Fenetre_Principale(object):
         icon.addPixmap(QtGui.QPixmap("gfx/GOSLauncherA3.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         Fenetre_Principale.setWindowIcon(icon)
         Fenetre_Principale.setStyleSheet("background-color: rgb(236, 236, 236);")
+        Fenetre_Principale.setTabShape(QtWidgets.QTabWidget.Triangular)
         self.centralWidget = QtWidgets.QWidget(Fenetre_Principale)
         self.centralWidget.setObjectName("centralWidget")
         self.tabWidget = QtWidgets.QTabWidget(self.centralWidget)
@@ -442,10 +443,23 @@ class Ui_Fenetre_Principale(object):
         self.label.setFont(font)
         self.label.setText("GOS Launcher A3")
         self.label.setObjectName("label")
+        self.comboBox_ChoixProfil = QtWidgets.QComboBox(self.centralWidget)
+        self.comboBox_ChoixProfil.setGeometry(QtCore.QRect(20, 565, 121, 21))
+        font = QtGui.QFont()
+        font.setPointSize(8)
+        self.comboBox_ChoixProfil.setFont(font)
+        self.comboBox_ChoixProfil.setObjectName("comboBox_ChoixProfil")
+        self.toolButton_saveProfil = QtWidgets.QToolButton(self.centralWidget)
+        self.toolButton_saveProfil.setGeometry(QtCore.QRect(150, 560, 31, 31))
+        icon1 = QtGui.QIcon()
+        icon1.addPixmap(QtGui.QPixmap("gfx/disquette.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.toolButton_saveProfil.setIcon(icon1)
+        self.toolButton_saveProfil.setIconSize(QtCore.QSize(32, 32))
+        self.toolButton_saveProfil.setObjectName("toolButton_saveProfil")
         Fenetre_Principale.setCentralWidget(self.centralWidget)
 
         self.retranslateUi(Fenetre_Principale)
-        self.tabWidget.setCurrentIndex(2)
+        self.tabWidget.setCurrentIndex(0)
         self.tabWidget_2.setCurrentIndex(0)
         self.tabWidget_MODs.setCurrentIndex(0)
         self.tabWidget_options.setCurrentIndex(2)
@@ -534,6 +548,7 @@ class Ui_Fenetre_Principale(object):
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_Options), _translate("Fenetre_Principale", "Options"))
         self.pushButton_LaunchArma3.setText(_translate("Fenetre_Principale", "Lancer\n"
 "Arma 3"))
+        self.toolButton_saveProfil.setText(_translate("Fenetre_Principale", "..."))
 
 
 if __name__ == "__main__":

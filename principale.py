@@ -238,3 +238,10 @@ class Fenetre_Principale(QMainWindow, Ui_Fenetre_Principale):
         Slot documentation goes here.
         """
         goslaunchera3.action. optionCustomCommand(self)
+    
+    @pyqtSlot()
+    def on_toolButton_saveProfil_clicked(self):
+        """
+        Slot documentation goes here.
+        """
+        goslaunchera3.action.saveProfil(self)

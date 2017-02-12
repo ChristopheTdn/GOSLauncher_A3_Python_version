@@ -7,6 +7,7 @@ from PyQt5.QtCore import *
 import os, stat
 from . import vars
 from . import language
+from . import datafilemanager
 
 # 
 #  Action Interface : LISTE MODS
@@ -40,7 +41,10 @@ def optionCustomCommand(self):
 # 
 #  Action Interface : GENERAL
 #
-
+def saveProfil(self):
+    datafilemanager.serialize(self)
+    
+    
 def launchArma3(self):
     newLine='\n'
     #Linux version
