@@ -7,9 +7,13 @@ You need a working installation :
 - QT
 - Eric6 Developpement IDE (https://eric-ide.python-projects.org/eric-download.html)
 
-This app can work in Linux and Windows environnement. It can launch Arma 3 under the Linux system and windows system
+This app run in Linux and Windows environnement.
 
-- Open GOSLauncherA3.e4p with Eric6
+- Open GOSLauncherA3.e4p with Eric6 
+
+Run the apps (goslauncher.py) : Shift + 2
+
+
 
 
 
