@@ -3,8 +3,8 @@
 #
 # Module Interface Action
 
-from PyQt5.QtCore import *
-import os, stat
+from PyQt5 import QtCore
+import os, stat, sys
 from . import vars
 from . import language
 from . import datafilemanager
@@ -32,7 +32,7 @@ def optionModifLangue(self, langue):
     language.changeLangage(self, langue)
 
 def optionCustomCommand(self):
-    if (self.checkBox_customCommand.checkState() == Qt.Checked):
+    if (self.checkBox_customCommand.checkState() ==QtCore.Qt.Checked):
         self.lineEdit_customCommand.setEnabled(True)
     else:
         self.lineEdit_customCommand.setEnabled(False)
@@ -42,8 +42,10 @@ def optionCustomCommand(self):
 #  Action Interface : GENERAL
 #
 def saveProfil(self):
-    datafilemanager.serialize(self)
-    
+    datafilemanager.guisave(self, QtCore.QSettings('saved.ini', QtCore.QSettings.IniFormat))
+ 
+def restoreProfil(self):
+    datafilemanager.guirestore(self) 
     
 def launchArma3(self):
     newLine='\n'
@@ -65,3 +67,13 @@ def launchArma3(self):
         fichier.close()
         os.system('runArma3.bat')
 
+################################################################
+
+if __name__ == "__main__":
+
+    # execute when run directly, but not when called as a module.
+    # therefore this section allows for testing this module!
+
+    #print "running directly, not as a module!"
+
+    sys.exit() 

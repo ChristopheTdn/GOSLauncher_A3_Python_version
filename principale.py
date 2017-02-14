@@ -245,3 +245,14 @@ class Fenetre_Principale(QMainWindow, Ui_Fenetre_Principale):
         Slot documentation goes here.
         """
         goslaunchera3.action.saveProfil(self)
+    
+    @pyqtSlot(str)
+    def on_comboBox_ChoixProfil_currentIndexChanged(self, p0):
+        """
+        Slot documentation goes here.
+        
+        @param p0 DESCRIPTION
+        @type str
+        """
+        # TODO: not implemented yet
+        raise NotImplementedError
