@@ -17,7 +17,9 @@ def initOuverture(self):
         genereTab(self.listWidget_Client,genereListMods(self,self.var_Arma3Path+"/@GOS/@CLIENT/"))        
         genereTab(self.listWidget_Test,genereListMods(self,self.var_Arma3Path+"/@GOS/@TEST/")) 
         # Mods @Arma3
-        genereTab(self.listWidget_Arma3,genereListMods(self, self.var_Arma3Path+"/")) 
+        genereTab(self.listWidget_Arma3,genereListMods(self, self.var_Arma3Path+"/"))
+        # Gestion Profil
+        self.comboBox_ChoixProfil.addItem("défaut") 
 
 def genereTabTemplate(self):
     listeWidget = self.listWidget_Template
@@ -57,3 +59,14 @@ def genereListMods(self, repertoire):
     
 def LogoGosSkin(self, name) :
     self.label_GFX_Template.setPixmap(QtGui.QPixmap("gfx/camo_image/"+name.replace(" ", "_")+".jpg"))
+
+################################################################
+
+if __name__ == "__main__":
+
+    # execute when run directly, but not when called as a module.
+    # therefore this section allows for testing this module!
+
+    #print "running directly, not as a module!"
+
+    sys.exit() 

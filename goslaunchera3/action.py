@@ -45,7 +45,7 @@ def saveProfil(self):
     datafilemanager.guisave(self, QtCore.QSettings('saved.ini', QtCore.QSettings.IniFormat))
  
 def restoreProfil(self):
-    datafilemanager.guirestore(self) 
+    datafilemanager.guirestore(self, QtCore.QSettings('saved.ini', QtCore.QSettings.IniFormat))
     
 def launchArma3(self):
     newLine='\n'

@@ -255,4 +255,4 @@ class Fenetre_Principale(QMainWindow, Ui_Fenetre_Principale):
         @type str
         """
         # TODO: not implemented yet
-        raise NotImplementedError
+        goslaunchera3.action.restoreProfil(self)

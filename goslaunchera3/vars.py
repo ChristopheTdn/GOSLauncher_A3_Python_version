@@ -2,6 +2,7 @@
 #-*- coding: utf-8 -*-
 #
 # Module Interface VAR
+
 from PyQt5.QtCore import *
 from PyQt5.QtWidgets import *
 import configparser, os
@@ -114,3 +115,14 @@ def getListMods (self, listWidget, directory):
             if listWidget.item(index).checkState() == Qt.Checked:
                 listeMods += directory+listWidget.item(index).text()+";"
     return listeMods
+
+################################################################
+
+if __name__ == "__main__":
+
+    # execute when run directly, but not when called as a module.
+    # therefore this section allows for testing this module!
+
+    #print "running directly, not as a module!"
+
+    sys.exit() 
