@@ -3,7 +3,7 @@
 #
 # Module Interface SHOW
 from PyQt5 import QtCore, QtGui, QtWidgets
-import os
+import os, sys
 
 
 def initOuverture(self):

@@ -3,6 +3,7 @@
 #
 # Module LANGUAGE
 
+import sys
 
 def changeLangage(self, langue):
     #ToDo : Gestion modification Langage

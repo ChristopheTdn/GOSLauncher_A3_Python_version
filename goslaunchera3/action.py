@@ -7,7 +7,7 @@ from PyQt5 import QtCore
 import os, stat, sys
 from . import vars
 from . import language
-from . import datafilemanager
+from . import saveloadui
 
 # 
 #  Action Interface : LISTE MODS
@@ -15,14 +15,14 @@ from . import datafilemanager
 
 def selectionTousMods(self,listeWidgetMods):
     for index in range(listeWidgetMods.count()):
-        listeWidgetMods.item(index).setCheckState(Qt.Checked)
+        listeWidgetMods.item(index).setCheckState(QtCore.Qt.Checked)
 
 def invSelectionTousMods(self,listeWidgetMods):
     for index in range(listeWidgetMods.count()):
-        if listeWidgetMods.item(index).checkState() == Qt.Checked:
-            listeWidgetMods.item(index).setCheckState(Qt.Unchecked)
+        if listeWidgetMods.item(index).checkState() == QtCore.Qt.Checked:
+            listeWidgetMods.item(index).setCheckState(QtCore.Qt.Unchecked)
         else:
-            listeWidgetMods.item(index).setCheckState(Qt.Checked)
+            listeWidgetMods.item(index).setCheckState(QtCore.Qt.Checked)
 
 # 
 #  Action Interface : OPTIONS
@@ -42,10 +42,10 @@ def optionCustomCommand(self):
 #  Action Interface : GENERAL
 #
 def saveProfil(self):
-    datafilemanager.guisave(self, QtCore.QSettings('saved.ini', QtCore.QSettings.IniFormat))
+    saveloadui.guisave(self, QtCore.QSettings('saved.ini', QtCore.QSettings.IniFormat))
  
 def restoreProfil(self):
-    datafilemanager.guirestore(self, QtCore.QSettings('saved.ini', QtCore.QSettings.IniFormat))
+    saveloadui.guirestore(self, QtCore.QSettings('saved.ini', QtCore.QSettings.IniFormat))
     
 def launchArma3(self):
     newLine='\n'

@@ -6,6 +6,7 @@
 from PyQt5 import QtWidgets
 from . import show
 from . import vars
+import sys
 
 def initApplication(self):
     # Définition Constantes
