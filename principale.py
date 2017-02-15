@@ -4,7 +4,7 @@
 Module implementing Fenetre_Principale.
 """
 from PyQt5.QtCore import pyqtSlot
-from PyQt5.QtWidgets import QMainWindow, QApplication
+from PyQt5.QtWidgets import QMainWindow
 from Ui_principale import Ui_Fenetre_Principale
 import goslaunchera3
 
