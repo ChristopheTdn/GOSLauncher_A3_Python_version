@@ -256,3 +256,25 @@ class Fenetre_Principale(QMainWindow, Ui_Fenetre_Principale):
         """
         # TODO: not implemented yet
         goslaunchera3.action.restoreProfil(self)
+    
+    @pyqtSlot()
+    def on_pushButton_Mods_Workshop_RefreshList_clicked(self):
+        """
+        Slot documentation goes here.
+        """
+        # TODO: not implemented yet
+        raise NotImplementedError
+    
+    @pyqtSlot()
+    def on_pushButton_Mods_Workshop_InvSelect_clicked(self):
+        """
+        Slot documentation goes here.
+        """
+        goslaunchera3.action.invSelectionTousMods(self,self.listWidget_Workshop)
+    
+    @pyqtSlot()
+    def on_pushButton_Mods_Workshop_SelectAll_clicked(self):
+        """
+        Slot documentation goes here.
+        """
+        goslaunchera3.action.selectionTousMods(self,self.listWidget_Workshop)

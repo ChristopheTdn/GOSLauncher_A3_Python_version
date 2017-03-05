@@ -106,7 +106,9 @@ def CreatelisteModsLaunch(self):
     # @TEST
     allModsListed +=  getListMods(self,self.listWidget_Test, "@GOS/@TEST/" )
     # @ARMA3
-    allModsListed +=  getListMods(self,self.listWidget_Arma3, "/" )   
+    allModsListed +=  getListMods(self,self.listWidget_Arma3, "/" ) 
+    # @!Workshop  
+    allModsListed +=  getListMods(self,self.listWidget_Workshop, "/!Workshop/" ) 
     return allModsListed
             
 def getListMods (self, listWidget, directory):

@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'H:\home\tof\Documents\Developpement\python\GOSLauncher_A3_Python_version\principale.ui'
+# Form implementation generated from reading ui file 'D:\Zone Documents\ToF\Documents\GitHub\GOSLauncher_A3_Python_version\principale.ui'
 #
 # Created by: PyQt5 UI code generator 5.7.1
 #
@@ -331,6 +331,40 @@ class Ui_Fenetre_Principale(object):
         self.pushButton_Mods_A3_RefreshList.setFont(font)
         self.pushButton_Mods_A3_RefreshList.setObjectName("pushButton_Mods_A3_RefreshList")
         self.tabWidget_MODs.addTab(self.tab_Arma3, "")
+        self.tab_Workshop = QtWidgets.QWidget()
+        self.tab_Workshop.setObjectName("tab_Workshop")
+        self.listWidget_Workshop = QtWidgets.QListWidget(self.tab_Workshop)
+        self.listWidget_Workshop.setGeometry(QtCore.QRect(10, 10, 341, 401))
+        font = QtGui.QFont()
+        font.setFamily("MS Shell Dlg 2")
+        font.setPointSize(10)
+        self.listWidget_Workshop.setFont(font)
+        self.listWidget_Workshop.setObjectName("listWidget_Workshop")
+        self.pushButton_Mods_Workshop_RefreshList = QtWidgets.QPushButton(self.tab_Workshop)
+        self.pushButton_Mods_Workshop_RefreshList.setGeometry(QtCore.QRect(370, 250, 101, 41))
+        font = QtGui.QFont()
+        font.setPointSize(9)
+        self.pushButton_Mods_Workshop_RefreshList.setFont(font)
+        self.pushButton_Mods_Workshop_RefreshList.setObjectName("pushButton_Mods_Workshop_RefreshList")
+        self.label_GFX_Workshop = QtWidgets.QLabel(self.tab_Workshop)
+        self.label_GFX_Workshop.setGeometry(QtCore.QRect(370, 130, 101, 101))
+        self.label_GFX_Workshop.setText("")
+        self.label_GFX_Workshop.setPixmap(QtGui.QPixmap("gfx/Steam_Icon.png"))
+        self.label_GFX_Workshop.setScaledContents(True)
+        self.label_GFX_Workshop.setObjectName("label_GFX_Workshop")
+        self.pushButton_Mods_Workshop_InvSelect = QtWidgets.QPushButton(self.tab_Workshop)
+        self.pushButton_Mods_Workshop_InvSelect.setGeometry(QtCore.QRect(370, 70, 101, 38))
+        font = QtGui.QFont()
+        font.setPointSize(9)
+        self.pushButton_Mods_Workshop_InvSelect.setFont(font)
+        self.pushButton_Mods_Workshop_InvSelect.setObjectName("pushButton_Mods_Workshop_InvSelect")
+        self.pushButton_Mods_Workshop_SelectAll = QtWidgets.QPushButton(self.tab_Workshop)
+        self.pushButton_Mods_Workshop_SelectAll.setGeometry(QtCore.QRect(370, 20, 101, 38))
+        font = QtGui.QFont()
+        font.setPointSize(9)
+        self.pushButton_Mods_Workshop_SelectAll.setFont(font)
+        self.pushButton_Mods_Workshop_SelectAll.setObjectName("pushButton_Mods_Workshop_SelectAll")
+        self.tabWidget_MODs.addTab(self.tab_Workshop, "")
         self.tab_DocsArma3 = QtWidgets.QWidget()
         self.tab_DocsArma3.setObjectName("tab_DocsArma3")
         self.tabWidget_MODs.addTab(self.tab_DocsArma3, "")
@@ -459,7 +493,7 @@ class Ui_Fenetre_Principale(object):
         Fenetre_Principale.setCentralWidget(self.centralWidget)
 
         self.retranslateUi(Fenetre_Principale)
-        self.tabWidget.setCurrentIndex(0)
+        self.tabWidget.setCurrentIndex(1)
         self.tabWidget_2.setCurrentIndex(0)
         self.tabWidget_MODs.setCurrentIndex(0)
         self.tabWidget_options.setCurrentIndex(2)
@@ -525,6 +559,13 @@ class Ui_Fenetre_Principale(object):
         self.pushButton_Mods_A3_RefreshList.setText(_translate("Fenetre_Principale", "Rafraichir\n"
 "liste"))
         self.tabWidget_MODs.setTabText(self.tabWidget_MODs.indexOf(self.tab_Arma3), _translate("Fenetre_Principale", "ARMA3"))
+        self.pushButton_Mods_Workshop_RefreshList.setText(_translate("Fenetre_Principale", "Rafraichir\n"
+"liste"))
+        self.pushButton_Mods_Workshop_InvSelect.setText(_translate("Fenetre_Principale", "Inverser\n"
+"selection"))
+        self.pushButton_Mods_Workshop_SelectAll.setText(_translate("Fenetre_Principale", "Selectionner\n"
+"tous"))
+        self.tabWidget_MODs.setTabText(self.tabWidget_MODs.indexOf(self.tab_Workshop), _translate("Fenetre_Principale", "WorkShop"))
         self.tabWidget_MODs.setTabText(self.tabWidget_MODs.indexOf(self.tab_DocsArma3), _translate("Fenetre_Principale", "Default Profile"))
         self.tabWidget_MODs.setTabText(self.tabWidget_MODs.indexOf(self.tab_OthersProfiles), _translate("Fenetre_Principale", "ARMA 3 Others Profile"))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_MODs), _translate("Fenetre_Principale", "MODs"))

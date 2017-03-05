@@ -42,10 +42,10 @@ def optionCustomCommand(self):
 #  Action Interface : GENERAL
 #
 def saveProfil(self):
-    saveloadui.guisave(self, QtCore.QSettings('saved.ini', QtCore.QSettings.IniFormat))
+    saveloadui.guisave(self,QtCore.QSettings( "profil/"+self.comboBox_ChoixProfil.currentText()+'.ini', QtCore.QSettings.IniFormat))
  
 def restoreProfil(self):
-    saveloadui.guirestore(self, QtCore.QSettings('saved.ini', QtCore.QSettings.IniFormat))
+    saveloadui.guirestore(self, QtCore.QSettings("profil/"+self.comboBox_ChoixProfil.currentText()+'.ini', QtCore.QSettings.IniFormat))
     
 def launchArma3(self):
     newLine='\n'
@@ -63,7 +63,7 @@ def launchArma3(self):
     if vars.OSName()=="windows":
         fichier = open("runArma3.bat", "w")
         fichier.write('cd "'+self.var_Arma3Path+'" '+newLine)    
-        fichier.write('"'+self.var_Arma3Path+'/arma3.exe'+'" "-MOD='+vars.CreatelisteModsLaunch(self)+' " '+newLine)
+        fichier.write('"'+self.var_Arma3Path+'/arma3.exe'+'" "-MOD='+vars.CreatelisteModsLaunch(self)+'" '+newLine)
         fichier.close()
         os.system('runArma3.bat')
 

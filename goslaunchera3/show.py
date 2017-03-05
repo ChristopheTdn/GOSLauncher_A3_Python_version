@@ -18,6 +18,8 @@ def initOuverture(self):
         genereTab(self.listWidget_Test,genereListMods(self,self.var_Arma3Path+"/@GOS/@TEST/")) 
         # Mods @Arma3
         genereTab(self.listWidget_Arma3,genereListMods(self, self.var_Arma3Path+"/"))
+        # Mods @WorkShop        
+        genereTab(self.listWidget_Workshop,genereListMods(self, self.var_Arma3Path+"/!Workshop/"))
         # Gestion Profil
         self.comboBox_ChoixProfil.addItem("défaut") 
 
@@ -52,9 +54,16 @@ def genereListMods(self, repertoire):
                        listeMods.append(SearchedDir[0: (len(SearchedDir)-7)]) 
                    #test #Arma
                    if ((root.find("@GOS") == -1 ) and
-                      (repertoire == self.var_Arma3Path+"/") and
+                      (repertoire == self.var_Arma3Path+"/" ) and
+                      ("!Workshop" not in root) and
                       (SearchedDir.lower() != "addons")):
                        listeMods.append(SearchedDir[0: (len(SearchedDir)-7)]) 
+                   #test #Workshop
+                   if ((root.find("@GOS") == -1 ) and
+                      ("/!Workshop/"  in repertoire ) and
+                      (SearchedDir.lower() != "addons")):
+                       listeMods.append(SearchedDir[0: (len(SearchedDir)-7)]) 
+                   
     return listeMods
     
 def LogoGosSkin(self, name) :
