@@ -42,7 +42,7 @@
      <string notr="true">background-color: rgb(236, 236, 236);</string>
     </property>
     <property name="currentIndex">
-     <number>1</number>
+     <number>3</number>
     </property>
     <widget class="QWidget" name="Tab_ModsGOS">
      <attribute name="title">
@@ -804,7 +804,7 @@ liste</string>
        </font>
       </property>
       <property name="currentIndex">
-       <number>0</number>
+       <number>1</number>
       </property>
       <widget class="QWidget" name="tab_Arma3">
        <property name="font">
@@ -1017,6 +1017,79 @@ tous</string>
       </widget>
      </widget>
     </widget>
+    <widget class="QWidget" name="tab_priorityList">
+     <attribute name="title">
+      <string>Priorité</string>
+     </attribute>
+     <widget class="QListWidget" name="listWidget_priority">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>361</width>
+        <height>446</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_priorityTop">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>25</y>
+        <width>91</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Haut</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_priorityPlus">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>75</y>
+        <width>91</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>+</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_priorityMinus">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>125</y>
+        <width>91</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>-</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_priorityBottom">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>180</y>
+        <width>91</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Bas</string>
+      </property>
+     </widget>
+    </widget>
     <widget class="QWidget" name="tab_Options">
      <attribute name="title">
       <string>Options</string>
@@ -1025,9 +1098,9 @@ tous</string>
       <property name="geometry">
        <rect>
         <x>10</x>
-        <y>10</y>
+        <y>5</y>
         <width>241</width>
-        <height>271</height>
+        <height>256</height>
        </rect>
       </property>
       <property name="title">
@@ -1196,18 +1269,98 @@ tous</string>
         <string>ligne de commande...</string>
        </property>
       </widget>
+      <widget class="QCheckBox" name="checkBox_windowedMode">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>200</y>
+         <width>101</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="locale">
+        <locale language="French" country="France"/>
+       </property>
+       <property name="text">
+        <string>Mode fenêtré</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_optionsXwindow">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>220</y>
+         <width>21</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>X=</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_optionsYwindow">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>220</y>
+         <width>21</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Y=</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_WindowedModeX">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>220</y>
+         <width>51</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="readOnly">
+        <bool>false</bool>
+       </property>
+       <property name="placeholderText">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_WindowedModeY">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>220</y>
+         <width>51</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="readOnly">
+        <bool>false</bool>
+       </property>
+       <property name="placeholderText">
+        <string/>
+       </property>
+      </widget>
      </widget>
      <widget class="QTabWidget" name="tabWidget_options">
       <property name="geometry">
        <rect>
         <x>10</x>
-        <y>290</y>
+        <y>270</y>
         <width>491</width>
-        <height>161</height>
+        <height>181</height>
        </rect>
       </property>
       <property name="currentIndex">
-       <number>2</number>
+       <number>1</number>
       </property>
       <widget class="QWidget" name="tab_outilGOS">
        <attribute name="title">
@@ -1218,6 +1371,25 @@ tous</string>
        <attribute name="title">
         <string>Profils</string>
        </attribute>
+       <widget class="QLabel" name="label_GFX_Langage_2">
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>35</y>
+          <width>71</width>
+          <height>76</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string notr="true"/>
+        </property>
+        <property name="pixmap">
+         <pixmap>gfx/profil.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
       </widget>
       <widget class="QWidget" name="tab_Langage">
        <attribute name="title">

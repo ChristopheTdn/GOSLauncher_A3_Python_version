@@ -278,3 +278,43 @@ class Fenetre_Principale(QMainWindow, Ui_Fenetre_Principale):
         Slot documentation goes here.
         """
         goslaunchera3.action.selectionTousMods(self,self.listWidget_Workshop)
+    
+    @pyqtSlot()
+    def on_pushButton_priorityTop_clicked(self):
+        """
+        Slot documentation goes here.
+        """
+        # TODO: not implemented yet
+        raise NotImplementedError
+    
+    @pyqtSlot()
+    def on_pushButton_priorityPlus_clicked(self):
+        """
+        Slot documentation goes here.
+        """
+        # TODO: not implemented yet
+        raise NotImplementedError
+    
+    @pyqtSlot()
+    def on_pushButton_priorityMinus_clicked(self):
+        """
+        Slot documentation goes here.
+        """
+        # TODO: not implemented yet
+        raise NotImplementedError
+    
+    @pyqtSlot()
+    def on_pushButton_priorityBottom_clicked(self):
+        """
+        Slot documentation goes here.
+        """
+        # TODO: not implemented yet
+        raise NotImplementedError
+    
+    @pyqtSlot()
+    def on_checkBox_windowedMode_clicked(self):
+        """
+        Slot documentation goes here.
+        """
+        # TODO: not implemented yet
+        raise NotImplementedError
