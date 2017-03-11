@@ -7,16 +7,24 @@
 
 from PyQt5 import QtCore
 from . import show
-import os
+import os, sys
 
 def initPriorityTabWidget(self):
-    #self.listWidget_priority.clear()
     show.genereTabPriority(self.listWidget_priority, genereList(self))
     cleanPriorityTabWidget(self)
     
 def genereList(self):
     items = []
-    listWidget = [[self.listWidget_Template, "@GOS/@TEMPLATE/"], [self.listWidget_Islands, "@GOS/@ISLANDS/"], [self.listWidget_Framework,"@GOS/@FRAMEWORK/"] , [self.listWidget_Materiel,"@GOS/@MATERIEL/"],[self.listWidget_Units, "@GOS/@UNITS/"],[self.listWidget_Test, "@GOS/@TEST/"], [self.listWidget_Client, "@GOS/@CLIENT/"]]
+    listWidget = [[self.listWidget_Template, "@GOS/@TEMPLATE/"],
+        [self.listWidget_Islands, "@GOS/@ISLANDS/"],
+        [self.listWidget_Framework,"@GOS/@FRAMEWORK/"],
+        [self.listWidget_Materiel,"@GOS/@MATERIEL/"],
+        [self.listWidget_Units, "@GOS/@UNITS/"],
+        [self.listWidget_Test, "@GOS/@TEST/"],
+        [self.listWidget_Client, "@GOS/@CLIENT/"], 
+        [self.listWidget_Arma3, ""], 
+        [self.listWidget_Workshop, "!Workshop/"]        
+        ]
     for widget,prefix in listWidget:
         for index in range(widget.count()):
             if widget.item(index).checkState() == QtCore.Qt.Checked and len(self.listWidget_priority.findItems(prefix+widget.item(index).text(), QtCore.Qt.MatchExactly))==0 :
@@ -36,10 +44,16 @@ def  cleanPriorityTabWidget(self):
                     self.listWidget_priority.takeItem(index)
             except:
                 self.listWidget_priority.takeItem(index)
-                
-            
-                
-                
 
+################################################################
 
+if __name__ == "__main__":
+
+    # execute when run directly, but not when called as a module.
+    # therefore this section allows for testing this module!
+
+    #print "running directly, not as a module!"
+
+    sys.exit() 
+  
 

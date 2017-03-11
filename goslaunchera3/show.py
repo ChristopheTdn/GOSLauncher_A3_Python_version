@@ -4,7 +4,6 @@
 # Module Interface SHOW
 from PyQt5 import QtCore, QtGui, QtWidgets
 import os, sys
-from . import priority
 
 
 def initOuverture(self):

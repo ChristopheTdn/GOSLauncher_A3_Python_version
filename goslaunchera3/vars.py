@@ -58,8 +58,6 @@ def configArma3Dir(self):
             cfg.write(open('goslaunchera3.cfg', "w"))
         return Arma3Dir
 
-
-
 def OSName():
     from sys import platform as _platform
     system = "inconnu"
@@ -90,33 +88,10 @@ def OSpec_ArmaName():
 
 def CreatelisteModsLaunch(self):
     allModsListed = ""
-
-    # @TEMPLATE
-    allModsListed +=  getListMods(self,self.listWidget_Template, "@GOS/@TEMPLATE/" )
-    if (self.comboBox_ChoixApparence.currentText() != ""): #Ajout choix de l'apparence
-        allModsListed +=  "@GOSSkin_"+self.comboBox_ChoixApparence.currentText().replace(" ","_")+";"
-    # @FRAMEWORK
-    allModsListed +=  getListMods(self,self.listWidget_Framework, "@GOS/@FRAMEWORK/" )
-    # @ISLANDS
-    allModsListed +=  getListMods(self,self.listWidget_Islands, "@GOS/@ISLANDS/" ) 
-    # @MATERIEL
-    allModsListed +=  getListMods(self,self.listWidget_Materiel, "@GOS/@MATERIEL/" ) 
-    # @UNITS
-    allModsListed +=  getListMods(self,self.listWidget_Units, "@GOS/@UNITS/" ) 
-    # @TEST
-    allModsListed +=  getListMods(self,self.listWidget_Test, "@GOS/@TEST/" )
-    # @ARMA3
-    allModsListed +=  getListMods(self,self.listWidget_Arma3, "/" ) 
-    # @!Workshop  
-    allModsListed +=  getListMods(self,self.listWidget_Workshop, "/!Workshop/" ) 
+    for index in range(self.listWidget_priority.count()):
+        allModsListed += self.listWidget_priority.item(index).text()+";"
     return allModsListed
-            
-def getListMods (self, listWidget, directory):
-    listeMods =""
-    for index in range(listWidget.count()):
-            if listWidget.item(index).checkState() == Qt.Checked:
-                listeMods += directory+listWidget.item(index).text()+";"
-    return listeMods
+ 
 
 ################################################################
 

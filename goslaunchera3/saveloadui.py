@@ -5,7 +5,7 @@
 # Based on Panofish Work : http://stackoverflow.com/questions/23279125/python-pyqt4-functions-to-save-and-restore-ui-widget-values
 
 from PyQt5 import QtWidgets
-import inspect
+import inspect, sys
 from distutils.util import strtobool
 
 excludeWidgetList=["comboBox_ChoixProfil"]
