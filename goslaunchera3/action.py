@@ -9,6 +9,7 @@ from . import vars
 from . import language
 from . import saveloadui
 from . import priority
+import subprocess
 
 # 
 #  Action Interface : LISTE MODS
@@ -69,11 +70,10 @@ def launchArma3(self):
         
     #Windows version
     if vars.OSName()=="windows":
-        fichier = open("runArma3.bat", "w")
-        fichier.write('cd "'+self.var_Arma3Path+'" '+newLine)    
-        fichier.write('"'+self.var_Arma3Path+'/arma3.exe'+'" "-MOD='+vars.CreatelisteModsLaunch(self)+'" '+newLine)
-        fichier.close()
-        os.system('runArma3.bat')
+        commandLine = '"'+self.var_Arma3Path+'/arma3.exe" "-MOD='+vars.CreatelisteModsLaunch(self)+'" '
+        # 
+        print("execution : "+commandLine)
+        subprocess.Popen(commandLine)
 
 ################################################################
 
