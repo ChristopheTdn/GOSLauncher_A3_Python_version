@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 
-
 from PyQt5 import QtWidgets, QtCore
 from principale import Fenetre_Principale
 import sys

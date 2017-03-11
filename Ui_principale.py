@@ -28,18 +28,18 @@ class Ui_Fenetre_Principale(object):
         self.tabWidget.setObjectName("tabWidget")
         self.Tab_ModsGOS = QtWidgets.QWidget()
         self.Tab_ModsGOS.setObjectName("Tab_ModsGOS")
-        self.tabWidget_2 = QtWidgets.QTabWidget(self.Tab_ModsGOS)
-        self.tabWidget_2.setGeometry(QtCore.QRect(10, 10, 491, 451))
-        self.tabWidget_2.setMinimumSize(QtCore.QSize(381, 0))
+        self.tabWidget_GOS = QtWidgets.QTabWidget(self.Tab_ModsGOS)
+        self.tabWidget_GOS.setGeometry(QtCore.QRect(10, 10, 491, 451))
+        self.tabWidget_GOS.setMinimumSize(QtCore.QSize(381, 0))
         font = QtGui.QFont()
         font.setPointSize(7)
-        self.tabWidget_2.setFont(font)
-        self.tabWidget_2.setAutoFillBackground(False)
-        self.tabWidget_2.setElideMode(QtCore.Qt.ElideNone)
-        self.tabWidget_2.setUsesScrollButtons(True)
-        self.tabWidget_2.setDocumentMode(False)
-        self.tabWidget_2.setTabBarAutoHide(False)
-        self.tabWidget_2.setObjectName("tabWidget_2")
+        self.tabWidget_GOS.setFont(font)
+        self.tabWidget_GOS.setAutoFillBackground(False)
+        self.tabWidget_GOS.setElideMode(QtCore.Qt.ElideNone)
+        self.tabWidget_GOS.setUsesScrollButtons(True)
+        self.tabWidget_GOS.setDocumentMode(False)
+        self.tabWidget_GOS.setTabBarAutoHide(False)
+        self.tabWidget_GOS.setObjectName("tabWidget_GOS")
         self.tab_Template = QtWidgets.QWidget()
         self.tab_Template.setObjectName("tab_Template")
         self.listWidget_Template = QtWidgets.QListWidget(self.tab_Template)
@@ -80,7 +80,7 @@ class Ui_Fenetre_Principale(object):
         font.setPointSize(8)
         self.comboBox_ChoixApparence.setFont(font)
         self.comboBox_ChoixApparence.setObjectName("comboBox_ChoixApparence")
-        self.tabWidget_2.addTab(self.tab_Template, "")
+        self.tabWidget_GOS.addTab(self.tab_Template, "")
         self.tab_Framework = QtWidgets.QWidget()
         self.tab_Framework.setObjectName("tab_Framework")
         self.listWidget_Framework = QtWidgets.QListWidget(self.tab_Framework)
@@ -114,7 +114,7 @@ class Ui_Fenetre_Principale(object):
         font.setPointSize(9)
         self.pushButton_Mods_Framework_InvSelect.setFont(font)
         self.pushButton_Mods_Framework_InvSelect.setObjectName("pushButton_Mods_Framework_InvSelect")
-        self.tabWidget_2.addTab(self.tab_Framework, "")
+        self.tabWidget_GOS.addTab(self.tab_Framework, "")
         self.tab_Islands = QtWidgets.QWidget()
         self.tab_Islands.setObjectName("tab_Islands")
         self.listWidget_Islands = QtWidgets.QListWidget(self.tab_Islands)
@@ -148,7 +148,7 @@ class Ui_Fenetre_Principale(object):
         font.setPointSize(9)
         self.pushButton_Mods_Islands_RefreshList.setFont(font)
         self.pushButton_Mods_Islands_RefreshList.setObjectName("pushButton_Mods_Islands_RefreshList")
-        self.tabWidget_2.addTab(self.tab_Islands, "")
+        self.tabWidget_GOS.addTab(self.tab_Islands, "")
         self.tab_Units = QtWidgets.QWidget()
         self.tab_Units.setObjectName("tab_Units")
         self.listWidget_Units = QtWidgets.QListWidget(self.tab_Units)
@@ -182,7 +182,7 @@ class Ui_Fenetre_Principale(object):
         font.setPointSize(9)
         self.pushButton_Mods_Units_SelectAll.setFont(font)
         self.pushButton_Mods_Units_SelectAll.setObjectName("pushButton_Mods_Units_SelectAll")
-        self.tabWidget_2.addTab(self.tab_Units, "")
+        self.tabWidget_GOS.addTab(self.tab_Units, "")
         self.tab_Materiel = QtWidgets.QWidget()
         self.tab_Materiel.setObjectName("tab_Materiel")
         self.listWidget_Materiel = QtWidgets.QListWidget(self.tab_Materiel)
@@ -216,7 +216,7 @@ class Ui_Fenetre_Principale(object):
         font.setPointSize(9)
         self.pushButton_Mods_Materiel_InvSelect.setFont(font)
         self.pushButton_Mods_Materiel_InvSelect.setObjectName("pushButton_Mods_Materiel_InvSelect")
-        self.tabWidget_2.addTab(self.tab_Materiel, "")
+        self.tabWidget_GOS.addTab(self.tab_Materiel, "")
         self.tab_Client = QtWidgets.QWidget()
         self.tab_Client.setObjectName("tab_Client")
         self.listWidget_Client = QtWidgets.QListWidget(self.tab_Client)
@@ -250,7 +250,7 @@ class Ui_Fenetre_Principale(object):
         font.setPointSize(9)
         self.pushButton_Mods_Client_RefreshList.setFont(font)
         self.pushButton_Mods_Client_RefreshList.setObjectName("pushButton_Mods_Client_RefreshList")
-        self.tabWidget_2.addTab(self.tab_Client, "")
+        self.tabWidget_GOS.addTab(self.tab_Client, "")
         self.tab_Test = QtWidgets.QWidget()
         self.tab_Test.setObjectName("tab_Test")
         self.listWidget_Test = QtWidgets.QListWidget(self.tab_Test)
@@ -284,7 +284,7 @@ class Ui_Fenetre_Principale(object):
         self.label_GFX_Test.setPixmap(QtGui.QPixmap("gfx/ampoule.png"))
         self.label_GFX_Test.setScaledContents(True)
         self.label_GFX_Test.setObjectName("label_GFX_Test")
-        self.tabWidget_2.addTab(self.tab_Test, "")
+        self.tabWidget_GOS.addTab(self.tab_Test, "")
         self.tabWidget.addTab(self.Tab_ModsGOS, "")
         self.tab_MODs = QtWidgets.QWidget()
         self.tab_MODs.setObjectName("tab_MODs")
@@ -543,9 +543,9 @@ class Ui_Fenetre_Principale(object):
         Fenetre_Principale.setCentralWidget(self.centralWidget)
 
         self.retranslateUi(Fenetre_Principale)
-        self.tabWidget.setCurrentIndex(3)
-        self.tabWidget_2.setCurrentIndex(0)
-        self.tabWidget_MODs.setCurrentIndex(1)
+        self.tabWidget.setCurrentIndex(0)
+        self.tabWidget_GOS.setCurrentIndex(0)
+        self.tabWidget_MODs.setCurrentIndex(2)
         self.tabWidget_options.setCurrentIndex(1)
         QtCore.QMetaObject.connectSlotsByName(Fenetre_Principale)
 
@@ -558,49 +558,49 @@ class Ui_Fenetre_Principale(object):
 "selection"))
         self.pushButton_Mods_Template_SelectAll.setText(_translate("Fenetre_Principale", "Selectionner\n"
 "tous"))
-        self.tabWidget_2.setTabText(self.tabWidget_2.indexOf(self.tab_Template), _translate("Fenetre_Principale", "TEMPLATE"))
+        self.tabWidget_GOS.setTabText(self.tabWidget_GOS.indexOf(self.tab_Template), _translate("Fenetre_Principale", "TEMPLATE"))
         self.pushButton_Mods_Framework_SelectAll.setText(_translate("Fenetre_Principale", "Selectionner\n"
 "tous"))
         self.pushButton_Mods_Framework_RefreshList.setText(_translate("Fenetre_Principale", "Rafraichir\n"
 "liste"))
         self.pushButton_Mods_Framework_InvSelect.setText(_translate("Fenetre_Principale", "Inverser\n"
 "selection"))
-        self.tabWidget_2.setTabText(self.tabWidget_2.indexOf(self.tab_Framework), _translate("Fenetre_Principale", "FRAMEWORK"))
+        self.tabWidget_GOS.setTabText(self.tabWidget_GOS.indexOf(self.tab_Framework), _translate("Fenetre_Principale", "FRAMEWORK"))
         self.pushButton_Mods_Islands_SelectAll.setText(_translate("Fenetre_Principale", "Selectionner\n"
 "tous"))
         self.pushButton_Mods_Islands_InvSelect.setText(_translate("Fenetre_Principale", "Inverser\n"
 "selection"))
         self.pushButton_Mods_Islands_RefreshList.setText(_translate("Fenetre_Principale", "Rafraichir\n"
 "liste"))
-        self.tabWidget_2.setTabText(self.tabWidget_2.indexOf(self.tab_Islands), _translate("Fenetre_Principale", "ISLANDS"))
+        self.tabWidget_GOS.setTabText(self.tabWidget_GOS.indexOf(self.tab_Islands), _translate("Fenetre_Principale", "ISLANDS"))
         self.pushButton_Mods_Units_InvSelect.setText(_translate("Fenetre_Principale", "Inverser\n"
 "selection"))
         self.pushButton_Mods_Units_RefreshList.setText(_translate("Fenetre_Principale", "Rafraichir\n"
 "liste"))
         self.pushButton_Mods_Units_SelectAll.setText(_translate("Fenetre_Principale", "Selectionner\n"
 "tous"))
-        self.tabWidget_2.setTabText(self.tabWidget_2.indexOf(self.tab_Units), _translate("Fenetre_Principale", "UNITS"))
+        self.tabWidget_GOS.setTabText(self.tabWidget_GOS.indexOf(self.tab_Units), _translate("Fenetre_Principale", "UNITS"))
         self.pushButton_Mods_Materiel_SelectAll.setText(_translate("Fenetre_Principale", "Selectionner\n"
 "tous"))
         self.pushButton_Mods_Materiel_RefreshList.setText(_translate("Fenetre_Principale", "Rafraichir\n"
 "liste"))
         self.pushButton_Mods_Materiel_InvSelect.setText(_translate("Fenetre_Principale", "Inverser\n"
 "selection"))
-        self.tabWidget_2.setTabText(self.tabWidget_2.indexOf(self.tab_Materiel), _translate("Fenetre_Principale", "MATERIEL"))
+        self.tabWidget_GOS.setTabText(self.tabWidget_GOS.indexOf(self.tab_Materiel), _translate("Fenetre_Principale", "MATERIEL"))
         self.pushButton_Mods_Client_SelectAll.setText(_translate("Fenetre_Principale", "Selectionner\n"
 "tous"))
         self.pushButton_Mods_Client_InvSelect.setText(_translate("Fenetre_Principale", "Inverser\n"
 "selection"))
         self.pushButton_Mods_Client_RefreshList.setText(_translate("Fenetre_Principale", "Rafraichir\n"
 "liste"))
-        self.tabWidget_2.setTabText(self.tabWidget_2.indexOf(self.tab_Client), _translate("Fenetre_Principale", "CLIENT"))
+        self.tabWidget_GOS.setTabText(self.tabWidget_GOS.indexOf(self.tab_Client), _translate("Fenetre_Principale", "CLIENT"))
         self.pushButton_Mods_Test_SelectAll.setText(_translate("Fenetre_Principale", "Selectionner\n"
 "tous"))
         self.pushButton_Mods_Test_InvSelect.setText(_translate("Fenetre_Principale", "Inverser\n"
 "selection"))
         self.pushButton_Mods_Test_RefreshList.setText(_translate("Fenetre_Principale", "Rafraichir\n"
 "liste"))
-        self.tabWidget_2.setTabText(self.tabWidget_2.indexOf(self.tab_Test), _translate("Fenetre_Principale", "TEST"))
+        self.tabWidget_GOS.setTabText(self.tabWidget_GOS.indexOf(self.tab_Test), _translate("Fenetre_Principale", "TEST"))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.Tab_ModsGOS), _translate("Fenetre_Principale", "Mods GOS"))
         self.pushButton_Mods_A3_InvSelect.setText(_translate("Fenetre_Principale", "Inverser\n"
 "selection"))

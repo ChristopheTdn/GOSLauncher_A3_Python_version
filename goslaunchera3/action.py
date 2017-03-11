@@ -8,6 +8,7 @@ import os, stat, sys
 from . import vars
 from . import language
 from . import saveloadui
+from . import priority
 
 # 
 #  Action Interface : LISTE MODS
@@ -37,10 +38,17 @@ def optionCustomCommand(self):
     else:
         self.lineEdit_customCommand.setEnabled(False)
         
+#
+# Action Widget Priority
+# 
 
+def initPriorityTabWidget(self):
+    priority.initPriorityTabWidget(self)
+    
 # 
 #  Action Interface : GENERAL
 #
+
 def saveProfil(self):
     saveloadui.guisave(self,QtCore.QSettings( "profil/"+self.comboBox_ChoixProfil.currentText()+'.ini', QtCore.QSettings.IniFormat))
  

@@ -42,13 +42,13 @@
      <string notr="true">background-color: rgb(236, 236, 236);</string>
     </property>
     <property name="currentIndex">
-     <number>3</number>
+     <number>0</number>
     </property>
     <widget class="QWidget" name="Tab_ModsGOS">
      <attribute name="title">
       <string>Mods GOS</string>
      </attribute>
-     <widget class="QTabWidget" name="tabWidget_2">
+     <widget class="QTabWidget" name="tabWidget_GOS">
       <property name="geometry">
        <rect>
         <x>10</x>
@@ -804,7 +804,7 @@ liste</string>
        </font>
       </property>
       <property name="currentIndex">
-       <number>1</number>
+       <number>2</number>
       </property>
       <widget class="QWidget" name="tab_Arma3">
        <property name="font">

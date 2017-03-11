@@ -22,6 +22,7 @@ class Fenetre_Principale(QMainWindow, Ui_Fenetre_Principale):
         super(Fenetre_Principale, self).__init__(parent)
         self.setupUi(self)
         goslaunchera3.core.initApplication(self)
+
     
     @pyqtSlot()
     def on_pushButton_Mods_A3_SelectAll_clicked(self):
@@ -318,3 +319,15 @@ class Fenetre_Principale(QMainWindow, Ui_Fenetre_Principale):
         """
         # TODO: not implemented yet
         raise NotImplementedError
+    
+    @pyqtSlot(int)
+    def on_tabWidget_currentChanged(self, index):
+        """
+        Slot documentation goes here.
+        
+        @param index DESCRIPTION
+        @type int
+        """
+        if index == 2:
+           goslaunchera3.action.initPriorityTabWidget(self)
+           

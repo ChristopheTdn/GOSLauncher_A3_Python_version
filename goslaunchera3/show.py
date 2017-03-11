@@ -4,45 +4,59 @@
 # Module Interface SHOW
 from PyQt5 import QtCore, QtGui, QtWidgets
 import os, sys
+from . import priority
 
 
 def initOuverture(self):
         ''' Affiche Liste Mods '''
+        # Gestion Profil
+        self.comboBox_ChoixProfil.addItem("défaut") # définis la skin par defaut
         # Mods @GOS
         genereTabTemplate(self) #  Specifique @TEMPLATE GOS
-        genereTab(self.listWidget_Framework,genereListMods(self,self.var_Arma3Path+"/@GOS/@FRAMEWORK/"))
-        genereTab(self.listWidget_Islands,genereListMods(self,self.var_Arma3Path+"/@GOS/@ISLANDS/"))
-        genereTab(self.listWidget_Units,genereListMods(self,self.var_Arma3Path+"/@GOS/@UNITS/"))
-        genereTab(self.listWidget_Materiel,genereListMods(self,self.var_Arma3Path+"/@GOS/@MATERIEL/"))        
-        genereTab(self.listWidget_Client,genereListMods(self,self.var_Arma3Path+"/@GOS/@CLIENT/"))        
-        genereTab(self.listWidget_Test,genereListMods(self,self.var_Arma3Path+"/@GOS/@TEST/")) 
+        genereTab(self, self.listWidget_Framework, self.var_Arma3Path+"/@GOS/@FRAMEWORK/")
+        genereTab(self,self.listWidget_Islands,self.var_Arma3Path+"/@GOS/@ISLANDS/")
+        genereTab(self,self.listWidget_Units,self.var_Arma3Path+"/@GOS/@UNITS/")
+        genereTab(self,self.listWidget_Materiel,self.var_Arma3Path+"/@GOS/@MATERIEL/")        
+        genereTab(self,self.listWidget_Client,self.var_Arma3Path+"/@GOS/@CLIENT/")        
+        genereTab(self,self.listWidget_Test,self.var_Arma3Path+"/@GOS/@TEST/") 
         # Mods @Arma3
-        genereTab(self.listWidget_Arma3,genereListMods(self, self.var_Arma3Path+"/"))
+        genereTab(self,self.listWidget_Arma3,self.var_Arma3Path+"/")
         # Mods @WorkShop        
-        genereTab(self.listWidget_Workshop,genereListMods(self, self.var_Arma3Path+"/!Workshop/"))
-        # Gestion Profil
-        self.comboBox_ChoixProfil.addItem("défaut") 
-
+        genereTab(self,self.listWidget_Workshop,self.var_Arma3Path+"/!Workshop/")
+        
+def itemCheckState(self, mods):
+    if len(self.listWidget_priority.findItems(mods, QtCore.Qt.MatchExactly))>0:
+        return QtCore.Qt.Checked
+    else:
+        return QtCore.Qt.Unchecked
+    
 def genereTabTemplate(self):
     listeWidget = self.listWidget_Template
     repertoire = self.var_Arma3Path+"/@GOS/@TEMPLATE/"
     self.comboBox_ChoixApparence.addItem("")
     for mods in genereListMods(self, repertoire):
         if mods.find("@GOSSkin_") == -1:
-            item = QtWidgets.QListWidgetItem()            
-            item.setCheckState(QtCore.Qt.Unchecked)
+            item = QtWidgets.QListWidgetItem()
+            item.setCheckState(itemCheckState(self,"@GOS/@TEMPLATE/"+mods))
             item.setText(mods)
             listeWidget.addItem(item)
         else :
             self.comboBox_ChoixApparence.addItem(mods.replace("@GOSSkin_", "").replace("_", " "))
         
-def genereTab (listeWidget,listeMods):
+def genereTab (self, listeWidget,  repertoire):
+    listeMods=genereListMods(self, repertoire)
     for mods in listeMods:
         item = QtWidgets.QListWidgetItem()            
-        item.setCheckState(QtCore.Qt.Unchecked)
+        item.setCheckState(itemCheckState(self,(repertoire+mods).replace(self.var_Arma3Path+"/", "")))
         item.setText(mods)
         listeWidget.addItem(item)
 
+def genereTabPriority (listeWidget,listeMods):
+    for mods in listeMods:
+        item = QtWidgets.QListWidgetItem()
+        item.setText(mods)
+        listeWidget.addItem(item)
+        
 def genereListMods(self, repertoire):
     listeMods=[]  
     for root, dirs,  files in os.walk(repertoire):  
@@ -62,8 +76,7 @@ def genereListMods(self, repertoire):
                    if ((root.find("@GOS") == -1 ) and
                       ("/!Workshop/"  in repertoire ) and
                       (SearchedDir.lower() != "addons")):
-                       listeMods.append(SearchedDir[0: (len(SearchedDir)-7)]) 
-                   
+                       listeMods.append(SearchedDir[0: (len(SearchedDir)-7)])                   
     return listeMods
     
 def LogoGosSkin(self, name) :

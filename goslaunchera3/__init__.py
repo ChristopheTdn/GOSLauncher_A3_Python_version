@@ -5,4 +5,5 @@ from . import show
 from . import vars
 from . import language
 from . import saveloadui
+from . import priority
 
