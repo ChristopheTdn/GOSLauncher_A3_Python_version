@@ -62,7 +62,7 @@ def launchArma3(self):
     if vars.OSName()=="linux":
         fichier = open("runArma3", "w")
         fichier.write('cd "'+self.var_Arma3Path+'" '+newLine)    
-        fichier.write('./arma3'+' "-MOD='+vars.CreatelisteModsLaunch(self)+' " ')
+        fichier.write('./arma3'+' "-MOD='+vars.createListeModsLaunch(self)+'" '+vars.createListeOptions(self))
         fichier.close()
         os.chmod('runArma3', stat.S_IRWXU)
         # TODO: change os.system Obsolete
@@ -70,7 +70,7 @@ def launchArma3(self):
         
     #Windows version
     if vars.OSName()=="windows":
-        commandLine = '"'+self.var_Arma3Path+'/arma3.exe" "-MOD='+vars.CreatelisteModsLaunch(self)+'" '
+        commandLine = '"'+self.var_Arma3Path+'/arma3.exe" "-MOD='+vars.createListeModsLaunch(self)+'" '+vars.createListeOptions(self)
         # 
         print("execution : "+commandLine)
         subprocess.Popen(commandLine)

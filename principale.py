@@ -330,4 +330,3 @@ class Fenetre_Principale(QMainWindow, Ui_Fenetre_Principale):
         """
         if index == 2:
            goslaunchera3.action.initPriorityTabWidget(self)
-           

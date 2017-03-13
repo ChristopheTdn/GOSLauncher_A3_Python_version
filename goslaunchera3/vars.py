@@ -19,7 +19,7 @@ def createConfFile():
         cfg.add_section('Directory')
         cfg.set('Directory', 'Arma3Dir', '')
         cfg.write(open("goslaunchera3.cfg", 'w'))
-        
+
 def askConfig(section, option):
     #creation config.ini
     cfg = configparser.ConfigParser()    
@@ -28,7 +28,7 @@ def askConfig(section, option):
         return cfg[section][option]
     except:
         return '' 
-  
+
 
 def locateArma3():
         msg = QMessageBox()
@@ -86,12 +86,44 @@ def OSpec_ArmaName():
         name="arma3.exe"
     return name
 
-def CreatelisteModsLaunch(self):
+def createListeModsLaunch(self):
     allModsListed = ""
     for index in range(self.listWidget_priority.count()):
         allModsListed += self.listWidget_priority.item(index).text()+";"
     return allModsListed
- 
+
+def  createListeOptions(self):
+    '''
+    Fonction : CreateListeOtions
+    Param : self
+    return value  : STRING
+    Genere la liste des options a ajouter a la ligne de commande pour lancer Arma 3
+    Les options sont determiné dans l'onglet "Option" du Launcher
+    '''
+    allOptionsListed = ""
+    if  self.checkBox_AllowFileChange.checkState():
+        allOptionsListed +="-filePatching "
+    if  self.checkBox_nosplash.checkState():
+        allOptionsListed +="-noSplash "
+    if self.checkBox_noLogs.checkState():
+        allOptionsListed +="-noLogs "
+    if self.checkBox_emptyWorld.checkState():
+        allOptionsListed +="-skipIntro "
+    if self.checkBox_customCommand.checkState():
+        allOptionsListed +=self.lineEdit_customCommand.text()+" "
+    if self.checkBox_noPause.checkState():
+        allOptionsListed +="-noPause "
+    if self.checkBox_noCB.checkState():
+        allOptionsListed +="-noCB "  
+    if self.checkBox_showScriptError.checkState():
+        allOptionsListed +="-showScriptErrors "
+    if self.checkBox_xpMode.checkState():
+        allOptionsListed +="-showScriptErrors "   
+    return allOptionsListed
+
+
+
+
 
 ################################################################
 

@@ -1,239 +1,250 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS><TS version="2.0" language="fr_FR" sourcelanguage="">
+<!DOCTYPE TS>
+<TS version="2.1" language="fr_FR">
 <context>
     <name>Fenetre_Principale</name>
     <message>
-        <location filename="../principale.ui" line="14"/>
+        <location filename="../Ui_principale.py" line="581"/>
         <source>GOS Launcher A3</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../principale.ui" line="49"/>
+        <location filename="../Ui_principale.py" line="631"/>
         <source>Mods GOS</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../principale.ui" line="91"/>
+        <location filename="../Ui_principale.py" line="588"/>
         <source>TEMPLATE</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../principale.ui" line="946"/>
+        <location filename="../Ui_principale.py" line="639"/>
         <source>Rafraichir
 liste</source>
         <translation>Rafraichir
 liste</translation>
     </message>
     <message>
-        <location filename="../principale.ui" line="984"/>
+        <location filename="../Ui_principale.py" line="641"/>
         <source>Inverser
 selection</source>
         <translation>Inverser
 selection</translation>
     </message>
     <message>
-        <location filename="../principale.ui" line="1003"/>
+        <location filename="../Ui_principale.py" line="643"/>
         <source>Selectionner
 tous</source>
         <translation>Selectionner
 tous</translation>
     </message>
     <message>
-        <location filename="../principale.ui" line="206"/>
+        <location filename="../Ui_principale.py" line="595"/>
         <source>FRAMEWORK</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../principale.ui" line="303"/>
+        <location filename="../Ui_principale.py" line="602"/>
         <source>ISLANDS</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../principale.ui" line="400"/>
+        <location filename="../Ui_principale.py" line="609"/>
         <source>UNITS</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../principale.ui" line="497"/>
+        <location filename="../Ui_principale.py" line="616"/>
         <source>MATERIEL</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../principale.ui" line="594"/>
+        <location filename="../Ui_principale.py" line="623"/>
         <source>CLIENT</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../principale.ui" line="691"/>
+        <location filename="../Ui_principale.py" line="630"/>
         <source>TEST</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../principale.ui" line="790"/>
+        <location filename="../Ui_principale.py" line="648"/>
         <source>MODs</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../principale.ui" line="816"/>
+        <location filename="../Ui_principale.py" line="638"/>
         <source>ARMA3</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../principale.ui" line="1010"/>
+        <location filename="../Ui_principale.py" line="646"/>
         <source>Default Profile</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../principale.ui" line="1015"/>
+        <location filename="../Ui_principale.py" line="647"/>
         <source>ARMA 3 Others Profile</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../principale.ui" line="1095"/>
+        <location filename="../Ui_principale.py" line="676"/>
         <source>Options</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../principale.ui" line="1107"/>
-        <source>Param&#xc3;&#xa8;tres</source>
+        <location filename="../Ui_principale.py" line="654"/>
+        <source>ParamÃ¨tres</source>
         <translation>Paramètres</translation>
     </message>
     <message>
-        <location filename="../principale.ui" line="1122"/>
-        <source>Passer &#xc3;&#xa9;crans de d&#xc3;&#xa9;marrage</source>
+        <location filename="../Ui_principale.py" line="655"/>
+        <source>Passer Ã©crans de dÃ©marrage</source>
         <translation>Passer écran de démarrage</translation>
     </message>
     <message>
-        <location filename="../principale.ui" line="1138"/>
+        <location filename="../Ui_principale.py" line="656"/>
         <source>Pas de pause</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../principale.ui" line="1154"/>
+        <location filename="../Ui_principale.py" line="657"/>
         <source>Monde vide au demarrage</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../principale.ui" line="1170"/>
+        <location filename="../Ui_principale.py" line="658"/>
         <source>Afficher les erreurs scripts</source>
         <translation>Afficher les erreurs scripts</translation>
     </message>
     <message>
-        <location filename="../principale.ui" line="1519"/>
+        <location filename="../Ui_principale.py" line="677"/>
         <source>Lancer
 Arma 3</source>
         <translation>Lancer
 Arma 3</translation>
     </message>
     <message>
-        <location filename="../principale.ui" line="1421"/>
+        <location filename="../Ui_principale.py" line="670"/>
         <source>Anglais</source>
         <translation>Anglais</translation>
     </message>
     <message>
-        <location filename="../principale.ui" line="1186"/>
+        <location filename="../Ui_principale.py" line="659"/>
         <source>Arret gestion Multi-Core</source>
         <translation>Arrêt gestion Multi-Core</translation>
     </message>
     <message>
-        <location filename="../principale.ui" line="1202"/>
-        <source>mode winXP/multi GPU/DirectX9</source>
-        <translation>mode WinXP/mult GPU/DirectX9</translation>
-    </message>
-    <message>
-        <location filename="../principale.ui" line="1218"/>
+        <location filename="../Ui_principale.py" line="660"/>
         <source>Activer Modification du Fichier</source>
         <translation>activer modification du fichier</translation>
     </message>
     <message>
-        <location filename="../principale.ui" line="1234"/>
+        <location filename="../Ui_principale.py" line="661"/>
         <source>no logs</source>
         <translation>no Logs</translation>
     </message>
     <message>
-        <location filename="../principale.ui" line="1250"/>
+        <location filename="../Ui_principale.py" line="662"/>
         <source>custom</source>
         <translation>custom</translation>
     </message>
     <message>
-        <location filename="../principale.ui" line="1269"/>
+        <location filename="../Ui_principale.py" line="663"/>
         <source>ligne de commande...</source>
         <translation>ligne de commande...</translation>
     </message>
     <message>
-        <location filename="../principale.ui" line="1367"/>
+        <location filename="../Ui_principale.py" line="667"/>
         <source>Outils GOS</source>
         <translation>Outils GOS</translation>
     </message>
     <message>
-        <location filename="../principale.ui" line="1372"/>
+        <location filename="../Ui_principale.py" line="668"/>
         <source>Profils</source>
         <translation>Profils</translation>
     </message>
     <message>
-        <location filename="../principale.ui" line="1396"/>
+        <location filename="../Ui_principale.py" line="671"/>
         <source>Langage</source>
         <translation>Langage</translation>
     </message>
     <message>
-        <location filename="../principale.ui" line="1484"/>
+        <location filename="../Ui_principale.py" line="672"/>
         <source>A propos</source>
         <translation>A propos</translation>
     </message>
     <message>
-        <location filename="../principale.ui" line="913"/>
+        <location filename="../Ui_principale.py" line="645"/>
         <source>WorkShop</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../principale.ui" line="1569"/>
+        <location filename="../Ui_principale.py" line="679"/>
         <source>...</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../principale.ui" line="1050"/>
+        <location filename="../Ui_principale.py" line="649"/>
         <source>Haut</source>
         <translation>Haut</translation>
     </message>
     <message>
-        <location filename="../principale.ui" line="1063"/>
+        <location filename="../Ui_principale.py" line="650"/>
         <source>+</source>
         <translation>+</translation>
     </message>
     <message>
-        <location filename="../principale.ui" line="1076"/>
+        <location filename="../Ui_principale.py" line="651"/>
         <source>-</source>
         <translation>-</translation>
     </message>
     <message>
-        <location filename="../principale.ui" line="1089"/>
+        <location filename="../Ui_principale.py" line="652"/>
         <source>Bas</source>
         <translation>Bas</translation>
     </message>
     <message>
-        <location filename="../principale.ui" line="1298"/>
+        <location filename="../Ui_principale.py" line="665"/>
         <source>X=</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../principale.ui" line="1311"/>
+        <location filename="../Ui_principale.py" line="666"/>
         <source>Y=</source>
         <translation></translation>
     </message>
-    <message encoding="UTF-8">
-        <location filename="../principale.ui" line="1022"/>
-        <source>Priorité</source>
-        <translation type="unfinished"></translation>
+    <message>
+        <location filename="../Ui_principale.py" line="653"/>
+        <source>PrioritÃ©</source>
+        <translation>Priorité</translation>
     </message>
-    <message encoding="UTF-8">
-        <location filename="../principale.ui" line="1285"/>
-        <source>Mode fenêtré</source>
-        <translation type="unfinished"></translation>
+    <message>
+        <location filename="../Ui_principale.py" line="664"/>
+        <source>Mode fenÃªtrÃ©</source>
+        <translation>Mode fenêtré</translation>
     </message>
-    <message encoding="UTF-8">
-        <location filename="../principale.ui" line="1408"/>
-        <source>Français</source>
-        <translation type="unfinished"></translation>
+    <message>
+        <location filename="../Ui_principale.py" line="669"/>
+        <source>FranÃ§ais</source>
+        <translation>Français</translation>
+    </message>
+    <message>
+        <location filename="../Ui_principale.py" line="673"/>
+        <source>ParamÃ¨tres expert</source>
+        <translation>Paramètres expert</translation>
+    </message>
+    <message>
+        <location filename="../Ui_principale.py" line="674"/>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Modifier ces paramÃ¨tres&lt;br/&gt;uniquement si vous savez&lt;br/&gt;ce que vous faites.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Modifier ces paramètres&lt;br/&gt;uniquement si vous savez&lt;br/&gt;ce que vous faites.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+    </message>
+    <message>
+        <location filename="../Ui_principale.py" line="675"/>
+        <source>Nombre de processeurs</source>
+        <translation>Nombre de processeurs</translation>
     </message>
 </context>
 </TS>

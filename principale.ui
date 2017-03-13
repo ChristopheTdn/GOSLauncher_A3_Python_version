@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>529</width>
+    <width>517</width>
     <height>623</height>
    </rect>
   </property>
@@ -29,7 +29,7 @@
      <rect>
       <x>10</x>
       <y>60</y>
-      <width>511</width>
+      <width>501</width>
       <height>491</height>
      </rect>
     </property>
@@ -42,7 +42,7 @@
      <string notr="true">background-color: rgb(236, 236, 236);</string>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>3</number>
     </property>
     <widget class="QWidget" name="Tab_ModsGOS">
      <attribute name="title">
@@ -1098,7 +1098,7 @@ tous</string>
       <property name="geometry">
        <rect>
         <x>10</x>
-        <y>5</y>
+        <y>10</y>
         <width>241</width>
         <height>256</height>
        </rect>
@@ -1186,27 +1186,11 @@ tous</string>
         <string>Arret gestion Multi-Core</string>
        </property>
       </widget>
-      <widget class="QCheckBox" name="checkBox_xpMode">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>120</y>
-         <width>221</width>
-         <height>17</height>
-        </rect>
-       </property>
-       <property name="locale">
-        <locale language="French" country="France"/>
-       </property>
-       <property name="text">
-        <string>mode winXP/multi GPU/DirectX9</string>
-       </property>
-      </widget>
       <widget class="QCheckBox" name="checkBox_AllowFileChange">
        <property name="geometry">
         <rect>
          <x>10</x>
-         <y>140</y>
+         <y>120</y>
          <width>211</width>
          <height>17</height>
         </rect>
@@ -1222,7 +1206,7 @@ tous</string>
        <property name="geometry">
         <rect>
          <x>10</x>
-         <y>160</y>
+         <y>140</y>
          <width>191</width>
          <height>17</height>
         </rect>
@@ -1238,7 +1222,7 @@ tous</string>
        <property name="geometry">
         <rect>
          <x>10</x>
-         <y>180</y>
+         <y>160</y>
          <width>61</width>
          <height>17</height>
         </rect>
@@ -1257,7 +1241,7 @@ tous</string>
        <property name="geometry">
         <rect>
          <x>80</x>
-         <y>180</y>
+         <y>160</y>
          <width>141</width>
          <height>20</height>
         </rect>
@@ -1273,7 +1257,7 @@ tous</string>
        <property name="geometry">
         <rect>
          <x>10</x>
-         <y>200</y>
+         <y>180</y>
          <width>101</width>
          <height>17</height>
         </rect>
@@ -1289,7 +1273,7 @@ tous</string>
        <property name="geometry">
         <rect>
          <x>30</x>
-         <y>220</y>
+         <y>200</y>
          <width>21</width>
          <height>16</height>
         </rect>
@@ -1302,7 +1286,7 @@ tous</string>
        <property name="geometry">
         <rect>
          <x>120</x>
-         <y>220</y>
+         <y>200</y>
          <width>21</width>
          <height>16</height>
         </rect>
@@ -1318,7 +1302,7 @@ tous</string>
        <property name="geometry">
         <rect>
          <x>50</x>
-         <y>220</y>
+         <y>200</y>
          <width>51</width>
          <height>20</height>
         </rect>
@@ -1337,7 +1321,7 @@ tous</string>
        <property name="geometry">
         <rect>
          <x>140</x>
-         <y>220</y>
+         <y>200</y>
          <width>51</width>
          <height>20</height>
         </rect>
@@ -1355,7 +1339,7 @@ tous</string>
        <rect>
         <x>10</x>
         <y>270</y>
-        <width>491</width>
+        <width>481</width>
         <height>181</height>
        </rect>
       </property>
@@ -1502,6 +1486,117 @@ tous</string>
          <bool>true</bool>
         </property>
        </widget>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_parametreExpert">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>10</y>
+        <width>221</width>
+        <height>256</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Paramètres expert</string>
+      </property>
+      <widget class="QLabel" name="label_GFX_parametresExperts">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>20</y>
+         <width>31</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string notr="true"/>
+       </property>
+       <property name="pixmap">
+        <pixmap>gfx/danger.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_avertissementExpertParam">
+       <property name="geometry">
+        <rect>
+         <x>60</x>
+         <y>15</y>
+         <width>131</width>
+         <height>46</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Modifier ces paramètres&lt;br/&gt;uniquement si vous savez&lt;br/&gt;ce que vous faites.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="checkBox_procNumber">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>65</y>
+         <width>191</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="locale">
+        <locale language="French" country="France"/>
+       </property>
+       <property name="text">
+        <string>Nombre de processeurs</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_procNumber">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>85</y>
+         <width>31</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="readOnly">
+        <bool>false</bool>
+       </property>
+       <property name="placeholderText">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QSlider" name="horizontalSlider_procNumber">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>85</y>
+         <width>101</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="sizeIncrement">
+        <size>
+         <width>0</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="minimum">
+        <number>1</number>
+       </property>
+       <property name="maximum">
+        <number>8</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="tickPosition">
+        <enum>QSlider::TicksBothSides</enum>
+       </property>
+       <property name="tickInterval">
+        <number>1</number>
+       </property>
       </widget>
      </widget>
     </widget>
