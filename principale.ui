@@ -1219,6 +1219,9 @@ tous</string>
        </property>
       </widget>
       <widget class="QCheckBox" name="checkBox_customCommand">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
        <property name="geometry">
         <rect>
          <x>10</x>
@@ -1254,6 +1257,9 @@ tous</string>
        </property>
       </widget>
       <widget class="QCheckBox" name="checkBox_windowedMode">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
        <property name="geometry">
         <rect>
          <x>10</x>
@@ -1554,6 +1560,9 @@ tous</string>
        </property>
       </widget>
       <widget class="QCheckBox" name="checkBox_procNumber">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
        <property name="geometry">
         <rect>
          <x>10</x>
@@ -1581,14 +1590,23 @@ tous</string>
          <height>20</height>
         </rect>
        </property>
-       <property name="readOnly">
+       <property name="acceptDrops">
         <bool>false</bool>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
        </property>
        <property name="placeholderText">
         <string/>
        </property>
       </widget>
       <widget class="QSlider" name="horizontalSlider_procNumber">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
        <property name="geometry">
         <rect>
          <x>100</x>
@@ -1620,6 +1638,9 @@ tous</string>
        </property>
       </widget>
       <widget class="QSlider" name="horizontalSlider_maxMemory">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
        <property name="geometry">
         <rect>
          <x>100</x>
@@ -1657,6 +1678,9 @@ tous</string>
        </property>
       </widget>
       <widget class="QCheckBox" name="checkBox_maxMemory">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
        <property name="geometry">
         <rect>
          <x>10</x>
@@ -1684,14 +1708,23 @@ tous</string>
          <height>20</height>
         </rect>
        </property>
-       <property name="readOnly">
+       <property name="acceptDrops">
         <bool>false</bool>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
        </property>
        <property name="placeholderText">
         <string/>
        </property>
       </widget>
       <widget class="QCheckBox" name="checkBox_maxVideoMemory">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
        <property name="geometry">
         <rect>
          <x>10</x>
@@ -1719,14 +1752,23 @@ tous</string>
          <height>20</height>
         </rect>
        </property>
-       <property name="readOnly">
+       <property name="acceptDrops">
         <bool>false</bool>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="readOnly">
+        <bool>true</bool>
        </property>
        <property name="placeholderText">
         <string/>
        </property>
       </widget>
       <widget class="QSlider" name="horizontalSlider_maxVIDEOMemory">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
        <property name="geometry">
         <rect>
          <x>100</x>
@@ -1767,6 +1809,9 @@ tous</string>
        </property>
       </widget>
       <widget class="QCheckBox" name="checkBox_extraThreads">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
        <property name="geometry">
         <rect>
          <x>10</x>
@@ -1783,6 +1828,9 @@ tous</string>
        </property>
       </widget>
       <widget class="QComboBox" name="comboBox_extraThreads">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
        <property name="geometry">
         <rect>
          <x>100</x>
@@ -1823,6 +1871,9 @@ tous</string>
        </item>
       </widget>
       <widget class="QLabel" name="label_fileOperations">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
        <property name="geometry">
         <rect>
          <x>70</x>
@@ -1841,6 +1892,9 @@ tous</string>
        </property>
       </widget>
       <widget class="QLabel" name="label_textureLoading">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
        <property name="geometry">
         <rect>
          <x>70</x>
@@ -1859,6 +1913,9 @@ tous</string>
        </property>
       </widget>
       <widget class="QLabel" name="label_geometryLoading">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
        <property name="geometry">
         <rect>
          <x>70</x>
@@ -1893,6 +1950,9 @@ tous</string>
        </property>
       </widget>
       <widget class="QLabel" name="label_GFX_fileOperation">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
        <property name="geometry">
         <rect>
          <x>50</x>
@@ -1912,6 +1972,9 @@ tous</string>
        </property>
       </widget>
       <widget class="QLabel" name="label_GFX_textureLoading">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
        <property name="geometry">
         <rect>
          <x>50</x>
@@ -1931,6 +1994,9 @@ tous</string>
        </property>
       </widget>
       <widget class="QLabel" name="label_GFX_geometryLoading">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
        <property name="geometry">
         <rect>
          <x>50</x>

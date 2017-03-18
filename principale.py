@@ -271,7 +271,7 @@ class Fenetre_Principale(QMainWindow, Ui_Fenetre_Principale):
         """
         Slot documentation goes here.
         """
-        goslaunchera3.action.inv_selection_tous_mods(self,self.listWidget_Workshop)
+        goslaunchera3.action.inv_selection_tous_mods(self, self.listWidget_Workshop)
     
     @pyqtSlot()
     def on_pushButton_Mods_Workshop_SelectAll_clicked(self):
@@ -339,8 +339,8 @@ class Fenetre_Principale(QMainWindow, Ui_Fenetre_Principale):
         @param value DESCRIPTION
         @type int
         """
-        # TODO: not implemented yet
-        raise NotImplementedError
+        self.lineEdit_procNumber.setText(str(value))
+        
     
     @pyqtSlot(int)
     def on_horizontalSlider_maxMemory_valueChanged(self, value):
@@ -350,8 +350,7 @@ class Fenetre_Principale(QMainWindow, Ui_Fenetre_Principale):
         @param value DESCRIPTION
         @type int
         """
-        # TODO: not implemented yet
-        raise NotImplementedError
+        self.lineEdit_maxMemory.setText(str(value))
     
     @pyqtSlot(int)
     def on_horizontalSlider_maxVIDEOMemory_valueChanged(self, value):
@@ -361,5 +360,49 @@ class Fenetre_Principale(QMainWindow, Ui_Fenetre_Principale):
         @param value DESCRIPTION
         @type int
         """
+        self.lineEdit_maxVIDEOMemory.setText(str(value))
+    
+    @pyqtSlot(bool)
+    def on_checkBox_maxMemory_clicked(self, checked):
+        """
+        Slot documentation goes here.
+        
+        @param checked DESCRIPTION
+        @type bool
+        """
+        self.horizontalSlider_maxMemory.setEnabled(checked)
+        self.lineEdit_maxMemory.setEnabled(checked)
+    
+    @pyqtSlot(bool)
+    def on_checkBox_procNumber_clicked(self, checked):
+        """
+        Slot documentation goes here.
+        
+        @param checked DESCRIPTION
+        @type bool
+        """
+        self.horizontalSlider_procNumber.setEnabled(checked)
+        self.lineEdit_procNumber.setEnabled(checked)
+    
+    @pyqtSlot(bool)
+    def on_checkBox_maxVideoMemory_clicked(self, checked):
+        """
+        Slot documentation goes here.
+        
+        @param checked DESCRIPTION
+        @type bool
+        """
         # TODO: not implemented yet
-        print ("coucou Seb")
+        self.horizontalSlider_maxVIDEOMemory.setEnabled(checked)
+        self.lineEdit_maxVIDEOMemory.setEnabled(checked)
+    
+    @pyqtSlot(bool)
+    def on_checkBox_extraThreads_clicked(self, checked):
+        """
+        Slot documentation goes here.
+        
+        @param checked DESCRIPTION
+        @type bool
+        """
+        # TODO: not implemented yet
+        raise NotImplementedError
