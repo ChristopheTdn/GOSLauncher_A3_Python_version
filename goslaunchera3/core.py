@@ -8,11 +8,11 @@ from . import show
 from . import vars
 import sys
 
-def initApplication(self):
+def init_application(self):
     # Définition Constantes
     vars.initVar(self)
     # Gestion affichage
-    show.initOuverture(self)
+    show.init_app_start(self)
 
 def infoDialogWindows(self, titre, message, iconMessagebox):
     msg = QtWidgets.QMessageBox()

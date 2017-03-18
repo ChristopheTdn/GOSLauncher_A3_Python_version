@@ -3,8 +3,6 @@
 from PyQt5 import QtWidgets, QtCore
 from principale import Fenetre_Principale
 import sys
-# VARIABLES GLOBALES
-global app, app, trans
 
 
 if __name__ == "__main__":

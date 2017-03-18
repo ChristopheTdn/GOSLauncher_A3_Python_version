@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE Project SYSTEM "Project-5.1.dtd">
 <!-- eric project file for project GOSLauncherA3 -->
-<!-- Saved: 2017-03-09, 14:47:38 -->
+<!-- Saved: 2017-03-18, 09:52:56 -->
 <!-- Copyright (C) 2017 ToF, Christophe.Taudin@gmail.com -->
 <Project version="5.1">
   <Language>en_US</Language>
@@ -40,11 +40,12 @@
   <Resources/>
   <Interfaces/>
   <Others>
+    <Other>doc</Other>
     <Other>doc.goslauncher.api</Other>
   </Others>
   <MainScript>goslauncher.py</MainScript>
   <Vcs>
-    <VcsType>Git</VcsType>
+    <VcsType>None</VcsType>
     <VcsOptions>
       <dict>
         <key>
@@ -192,6 +193,25 @@
             </key>
             <value>
               <bool>True</bool>
+            </value>
+          </dict>
+        </value>
+        <key>
+          <string>ERIC4DOC</string>
+        </key>
+        <value>
+          <dict>
+            <key>
+              <string>outputDirectory</string>
+            </key>
+            <value>
+              <string></string>
+            </value>
+            <key>
+              <string>qtHelpEnabled</string>
+            </key>
+            <value>
+              <bool>False</bool>
             </value>
           </dict>
         </value>

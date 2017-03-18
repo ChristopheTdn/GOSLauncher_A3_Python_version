@@ -3,58 +3,64 @@
 #
 # Module Interface Action
 
-from PyQt5 import QtCore
-import os, stat, sys
+import os
+import stat
+import sys
+import subprocess
+
 from . import vars
 from . import language
 from . import saveloadui
 from . import priority
-import subprocess
+
+from PyQt5.QtCore import Qt, QSettings
+
 
 # 
 #  Action Interface : LISTE MODS
 #
 
-def selectionTousMods(self,listeWidgetMods):
+def selection_tous_mods(self,listeWidgetMods):
     for index in range(listeWidgetMods.count()):
-        listeWidgetMods.item(index).setCheckState(QtCore.Qt.Checked)
+        listeWidgetMods.item(index).setCheckState(Qt.Checked)
 
-def invSelectionTousMods(self,listeWidgetMods):
+def inv_selection_tous_mods(self,listeWidgetMods):
     for index in range(listeWidgetMods.count()):
-        if listeWidgetMods.item(index).checkState() == QtCore.Qt.Checked:
-            listeWidgetMods.item(index).setCheckState(QtCore.Qt.Unchecked)
+        if listeWidgetMods.item(index).checkState() == Qt.Checked:
+            listeWidgetMods.item(index).setCheckState(Qt.Unchecked)
         else:
-            listeWidgetMods.item(index).setCheckState(QtCore.Qt.Checked)
+            listeWidgetMods.item(index).setCheckState(Qt.Checked)
 
 # 
 #  Action Interface : OPTIONS
 #
 
 def optionModifLangue(self, langue):
-    language.changeLangage(self, langue)
+    language.change_language(self, langue)
 
 def optionCustomCommand(self):
-    if (self.checkBox_customCommand.checkState() ==QtCore.Qt.Checked):
+    if (self.checkBox_customCommand.checkState() ==Qt.Checked):
         self.lineEdit_customCommand.setEnabled(True)
     else:
         self.lineEdit_customCommand.setEnabled(False)
-        
+
 #
 # Action Widget Priority
 # 
 
 def initPriorityTabWidget(self):
-    priority.initPriorityTabWidget(self)
+    priority.init_priority_tabwidget(self)
+
     
 # 
 #  Action Interface : GENERAL
 #
 
 def saveProfil(self):
-    saveloadui.guisave(self,QtCore.QSettings( "profil/"+self.comboBox_ChoixProfil.currentText()+'.ini', QtCore.QSettings.IniFormat))
+    saveloadui.guisave(self,QSettings( "profil/"+self.comboBox_ChoixProfil.currentText()+'.ini', QSettings.IniFormat))
  
 def restoreProfil(self):
-    saveloadui.guirestore(self, QtCore.QSettings("profil/"+self.comboBox_ChoixProfil.currentText()+'.ini', QtCore.QSettings.IniFormat))
+    saveloadui.guirestore(self, QSettings("profil/"+self.comboBox_ChoixProfil.currentText()+'.ini', QSettings.IniFormat))
     
 def launchArma3(self):
     newLine='\n'

@@ -21,7 +21,7 @@ class Fenetre_Principale(QMainWindow, Ui_Fenetre_Principale):
         """
         super(Fenetre_Principale, self).__init__(parent)
         self.setupUi(self)
-        goslaunchera3.core.initApplication(self)
+        goslaunchera3.core.init_application(self)
 
     
     @pyqtSlot()
@@ -29,14 +29,14 @@ class Fenetre_Principale(QMainWindow, Ui_Fenetre_Principale):
         """
         Slot documentation goes here.
         """
-        goslaunchera3.action.selectionTousMods(self,self.listWidget_Arma3)
+        goslaunchera3.action.selection_tous_mods(self,self.listWidget_Arma3)
     
     @pyqtSlot()
     def on_pushButton_Mods_A3_InvSelect_clicked(self):
         """
         Slot documentation goes here.
         """
-        goslaunchera3.action.invSelectionTousMods(self,self.listWidget_Arma3)
+        goslaunchera3.action.inv_selection_tous_mods(self,self.listWidget_Arma3)
     
     @pyqtSlot()
     def on_pushButton_Mods_A3_RefreshList_clicked(self):
@@ -59,21 +59,21 @@ class Fenetre_Principale(QMainWindow, Ui_Fenetre_Principale):
         """
         Slot documentation goes here.
         """
-        goslaunchera3.action.invSelectionTousMods(self,self.listWidget_Template)
+        goslaunchera3.action.inv_selection_tous_mods(self,self.listWidget_Template)
     
     @pyqtSlot()
     def on_pushButton_Mods_Template_SelectAll_clicked(self):
         """
         Slot documentation goes here.
         """
-        goslaunchera3.action.selectionTousMods(self,self.listWidget_Template)
+        goslaunchera3.action.selection_tous_mods(self,self.listWidget_Template)
     
     @pyqtSlot()
     def on_pushButton_Mods_Islands_SelectAll_clicked(self):
         """
         Slot documentation goes here.
         """
-        goslaunchera3.action.selectionTousMods(self,self.listWidget_Islands)
+        goslaunchera3.action.selection_tous_mods(self,self.listWidget_Islands)
     
     @pyqtSlot()
     def on_pushButton_Mods_Islands_RefreshList_clicked(self):
@@ -88,7 +88,7 @@ class Fenetre_Principale(QMainWindow, Ui_Fenetre_Principale):
         """
         Slot documentation goes here.
         """
-        goslaunchera3.action.invSelectionTousMods(self,self.listWidget_Islands)
+        goslaunchera3.action.inv_selection_tous_mods(self,self.listWidget_Islands)
     
     @pyqtSlot()
     def on_pushButton_LaunchArma3_clicked(self):
@@ -102,14 +102,14 @@ class Fenetre_Principale(QMainWindow, Ui_Fenetre_Principale):
         """
         Slot documentation goes here.
         """
-        goslaunchera3.action.selectionTousMods(self,self.listWidget_Client)
+        goslaunchera3.action.selection_tous_mods(self,self.listWidget_Client)
     
     @pyqtSlot()
     def on_pushButton_Mods_Client_InvSelect_clicked(self):
         """
         Slot documentation goes here.
         """
-        goslaunchera3.action.invSelectionTousMods(self,self.listWidget_Client)
+        goslaunchera3.action.inv_selection_tous_mods(self,self.listWidget_Client)
     
     @pyqtSlot()
     def on_pushButton_Mods_Client_RefreshList_clicked(self):
@@ -124,7 +124,7 @@ class Fenetre_Principale(QMainWindow, Ui_Fenetre_Principale):
         """
         Slot documentation goes here.
         """
-        goslaunchera3.action.selectionTousMods(self,self.listWidget_Framework)
+        goslaunchera3.action.selection_tous_mods(self,self.listWidget_Framework)
     
     @pyqtSlot()
     def on_pushButton_Mods_Framework_RefreshList_clicked(self):
@@ -140,14 +140,14 @@ class Fenetre_Principale(QMainWindow, Ui_Fenetre_Principale):
         Slot documentation goes here.
         """
         # TODO: not implemented yet
-        goslaunchera3.action.invSelectionTousMods(self,self.listWidget_Framework)
+        goslaunchera3.action.inv_selection_tous_mods(self,self.listWidget_Framework)
     
     @pyqtSlot()
     def on_pushButton_Mods_Materiel_SelectAll_clicked(self):
         """
         Slot documentation goes here.
         """
-        goslaunchera3.action.selectionTousMods(self,self.listWidget_Materiel)
+        goslaunchera3.action.selection_tous_mods(self,self.listWidget_Materiel)
     
     @pyqtSlot()
     def on_pushButton_Mods_Materiel_RefreshList_clicked(self):
@@ -162,14 +162,14 @@ class Fenetre_Principale(QMainWindow, Ui_Fenetre_Principale):
         """
         Slot documentation goes here.
         """
-        goslaunchera3.action.invSelectionTousMods(self,self.listWidget_Materiel)
+        goslaunchera3.action.inv_selection_tous_mods(self,self.listWidget_Materiel)
     
     @pyqtSlot()
     def on_pushButton_Mods_Test_SelectAll_clicked(self):
         """
         Slot documentation goes here.
         """
-        goslaunchera3.action.selectionTousMods(self,self.listWidget_Test)
+        goslaunchera3.action.selection_tous_mods(self,self.listWidget_Test)
 
     
     @pyqtSlot()
@@ -177,7 +177,7 @@ class Fenetre_Principale(QMainWindow, Ui_Fenetre_Principale):
         """
         Slot documentation goes here.
         """
-        goslaunchera3.action.invSelectionTousMods(self,self.listWidget_Test)
+        goslaunchera3.action.inv_selection_tous_mods(self,self.listWidget_Test)
 
     
     @pyqtSlot()
@@ -193,7 +193,7 @@ class Fenetre_Principale(QMainWindow, Ui_Fenetre_Principale):
         """
         Slot documentation goes here.
         """
-        goslaunchera3.action.invSelectionTousMods(self,self.listWidget_Units)
+        goslaunchera3.action.inv_selection_tous_mods(self,self.listWidget_Units)
 
     
     @pyqtSlot()
@@ -209,7 +209,7 @@ class Fenetre_Principale(QMainWindow, Ui_Fenetre_Principale):
         """
         Slot documentation goes here.
         """
-        goslaunchera3.action.selectionTousMods(self,self.listWidget_Units)
+        goslaunchera3.action.selection_tous_mods(self,self.listWidget_Units)
     
     @pyqtSlot(str)
     def on_comboBox_ChoixApparence_currentIndexChanged(self, p0):
@@ -271,14 +271,14 @@ class Fenetre_Principale(QMainWindow, Ui_Fenetre_Principale):
         """
         Slot documentation goes here.
         """
-        goslaunchera3.action.invSelectionTousMods(self,self.listWidget_Workshop)
+        goslaunchera3.action.inv_selection_tous_mods(self,self.listWidget_Workshop)
     
     @pyqtSlot()
     def on_pushButton_Mods_Workshop_SelectAll_clicked(self):
         """
         Slot documentation goes here.
         """
-        goslaunchera3.action.selectionTousMods(self,self.listWidget_Workshop)
+        goslaunchera3.action.selection_tous_mods(self,self.listWidget_Workshop)
     
     @pyqtSlot()
     def on_pushButton_priorityTop_clicked(self):

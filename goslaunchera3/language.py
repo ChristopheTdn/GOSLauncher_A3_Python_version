@@ -5,7 +5,7 @@
 
 import sys
 
-def changeLangage(self, langue):
+def change_language(self, langue):
     #ToDo : Gestion modification Langage
     self.close()
     exit()
