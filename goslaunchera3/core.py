@@ -14,7 +14,7 @@ def init_application(self):
     # Gestion affichage
     show.init_app_start(self)
 
-def infoDialogWindows(self, titre, message, iconMessagebox):
+def info_dialog_windows(self, titre, message, iconMessagebox):
     msg = QtWidgets.QMessageBox()
     msg.setIcon(iconMessagebox)
     msg.setText(message)

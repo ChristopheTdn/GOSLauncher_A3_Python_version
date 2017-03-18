@@ -28,9 +28,9 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>60</y>
+      <y>50</y>
       <width>501</width>
-      <height>491</height>
+      <height>501</height>
      </rect>
     </property>
     <property name="font">
@@ -1100,7 +1100,7 @@ tous</string>
         <x>10</x>
         <y>10</y>
         <width>241</width>
-        <height>256</height>
+        <height>291</height>
        </rect>
       </property>
       <property name="title">
@@ -1333,14 +1333,30 @@ tous</string>
         <string/>
        </property>
       </widget>
+      <widget class="QCheckBox" name="checkBox_arma3_64bit">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>225</y>
+         <width>101</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="locale">
+        <locale language="French" country="France"/>
+       </property>
+       <property name="text">
+        <string>Arma 3 64 bit</string>
+       </property>
+      </widget>
      </widget>
      <widget class="QTabWidget" name="tabWidget_options">
       <property name="geometry">
        <rect>
         <x>10</x>
-        <y>270</y>
+        <y>310</y>
         <width>481</width>
-        <height>181</height>
+        <height>161</height>
        </rect>
       </property>
       <property name="currentIndex">
@@ -1494,7 +1510,7 @@ tous</string>
         <x>270</x>
         <y>10</y>
         <width>221</width>
-        <height>256</height>
+        <height>291</height>
        </rect>
       </property>
       <property name="title">
@@ -1523,10 +1539,15 @@ tous</string>
        <property name="geometry">
         <rect>
          <x>60</x>
-         <y>15</y>
+         <y>20</y>
          <width>131</width>
-         <height>46</height>
+         <height>36</height>
         </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>7</pointsize>
+        </font>
        </property>
        <property name="text">
         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;Modifier ces paramètres&lt;br/&gt;uniquement si vous savez&lt;br/&gt;ce que vous faites.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
@@ -1536,7 +1557,7 @@ tous</string>
        <property name="geometry">
         <rect>
          <x>10</x>
-         <y>65</y>
+         <y>55</y>
          <width>191</width>
          <height>17</height>
         </rect>
@@ -1555,7 +1576,7 @@ tous</string>
        <property name="geometry">
         <rect>
          <x>50</x>
-         <y>85</y>
+         <y>75</y>
          <width>31</width>
          <height>20</height>
         </rect>
@@ -1571,7 +1592,7 @@ tous</string>
        <property name="geometry">
         <rect>
          <x>100</x>
-         <y>85</y>
+         <y>75</y>
          <width>101</width>
          <height>22</height>
         </rect>
@@ -1596,6 +1617,336 @@ tous</string>
        </property>
        <property name="tickInterval">
         <number>1</number>
+       </property>
+      </widget>
+      <widget class="QSlider" name="horizontalSlider_maxMemory">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>120</y>
+         <width>101</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="sizeIncrement">
+        <size>
+         <width>0</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="minimum">
+        <number>256</number>
+       </property>
+       <property name="maximum">
+        <number>8192</number>
+       </property>
+       <property name="singleStep">
+        <number>2</number>
+       </property>
+       <property name="pageStep">
+        <number>64</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="tickPosition">
+        <enum>QSlider::NoTicks</enum>
+       </property>
+       <property name="tickInterval">
+        <number>1</number>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="checkBox_maxMemory">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>100</y>
+         <width>191</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="locale">
+        <locale language="French" country="France"/>
+       </property>
+       <property name="text">
+        <string>Memoire max (MB)</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_maxMemory">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>120</y>
+         <width>31</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="readOnly">
+        <bool>false</bool>
+       </property>
+       <property name="placeholderText">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="checkBox_maxVideoMemory">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>145</y>
+         <width>191</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="locale">
+        <locale language="French" country="France"/>
+       </property>
+       <property name="text">
+        <string>Memoire VIDEO max (MB)</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_maxVIDEOMemory">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>165</y>
+         <width>31</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="readOnly">
+        <bool>false</bool>
+       </property>
+       <property name="placeholderText">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QSlider" name="horizontalSlider_maxVIDEOMemory">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>165</y>
+         <width>101</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="sizeIncrement">
+        <size>
+         <width>0</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="minimum">
+        <number>128</number>
+       </property>
+       <property name="maximum">
+        <number>4096</number>
+       </property>
+       <property name="singleStep">
+        <number>2</number>
+       </property>
+       <property name="pageStep">
+        <number>32</number>
+       </property>
+       <property name="value">
+        <number>128</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="tickPosition">
+        <enum>QSlider::NoTicks</enum>
+       </property>
+       <property name="tickInterval">
+        <number>1</number>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="checkBox_extraThreads">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>190</y>
+         <width>191</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="locale">
+        <locale language="French" country="France"/>
+       </property>
+       <property name="text">
+        <string>extra threads</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="comboBox_extraThreads">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>190</y>
+         <width>41</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>8</pointsize>
+        </font>
+       </property>
+       <item>
+        <property name="text">
+         <string>0</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>1</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>3</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>5</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>7</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QLabel" name="label_fileOperations">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>215</y>
+         <width>81</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>7</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>File operations</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_textureLoading">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>230</y>
+         <width>81</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>7</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Texture loading</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_geometryLoading">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>245</y>
+         <width>81</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>7</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Geometry loading</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="checkBox_hyperThreading">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>265</y>
+         <width>191</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="locale">
+        <locale language="French" country="France"/>
+       </property>
+       <property name="text">
+        <string>autoriser hyperThreading</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_GFX_fileOperation">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>215</y>
+         <width>12</width>
+         <height>12</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string notr="true"/>
+       </property>
+       <property name="pixmap">
+        <pixmap>gfx/crochet-ok-oui-icone-5594-64.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_GFX_textureLoading">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>230</y>
+         <width>12</width>
+         <height>12</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string notr="true"/>
+       </property>
+       <property name="pixmap">
+        <pixmap>gfx/crochet-ok-oui-icone-5594-64.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_GFX_geometryLoading">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>245</y>
+         <width>12</width>
+         <height>12</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string notr="true"/>
+       </property>
+       <property name="pixmap">
+        <pixmap>gfx/crochet-ok-oui-icone-5594-64.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
        </property>
       </widget>
      </widget>

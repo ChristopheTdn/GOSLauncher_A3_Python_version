@@ -330,3 +330,36 @@ class Fenetre_Principale(QMainWindow, Ui_Fenetre_Principale):
         """
         if index == 2:
            goslaunchera3.action.initPriorityTabWidget(self)
+    
+    @pyqtSlot(int)
+    def on_horizontalSlider_procNumber_valueChanged(self, value):
+        """
+        Slot documentation goes here.
+        
+        @param value DESCRIPTION
+        @type int
+        """
+        # TODO: not implemented yet
+        raise NotImplementedError
+    
+    @pyqtSlot(int)
+    def on_horizontalSlider_maxMemory_valueChanged(self, value):
+        """
+        Slot documentation goes here.
+        
+        @param value DESCRIPTION
+        @type int
+        """
+        # TODO: not implemented yet
+        raise NotImplementedError
+    
+    @pyqtSlot(int)
+    def on_horizontalSlider_maxVIDEOMemory_valueChanged(self, value):
+        """
+        Slot documentation goes here.
+        
+        @param value DESCRIPTION
+        @type int
+        """
+        # TODO: not implemented yet
+        print ("coucou Seb")
