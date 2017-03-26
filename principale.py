@@ -95,7 +95,7 @@ class Fenetre_Principale(QMainWindow, Ui_Fenetre_Principale):
         """
         Slot documentation goes here.
         """
-        goslaunchera3.action.launchArma3(self)
+        goslaunchera3.action.launch_arma3(self)
     
     @pyqtSlot()
     def on_pushButton_Mods_Client_SelectAll_clicked(self):
@@ -234,18 +234,11 @@ class Fenetre_Principale(QMainWindow, Ui_Fenetre_Principale):
         goslaunchera3.action. optionModifLangue(self, "en")
     
     @pyqtSlot()
-    def on_checkBox_customCommand_clicked(self):
-        """
-        Slot documentation goes here.
-        """
-        goslaunchera3.action. optionCustomCommand(self)
-    
-    @pyqtSlot()
     def on_toolButton_saveProfil_clicked(self):
         """
         Slot documentation goes here.
         """
-        goslaunchera3.action.saveProfil(self)
+        goslaunchera3.action.save_profil(self)
     
     @pyqtSlot(str)
     def on_comboBox_ChoixProfil_currentIndexChanged(self, p0):
@@ -256,7 +249,7 @@ class Fenetre_Principale(QMainWindow, Ui_Fenetre_Principale):
         @type str
         """
         # TODO: not implemented yet
-        goslaunchera3.action.restoreProfil(self)
+        goslaunchera3.action.restore_profil(self)
     
     @pyqtSlot()
     def on_pushButton_Mods_Workshop_RefreshList_clicked(self):
@@ -312,13 +305,18 @@ class Fenetre_Principale(QMainWindow, Ui_Fenetre_Principale):
         # TODO: not implemented yet
         raise NotImplementedError
     
-    @pyqtSlot()
-    def on_checkBox_windowedMode_clicked(self):
+    @pyqtSlot(int)
+    def on_checkBox_windowedMode_stateChanged(self, p0):
         """
         Slot documentation goes here.
+        
+        @param p0 DESCRIPTION
+        @type int
         """
         # TODO: not implemented yet
-        raise NotImplementedError
+        self.lineEdit_WindowedModeX.setEnabled((p0 == 2))
+        self.lineEdit_WindowedModeY.setEnabled((p0 == 2))
+        
     
     @pyqtSlot(int)
     def on_tabWidget_currentChanged(self, index):
@@ -362,47 +360,51 @@ class Fenetre_Principale(QMainWindow, Ui_Fenetre_Principale):
         """
         self.lineEdit_maxVIDEOMemory.setText(str(value))
     
-    @pyqtSlot(bool)
-    def on_checkBox_maxMemory_clicked(self, checked):
+    @pyqtSlot(int)
+    def on_checkBox_maxMemory_stateChanged(self, p0):
         """
         Slot documentation goes here.
         
-        @param checked DESCRIPTION
-        @type bool
-        """
-        self.horizontalSlider_maxMemory.setEnabled(checked)
-        self.lineEdit_maxMemory.setEnabled(checked)
-    
-    @pyqtSlot(bool)
-    def on_checkBox_procNumber_clicked(self, checked):
-        """
-        Slot documentation goes here.
-        
-        @param checked DESCRIPTION
-        @type bool
-        """
-        self.horizontalSlider_procNumber.setEnabled(checked)
-        self.lineEdit_procNumber.setEnabled(checked)
-    
-    @pyqtSlot(bool)
-    def on_checkBox_maxVideoMemory_clicked(self, checked):
-        """
-        Slot documentation goes here.
-        
-        @param checked DESCRIPTION
-        @type bool
+        @param p0 DESCRIPTION
+        @type int
         """
         # TODO: not implemented yet
-        self.horizontalSlider_maxVIDEOMemory.setEnabled(checked)
-        self.lineEdit_maxVIDEOMemory.setEnabled(checked)
+        self.horizontalSlider_maxMemory.setEnabled((p0 == 2))
+        self.lineEdit_maxMemory.setEnabled((p0 == 2))
     
-    @pyqtSlot(bool)
-    def on_checkBox_extraThreads_clicked(self, checked):
+    @pyqtSlot(int)
+    def on_checkBox_procNumber_stateChanged(self, p0):
         """
         Slot documentation goes here.
         
-        @param checked DESCRIPTION
-        @type bool
+        @param p0 DESCRIPTION
+        @type int
         """
         # TODO: not implemented yet
-        raise NotImplementedError
+        self.horizontalSlider_procNumber.setEnabled((p0 == 2))
+        self.lineEdit_procNumber.setEnabled((p0 == 2))
+    
+    @pyqtSlot(int)
+    def on_checkBox_maxVideoMemory_stateChanged(self, p0):
+        """
+        Slot documentation goes here.
+        
+        @param p0 DESCRIPTION
+        @type int
+        """
+        # TODO: not implemented yet
+        self.horizontalSlider_maxVIDEOMemory.setEnabled((p0 == 2))
+        self.lineEdit_maxVIDEOMemory.setEnabled((p0 == 2))
+    
+
+    
+    @pyqtSlot(int)
+    def on_checkBox_customCommand_stateChanged(self, p0):
+        """
+        Slot documentation goes here.
+        
+        @param p0 DESCRIPTION
+        @type int
+        """
+        # TODO: not implemented yet
+        self.lineEdit_customCommand.setEnabled((p0 == 2))

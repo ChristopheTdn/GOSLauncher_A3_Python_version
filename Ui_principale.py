@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'D:\Zone Documents\ToF\Documents\GitHub\GOSLauncher_A3_Python_version\principale.ui'
 #
-# Created by: PyQt5 UI code generator 5.7.1
+# Created by: PyQt5 UI code generator 5.8.1
 #
 # WARNING! All changes made in this file will be lost!
 
@@ -428,7 +428,7 @@ class Ui_Fenetre_Principale(object):
         self.checkBox_noLogs.setLocale(QtCore.QLocale(QtCore.QLocale.French, QtCore.QLocale.France))
         self.checkBox_noLogs.setObjectName("checkBox_noLogs")
         self.checkBox_customCommand = QtWidgets.QCheckBox(self.groupBox_Parametre)
-        self.checkBox_customCommand.setEnabled(False)
+        self.checkBox_customCommand.setEnabled(True)
         self.checkBox_customCommand.setGeometry(QtCore.QRect(10, 160, 61, 17))
         self.checkBox_customCommand.setLocale(QtCore.QLocale(QtCore.QLocale.French, QtCore.QLocale.France))
         self.checkBox_customCommand.setObjectName("checkBox_customCommand")
@@ -451,12 +451,16 @@ class Ui_Fenetre_Principale(object):
         self.lineEdit_WindowedModeX = QtWidgets.QLineEdit(self.groupBox_Parametre)
         self.lineEdit_WindowedModeX.setEnabled(False)
         self.lineEdit_WindowedModeX.setGeometry(QtCore.QRect(50, 200, 51, 20))
+        self.lineEdit_WindowedModeX.setMaxLength(4)
+        self.lineEdit_WindowedModeX.setAlignment(QtCore.Qt.AlignCenter)
         self.lineEdit_WindowedModeX.setReadOnly(False)
         self.lineEdit_WindowedModeX.setPlaceholderText("")
         self.lineEdit_WindowedModeX.setObjectName("lineEdit_WindowedModeX")
         self.lineEdit_WindowedModeY = QtWidgets.QLineEdit(self.groupBox_Parametre)
         self.lineEdit_WindowedModeY.setEnabled(False)
         self.lineEdit_WindowedModeY.setGeometry(QtCore.QRect(140, 200, 51, 20))
+        self.lineEdit_WindowedModeY.setMaxLength(4)
+        self.lineEdit_WindowedModeY.setAlignment(QtCore.Qt.AlignCenter)
         self.lineEdit_WindowedModeY.setReadOnly(False)
         self.lineEdit_WindowedModeY.setPlaceholderText("")
         self.lineEdit_WindowedModeY.setObjectName("lineEdit_WindowedModeY")
@@ -539,8 +543,9 @@ class Ui_Fenetre_Principale(object):
         self.lineEdit_procNumber.setEnabled(False)
         self.lineEdit_procNumber.setGeometry(QtCore.QRect(50, 75, 31, 20))
         self.lineEdit_procNumber.setAcceptDrops(False)
+        self.lineEdit_procNumber.setMaxLength(1)
         self.lineEdit_procNumber.setAlignment(QtCore.Qt.AlignCenter)
-        self.lineEdit_procNumber.setReadOnly(True)
+        self.lineEdit_procNumber.setReadOnly(False)
         self.lineEdit_procNumber.setPlaceholderText("")
         self.lineEdit_procNumber.setObjectName("lineEdit_procNumber")
         self.horizontalSlider_procNumber = QtWidgets.QSlider(self.groupBox_parametreExpert)
@@ -574,8 +579,9 @@ class Ui_Fenetre_Principale(object):
         self.lineEdit_maxMemory.setEnabled(False)
         self.lineEdit_maxMemory.setGeometry(QtCore.QRect(50, 120, 31, 20))
         self.lineEdit_maxMemory.setAcceptDrops(False)
+        self.lineEdit_maxMemory.setMaxLength(4)
         self.lineEdit_maxMemory.setAlignment(QtCore.Qt.AlignCenter)
-        self.lineEdit_maxMemory.setReadOnly(True)
+        self.lineEdit_maxMemory.setReadOnly(False)
         self.lineEdit_maxMemory.setPlaceholderText("")
         self.lineEdit_maxMemory.setObjectName("lineEdit_maxMemory")
         self.checkBox_maxVideoMemory = QtWidgets.QCheckBox(self.groupBox_parametreExpert)
@@ -587,8 +593,9 @@ class Ui_Fenetre_Principale(object):
         self.lineEdit_maxVIDEOMemory.setEnabled(False)
         self.lineEdit_maxVIDEOMemory.setGeometry(QtCore.QRect(50, 165, 31, 20))
         self.lineEdit_maxVIDEOMemory.setAcceptDrops(False)
+        self.lineEdit_maxVIDEOMemory.setMaxLength(4)
         self.lineEdit_maxVIDEOMemory.setAlignment(QtCore.Qt.AlignCenter)
-        self.lineEdit_maxVIDEOMemory.setReadOnly(True)
+        self.lineEdit_maxVIDEOMemory.setReadOnly(False)
         self.lineEdit_maxVIDEOMemory.setPlaceholderText("")
         self.lineEdit_maxVIDEOMemory.setObjectName("lineEdit_maxVIDEOMemory")
         self.horizontalSlider_maxVIDEOMemory = QtWidgets.QSlider(self.groupBox_parametreExpert)
