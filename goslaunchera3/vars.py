@@ -7,11 +7,13 @@ from PyQt5.QtCore import *
 from PyQt5.QtWidgets import *
 import configparser, os, sys
 from . import  core
+from . import  profil
 
 
 def initVar(self):
        createConfFile()
        self.var_Arma3Path=configArma3Dir(self)
+       self.var_Profil = profil.Profil(self,"Défaut",self.var_Arma3Path)
 
 def createConfFile():
     cfg = configparser.ConfigParser() 

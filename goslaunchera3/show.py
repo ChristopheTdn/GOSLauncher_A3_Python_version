@@ -11,7 +11,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 def init_app_start(self):
         """ Affiche Liste Mods."""
         # Gestion Profil
-        self.comboBox_ChoixProfil.addItem("défaut")  # définis la skin par defaut
+        self.var_Profil.activate("défaut")  # définis le profil actif
         # Mods @GOS
         genereTabTemplate(self)  # Specifique @TEMPLATE GOS
         genereTab(self, self.listWidget_Framework, self.var_Arma3Path+"/@GOS/@FRAMEWORK/")
@@ -64,7 +64,7 @@ def genereTabPriority(listeWidget, listeMods):
 
 
 def genereListMods(self, repertoire):
-    listeMods = []
+    listeMods = []    
     for root, dirs,  files in os.walk(repertoire):
         for i in files:
                 SearchedDir = root.replace(repertoire, "")

@@ -6,4 +6,5 @@ from . import vars
 from . import language
 from . import saveloadui
 from . import priority
+from .  import profil
 

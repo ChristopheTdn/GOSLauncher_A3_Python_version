@@ -11,8 +11,10 @@ import sys
 def init_application(self):
     # Définition Constantes
     vars.initVar(self)
+    
     # Gestion affichage
     show.init_app_start(self)
+    
 
 def info_dialog_windows(self, titre, message, iconMessagebox):
     msg = QtWidgets.QMessageBox()
