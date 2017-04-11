@@ -7,10 +7,8 @@ import os
 import stat
 import sys
 import subprocess
-
 from . import vars
 from . import language
-from . import saveloadui
 from . import priority
 
 from PyQt5.QtCore import Qt, QSettings
@@ -52,14 +50,7 @@ def initPriorityTabWidget(self):
 #  Action Interface : GENERAL
 #
 
-def save_profil(self):
-    saveloadui.guisave(self,
-                       QSettings("profil/" + self.comboBox_ChoixProfil.currentText() + '.ini', QSettings.IniFormat))
 
-
-def restore_profil(self):
-    saveloadui.guirestore(self,
-                          QSettings("profil/" + self.comboBox_ChoixProfil.currentText() + '.ini', QSettings.IniFormat))
 
 
 def launch_arma3(self):

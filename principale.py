@@ -238,7 +238,7 @@ class Fenetre_Principale(QMainWindow, Ui_Fenetre_Principale):
         """
         Slot documentation goes here.
         """
-        goslaunchera3.action.save_profil(self)
+        self.var_Profil.SaveProfil()
     
     @pyqtSlot(str)
     def on_comboBox_ChoixProfil_currentIndexChanged(self, p0):
@@ -249,7 +249,7 @@ class Fenetre_Principale(QMainWindow, Ui_Fenetre_Principale):
         @type str
         """
         # TODO: not implemented yet
-        goslaunchera3.action.restore_profil(self)
+        #goslaunchera3.action.restore_profil(self)
     
     @pyqtSlot()
     def on_pushButton_Mods_Workshop_RefreshList_clicked(self):
