@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE Project SYSTEM "Project-5.1.dtd">
 <!-- eric project file for project GOSLauncherA3 -->
-<!-- Saved: 2017-03-27, 02:12:58 -->
+<!-- Saved: 2017-04-10, 11:11:01 -->
 <!-- Copyright (C) 2017 ToF, Christophe.Taudin@gmail.com -->
 <Project version="5.1">
   <Language>en_US</Language>
@@ -23,6 +23,7 @@
     <Source>goslaunchera3/core.py</Source>
     <Source>goslaunchera3/language.py</Source>
     <Source>goslaunchera3/priority.py</Source>
+    <Source>goslaunchera3/profil.py</Source>
     <Source>goslaunchera3/saveloadui.py</Source>
     <Source>goslaunchera3/show.py</Source>
     <Source>goslaunchera3/vars.py</Source>
@@ -40,10 +41,7 @@
   </Translations>
   <Resources/>
   <Interfaces/>
-  <Others>
-    <Other>doc</Other>
-    <Other>doc.goslauncher.api</Other>
-  </Others>
+  <Others/>
   <MainScript>goslauncher.py</MainScript>
   <Vcs>
     <VcsType>Git</VcsType>

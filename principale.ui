@@ -1381,7 +1381,7 @@ tous</string>
       <property name="geometry">
        <rect>
         <x>10</x>
-        <y>300</y>
+        <y>305</y>
         <width>481</width>
         <height>161</height>
        </rect>
@@ -1402,7 +1402,7 @@ tous</string>
         <property name="geometry">
          <rect>
           <x>20</x>
-          <y>15</y>
+          <y>25</y>
           <width>71</width>
           <height>76</height>
          </rect>
@@ -1427,95 +1427,7 @@ tous</string>
          </rect>
         </property>
        </widget>
-       <widget class="QLabel" name="label_GFX_duplicate">
-        <property name="geometry">
-         <rect>
-          <x>440</x>
-          <y>5</y>
-          <width>21</width>
-          <height>21</height>
-         </rect>
-        </property>
-        <property name="toolTip">
-         <string>Copier le profil</string>
-        </property>
-        <property name="text">
-         <string notr="true"/>
-        </property>
-        <property name="pixmap">
-         <pixmap>gfx/copier.png</pixmap>
-        </property>
-        <property name="scaledContents">
-         <bool>true</bool>
-        </property>
-       </widget>
-       <widget class="QLabel" name="label_GFX_rename">
-        <property name="geometry">
-         <rect>
-          <x>440</x>
-          <y>30</y>
-          <width>21</width>
-          <height>21</height>
-         </rect>
-        </property>
-        <property name="toolTip">
-         <string>Renommer le profil</string>
-        </property>
-        <property name="text">
-         <string notr="true"/>
-        </property>
-        <property name="pixmap">
-         <pixmap>gfx/rename.png</pixmap>
-        </property>
-        <property name="scaledContents">
-         <bool>true</bool>
-        </property>
-       </widget>
-       <widget class="QLabel" name="label_GFX_favorit">
-        <property name="geometry">
-         <rect>
-          <x>440</x>
-          <y>55</y>
-          <width>21</width>
-          <height>21</height>
-         </rect>
-        </property>
-        <property name="toolTip">
-         <string>Definir comme favoris</string>
-        </property>
-        <property name="text">
-         <string notr="true"/>
-        </property>
-        <property name="pixmap">
-         <pixmap>gfx/favoris.png</pixmap>
-        </property>
-        <property name="scaledContents">
-         <bool>true</bool>
-        </property>
-       </widget>
-       <widget class="QLabel" name="label_GFX_rename_3">
-        <property name="geometry">
-         <rect>
-          <x>440</x>
-          <y>80</y>
-          <width>21</width>
-          <height>21</height>
-         </rect>
-        </property>
-        <property name="toolTip">
-         <string>Supprimer profil</string>
-        </property>
-        <property name="text">
-         <string notr="true"/>
-        </property>
-        <property name="pixmap">
-         <pixmap>gfx/supprimer.png</pixmap>
-        </property>
-        <property name="scaledContents">
-         <bool>true</bool>
-        </property>
-       </widget>
-       <widget class="QLineEdit" name="lineEdit">
+       <widget class="QLineEdit" name="lineEdit_AddProfilName">
         <property name="geometry">
          <rect>
           <x>210</x>
@@ -1545,6 +1457,32 @@ tous</string>
         </property>
         <property name="alignment">
          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_AddProfil">
+        <property name="geometry">
+         <rect>
+          <x>370</x>
+          <y>100</y>
+          <width>31</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string notr="true"/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>gfx/ajouter.png</normaloff>gfx/ajouter.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>24</width>
+          <height>24</height>
+         </size>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
         </property>
        </widget>
       </widget>
@@ -2238,7 +2176,7 @@ Arma 3</string>
      </rect>
     </property>
     <property name="text">
-     <string>...</string>
+     <string notr="true">...</string>
     </property>
     <property name="icon">
      <iconset>

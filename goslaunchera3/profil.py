@@ -40,3 +40,6 @@ class Profil:
 
     def RestoreProfil(self):
         saveloadui.guirestore(self.Ui, QSettings(self.ProfilDir+self.Name+".profil.ini",  QSettings.IniFormat))
+    
+    def AddProfil(self, nameProfil):
+        print ("ajout du profil : ",nameProfil)

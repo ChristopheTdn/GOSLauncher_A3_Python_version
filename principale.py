@@ -408,3 +408,11 @@ class Fenetre_Principale(QMainWindow, Ui_Fenetre_Principale):
         """
         # TODO: not implemented yet
         self.lineEdit_customCommand.setEnabled((p0 == 2))
+    
+    @pyqtSlot()
+    def on_pushButton_AddProfil_clicked(self):
+        """
+        Slot documentation goes here.
+        """
+        # TODO: not implemented yet
+        self.var_Profil.AddProfil(self.lineEdit_AddProfilName.text())
