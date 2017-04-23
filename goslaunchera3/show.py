@@ -86,6 +86,7 @@ def genereListMods(self, repertoire):
 def LogoGosSkin(self, name):
     self.label_GFX_Template.setPixmap(QtGui.QPixmap("gfx/camo_image/"+name.replace(" ", "_")+".jpg"))
 
+
 ################################################################
 
 if __name__ == "__main__":

@@ -249,7 +249,7 @@ class Fenetre_Principale(QMainWindow, Ui_Fenetre_Principale):
         @type str
         """
         # TODO: not implemented yet
-        #goslaunchera3.action.restore_profil(self)
+        self.var_Profil.RestoreProfil()
     
     @pyqtSlot()
     def on_pushButton_Mods_Workshop_RefreshList_clicked(self):
