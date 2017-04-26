@@ -3,18 +3,43 @@
 import os
 import inspect
 from distutils.util import strtobool
-from . import saveloadui
 from PyQt5.QtCore import QSettings
 from PyQt5 import QtWidgets
 
 
 class Profil:
     def __init__(self, Ui,  directory):
+        #Attributs
         self.Name = "Defaut"
         self.Ui = Ui
-        self.ProfilDir = directory + "/userconfig/GOS-LauncherA3_Py/"
-        self.GestionProfil ()
+        self.ProfilDir = directory + "/userconfig/GOSLauncherA3Py/"        
         self.excludeWidgetList=["comboBox_ChoixProfil", "lineEdit_AddProfilName"]
+        #Methodes
+        self.InitUi()
+        self.GestionProfil ()
+        
+    def InitUi(self):
+        ''' Create necessary file environnement for 
+           Interface '''
+           #Create profi directory
+        self.InitEnvironnement()
+           
+        #Gestion liste Profil
+        self.AfficheListeProfil()
+           
+    def InitEnvironnement(self):
+        ''' Create GOSLauncherA3Py directory in main Arma3/userconfig dir'''
+         
+        try:
+            fichier = open(self.ProfilDir+"config.ini","w")
+            fichier.writelines("Defaut")
+            fichier.close()
+        except:
+            os.mkdir(self.ProfilDir)
+            self.InitEnvironnement()    
+        
+        
+        
         
     def Rename(self):
         print ("rename", self.name)
@@ -22,31 +47,21 @@ class Profil:
     def PathName(self):
         return ((self.A3_directory+self.Name+".profil.ini"))
      
-    def InitProfil(self):
+    def AfficheListeProfil(self):
             FichList = [ f.replace(".profil.ini","") for f in os.listdir(self.ProfilDir) if os.path.isfile(os.path.join(self.ProfilDir,f)) and "profil.ini"in f]
             for profil in FichList:
                 self.Ui.listWidget_profil.addItem(profil)                
                 self.Ui.comboBox_ChoixProfil.addItem(profil)
 
     def GestionProfil(self):
-        if not os.path.exists(self.ProfilDir+"config.ini"):  # determine l existence du repertoire de config Profil
-            try:
-                os.mkdir(self.ProfilDir) 
-            except FileExistsError:
-                fichier = open(self.ProfilDir+"config.ini","w")
-                fichier.writelines("Defaut")
-                fichier.close()
-            finally:          
-                self.RestoreProfil()
+        
+        self.RestoreProfil()
                 
-    def CleanInterface(self):
-        excludeWidgetList=[]
+    def CleanInterface(self):        
         for name, obj in inspect.getmembers(self.Ui):  
-            if isinstance(obj, QtWidgets.QCheckBox) and obj.objectName() not in excludeWidgetList:
+            if isinstance(obj, QtWidgets.QCheckBox) and obj.objectName() not in self.excludeWidgetList:
                 obj.setChecked(False)
-        
-        
-    
+ 
     def SaveProfil(self):
         self.Name = self.Ui.comboBox_ChoixProfil.currentText()
         self.SaveGUI(QSettings(self.ProfilDir+self.Name+".profil.ini",  QSettings.IniFormat))
@@ -54,7 +69,6 @@ class Profil:
         self.RestoreProfil()
         
     def SaveGUI(self, settings):
-
         excludeWidgetList= self.excludeWidgetList
         #for child in ui.children():  # works like getmembers, but because it traverses the hierarachy, you would have to call guisave recursively to traverse down the tree
     
@@ -190,5 +204,5 @@ class Profil:
             print ("ajout du profil : IMPOSSIBLE >",nameProfil, " existe déjà")
         else:   
             self.CleanInterface()
-            saveloadui.guisave(self.Ui,QSettings(self.ProfilDir+nameProfil+".profil.ini",  QSettings.IniFormat))
+            self.SaveGUI(QSettings(self.ProfilDir+nameProfil+".profil.ini",  QSettings.IniFormat))
             print ("ajout du profil : ",nameProfil)

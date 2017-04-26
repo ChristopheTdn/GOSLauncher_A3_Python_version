@@ -12,17 +12,11 @@ from . import  profil
 
 def initVar(self):
     createConfFile()
-    self.var_Arma3Path=configArma3Dir(self)
-    #create userconfig Directory
-    if  not os.path.isdir(self.var_Arma3Path+"/userconfig/GOS-LauncherA3_Py/"):  # determine l existence du repertoire de config Profil
-        try:
-            os.makedirs(self.var_Arma3Path+"/userconfig/GOS-LauncherA3_Py/")                
-        except:
-            core.info_dialog_windows(self, "Critical error", "I can't write Config Directory in Arma 3/userconfig rep.\n Exiting...", QMessageBox.Critical)
-            sys.exit()
-            
-    #Genere Class PROFIL
+    self.var_Arma3Path=configArma3Dir(self) 
+        #Genere Class PROFIL
     self.var_Profil = profil.Profil(self,self.var_Arma3Path)
+            
+
        
 def createConfFile():
     cfg = configparser.ConfigParser() 

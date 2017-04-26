@@ -7,6 +7,7 @@ import sys
 from PyQt5 import QtCore, QtGui, QtWidgets
 
 def init_app_start(self):
+        # Gestion Profil 
         """ Affiche Liste Mods."""
         # Mods @GOS
         genereTabTemplate(self)  # Specifique @TEMPLATE GOS
@@ -20,8 +21,6 @@ def init_app_start(self):
         genereTab(self, self.listWidget_Arma3, self.var_Arma3Path+"/")
         # Mods @WorkShop
         genereTab(self, self.listWidget_Workshop, self.var_Arma3Path+"/!Workshop/")
-        # Gestion Profil
-        self.var_Profil.InitProfil()  # définis le profil actif
 
 def itemCheckState(self, mods):
     if len(self.listWidget_priority.findItems(mods, QtCore.Qt.MatchExactly)) > 0:

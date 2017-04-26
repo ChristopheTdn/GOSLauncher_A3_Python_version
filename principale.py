@@ -248,7 +248,6 @@ class Fenetre_Principale(QMainWindow, Ui_Fenetre_Principale):
         @param p0 DESCRIPTION
         @type str
         """
-        # TODO: not implemented yet
         self.var_Profil.RestoreProfil()
     
     @pyqtSlot()
