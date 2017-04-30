@@ -19,9 +19,12 @@ class Fenetre_Principale(QMainWindow, Ui_Fenetre_Principale):
         @param parent reference to the parent widget
         @type QWidget
         """
+        
+
         super(Fenetre_Principale, self).__init__(parent)
         self.setupUi(self)
         goslaunchera3.core.init_application(self)
+
 
     
     @pyqtSlot()
@@ -248,7 +251,7 @@ class Fenetre_Principale(QMainWindow, Ui_Fenetre_Principale):
         @param p0 DESCRIPTION
         @type str
         """
-        self.var_Profil.RestoreProfil()
+        #self.var_Profil.RestoreProfil()
     
     @pyqtSlot()
     def on_pushButton_Mods_Workshop_RefreshList_clicked(self):

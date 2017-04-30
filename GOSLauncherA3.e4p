@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE Project SYSTEM "Project-5.1.dtd">
 <!-- eric project file for project GOSLauncherA3 -->
-<!-- Saved: 2017-04-23, 19:04:08 -->
+<!-- Saved: 2017-04-26, 20:28:20 -->
 <!-- Copyright (C) 2017 ToF, Christophe.Taudin@gmail.com -->
 <Project version="5.1">
   <Language>en_US</Language>
@@ -27,7 +27,6 @@
     <Source>goslaunchera3/show.py</Source>
     <Source>goslaunchera3/vars.py</Source>
     <Source>principale.py</Source>
-    <Source>setup.py</Source>
   </Sources>
   <Forms>
     <Form>principale.ui</Form>

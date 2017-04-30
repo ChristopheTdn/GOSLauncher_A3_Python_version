@@ -37,10 +37,7 @@ class Profil:
         except:
             os.mkdir(self.ProfilDir)
             self.InitEnvironnement()    
-        
-        
-        
-        
+       
     def Rename(self):
         print ("rename", self.name)
         
