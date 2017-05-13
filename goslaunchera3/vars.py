@@ -13,9 +13,18 @@ from . import  profil
 def initVar(self):
     createConfFile()
     self.var_Arma3Path=configArma3Dir(self) 
-        #Genere Class PROFIL
+    # Genere List Widget 
+    self.var_list_widget = [[self.listWidget_Template, "@GOS/@TEMPLATE/"],
+                   [self.listWidget_Islands, "@GOS/@ISLANDS/"],
+                   [self.listWidget_Framework, "@GOS/@FRAMEWORK/"],
+                   [self.listWidget_Materiel, "@GOS/@MATERIEL/"],
+                   [self.listWidget_Units, "@GOS/@UNITS/"],
+                   [self.listWidget_Test, "@GOS/@TEST/"],
+                   [self.listWidget_Client, "@GOS/@CLIENT/"],
+                   [self.listWidget_Arma3, ""],
+                   [self.listWidget_Workshop, "!Workshop/"]]
+    #Genere Class PROFIL
     self.var_Profil = profil.Profil(self,self.var_Arma3Path)
-            
 
        
 def createConfFile():
@@ -52,7 +61,7 @@ def configArma3Dir(self):
         if (os.path.isfile(Arma3Dir+"/"+OSpec_ArmaName())== False):
             Arma3Dir=locateArma3()
             if (os.path.isfile(Arma3Dir+"/"+OSpec_ArmaName())== False):    
-                core.infoDialogWindows(self, "Critical error","IMPOSSIBLE DE LOCALISER ARMA 3\n\nLe programme va maintenant se terminer...", QMessageBox.Critical)          
+                core. info_dialog_windows(self, "Critical error","IMPOSSIBLE DE LOCALISER ARMA 3\n\nLe programme va maintenant se terminer...", QMessageBox.Critical)          
             cfg = configparser.ConfigParser()
             cfg.read("goslaunchera3.cfg")
             try:

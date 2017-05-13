@@ -27,23 +27,14 @@ def genere_list(self):
 
     """
     items = []
-    list_widget = [[self.listWidget_Template, "@GOS/@TEMPLATE/"],
-                   [self.listWidget_Islands, "@GOS/@ISLANDS/"],
-                   [self.listWidget_Framework, "@GOS/@FRAMEWORK/"],
-                   [self.listWidget_Materiel, "@GOS/@MATERIEL/"],
-                   [self.listWidget_Units, "@GOS/@UNITS/"],
-                   [self.listWidget_Test, "@GOS/@TEST/"],
-                   [self.listWidget_Client, "@GOS/@CLIENT/"],
-                   [self.listWidget_Arma3, ""],
-                   [self.listWidget_Workshop, "!Workshop/"]]
-    for widget, prefix in list_widget:
+    for widget, prefix in self.var_list_widget:
         for index in range(widget.count()):
             if widget.item(index).checkState() == Qt.Checked and \
              len(self.listWidget_priority.findItems(prefix+widget.item(index).text(), Qt.MatchExactly)) == 0:
                 items.append(prefix+widget.item(index).text())
-                if widget.item(index).checkState() == Qt.Unchecked and \
+            if widget.item(index).checkState() == Qt.Unchecked and \
                     len(self.listWidget_priority.findItems(prefix+widget.item(index).text(), Qt.MatchExactly)) > 0:
-                    for index_priority in range(self.listWidget_priority.count()):
+                for index_priority in range(self.listWidget_priority.count()):
                         if prefix+widget.item(index).text() == self.listWidget_priority.item(index_priority).text():
                             self.listWidget_priority.takeItem(index_priority)
                         break

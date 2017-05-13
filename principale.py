@@ -21,11 +21,11 @@ class Fenetre_Principale(QMainWindow, Ui_Fenetre_Principale):
         """
         
 
+        
+
         super(Fenetre_Principale, self).__init__(parent)
         self.setupUi(self)
         goslaunchera3.core.init_application(self)
-
-
     
     @pyqtSlot()
     def on_pushButton_Mods_A3_SelectAll_clicked(self):
@@ -251,8 +251,11 @@ class Fenetre_Principale(QMainWindow, Ui_Fenetre_Principale):
         @param p0 DESCRIPTION
         @type str
         """
-        #self.var_Profil.RestoreProfil()
-    
+        try:
+            self.var_Profil.RestoreProfil()
+        except:
+            print ("haha")
+            
     @pyqtSlot()
     def on_pushButton_Mods_Workshop_RefreshList_clicked(self):
         """

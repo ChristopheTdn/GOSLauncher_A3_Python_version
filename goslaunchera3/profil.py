@@ -5,6 +5,7 @@ import inspect
 from distutils.util import strtobool
 from PyQt5.QtCore import QSettings
 from PyQt5 import QtWidgets
+from . import show
 
 
 class Profil:
@@ -16,20 +17,18 @@ class Profil:
         self.excludeWidgetList=["comboBox_ChoixProfil", "lineEdit_AddProfilName"]
         #Methodes
         self.InitUi()
-        self.GestionProfil ()
+        self.RestoreProfil()
         
     def InitUi(self):
         ''' Create necessary file environnement for 
            Interface '''
            #Create profi directory
-        self.InitEnvironnement()
-           
+        self.InitEnvironnement()           
         #Gestion liste Profil
         self.AfficheListeProfil()
            
     def InitEnvironnement(self):
-        ''' Create GOSLauncherA3Py directory in main Arma3/userconfig dir'''
-         
+        ''' Create GOSLauncherA3Py directory in main Arma3/userconfig dir'''         
         try:
             fichier = open(self.ProfilDir+"config.ini","w")
             fichier.writelines("Defaut")
@@ -50,19 +49,10 @@ class Profil:
                 self.Ui.listWidget_profil.addItem(profil)                
                 self.Ui.comboBox_ChoixProfil.addItem(profil)
 
-    def GestionProfil(self):
-        
-        self.RestoreProfil()
-                
-    def CleanInterface(self):        
-        for name, obj in inspect.getmembers(self.Ui):  
-            if isinstance(obj, QtWidgets.QCheckBox) and obj.objectName() not in self.excludeWidgetList:
-                obj.setChecked(False)
- 
     def SaveProfil(self):
         self.Name = self.Ui.comboBox_ChoixProfil.currentText()
         self.SaveGUI(QSettings(self.ProfilDir+self.Name+".profil.ini",  QSettings.IniFormat))
-        self.CleanInterface()
+        show.CleanInterface(self)
         self.RestoreProfil()
         
     def SaveGUI(self, settings):
@@ -108,15 +98,13 @@ class Profil:
                 for index in range(obj.count()):        
                     value.append(obj.item(index).text())
                 settings.setValue(name, value)  
-            
-
-
 
     def RestoreProfil(self):
-        #self.CleanInterface()
+        show.CleanInterface(self)
         self.Name = self.Ui.comboBox_ChoixProfil.currentText()
         self.RestoreGUI(QSettings(self.ProfilDir+self.Name+".profil.ini",  QSettings.IniFormat))
-    
+        show.genere_tab_ui(self.Ui)
+        
     #===================================================================
     # restore "ui" controls with values stored in registry "settings"
     # currently only handles comboboxes, editlines &checkboxes
@@ -198,8 +186,13 @@ class Profil:
             list_profil.append(self.Ui.listWidget_profil.item(index).text())
         print (list_profil)    
         if nameProfil in list_profil:   
-            print ("ajout du profil : IMPOSSIBLE >",nameProfil, " existe déjà")
+            print ("LOG : ajout du profil : IMPOSSIBLE >",nameProfil, " existe déjà")
         else:   
-            self.CleanInterface()
+            show.CleanInterface()
             self.SaveGUI(QSettings(self.ProfilDir+nameProfil+".profil.ini",  QSettings.IniFormat))
-            print ("ajout du profil : ",nameProfil)
+            self.Ui.comboBox_ChoixProfil.addItem(nameProfil)
+            self.Ui.comboBox_ChoixProfil.setCurrentIndex(self.Ui.comboBox_ChoixProfil.findText(nameProfil))
+            
+            
+
+        

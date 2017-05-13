@@ -4,23 +4,29 @@
 # Module Interface SHOW
 import os
 import sys
+import inspect
 from PyQt5 import QtCore, QtGui, QtWidgets
 
 def init_app_start(self):
         # Gestion Profil 
         """ Affiche Liste Mods."""
+        
         # Mods @GOS
-        genereTabTemplate(self)  # Specifique @TEMPLATE GOS
-        genereTab(self, self.listWidget_Framework, self.var_Arma3Path+"/@GOS/@FRAMEWORK/")
-        genereTab(self, self.listWidget_Islands, self.var_Arma3Path+"/@GOS/@ISLANDS/")
-        genereTab(self, self.listWidget_Units, self.var_Arma3Path+"/@GOS/@UNITS/")
-        genereTab(self, self.listWidget_Materiel, self.var_Arma3Path+"/@GOS/@MATERIEL/")
-        genereTab(self, self.listWidget_Client, self.var_Arma3Path+"/@GOS/@CLIENT/")
-        genereTab(self, self.listWidget_Test, self.var_Arma3Path+"/@GOS/@TEST/")
-        # Mods @Arma3
-        genereTab(self, self.listWidget_Arma3, self.var_Arma3Path+"/")
-        # Mods @WorkShop
-        genereTab(self, self.listWidget_Workshop, self.var_Arma3Path+"/!Workshop/")
+        #genere_tab_ui(self)
+        
+
+def genere_tab_ui(self):    
+    genereTabTemplate(self)  # Specifique @TEMPLATE GOS
+    genereTab(self, self.listWidget_Framework, self.var_Arma3Path+"/@GOS/@FRAMEWORK/")
+    genereTab(self, self.listWidget_Islands, self.var_Arma3Path+"/@GOS/@ISLANDS/")
+    genereTab(self, self.listWidget_Units, self.var_Arma3Path+"/@GOS/@UNITS/")
+    genereTab(self, self.listWidget_Materiel, self.var_Arma3Path+"/@GOS/@MATERIEL/")
+    genereTab(self, self.listWidget_Client, self.var_Arma3Path+"/@GOS/@CLIENT/")
+    genereTab(self, self.listWidget_Test, self.var_Arma3Path+"/@GOS/@TEST/")
+    # Mods @Arma3
+    genereTab(self, self.listWidget_Arma3, self.var_Arma3Path+"/")
+    # Mods @WorkShop
+    genereTab(self, self.listWidget_Workshop, self.var_Arma3Path+"/!Workshop/")
 
 def itemCheckState(self, mods):
     if len(self.listWidget_priority.findItems(mods, QtCore.Qt.MatchExactly)) > 0:
@@ -31,6 +37,7 @@ def itemCheckState(self, mods):
 
 def genereTabTemplate(self):
     listeWidget = self.listWidget_Template
+    listeWidget.clear()
     repertoire = self.var_Arma3Path+"/@GOS/@TEMPLATE/"
     self.comboBox_ChoixApparence.addItem("")
     for mods in genereListMods(self, repertoire):
@@ -45,6 +52,7 @@ def genereTabTemplate(self):
 
 def genereTab(self, listeWidget,  repertoire):
     listeMods = genereListMods(self, repertoire)
+    listeWidget.clear()
     for mods in listeMods:
         item = QtWidgets.QListWidgetItem()
         item.setCheckState(itemCheckState(self, (repertoire+mods).replace(self.var_Arma3Path+"/", "")))
@@ -86,6 +94,14 @@ def LogoGosSkin(self, name):
     self.label_GFX_Template.setPixmap(QtGui.QPixmap("gfx/camo_image/"+name.replace(" ", "_")+".jpg"))
 
 
+def CleanInterface(self):        
+    for name, obj in inspect.getmembers(self.Ui):  
+        if isinstance(obj, QtWidgets.QCheckBox) and obj.objectName() not in self.excludeWidgetList:
+            obj.setChecked(False)
+        if isinstance(obj, QtWidgets.QListWidget) and obj.objectName() not in self.excludeWidgetList:
+            obj.clear()
+    genere_tab_ui(self.Ui)
+    
 ################################################################
 
 if __name__ == "__main__":
