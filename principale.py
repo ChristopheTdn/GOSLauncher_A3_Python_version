@@ -284,7 +284,11 @@ class Fenetre_Principale(QMainWindow, Ui_Fenetre_Principale):
         Slot documentation goes here.
         """
         # TODO: not implemented yet
-        raise NotImplementedError
+        while self.listWidget_priority.currentRow()>0:
+            textSplit=self.listWidget_priority.currentItem().text()
+            self.listWidget_priority.currentItem().setText(self.listWidget_priority.item(self.listWidget_priority.currentRow()-1).text())
+            self.listWidget_priority.item(self.listWidget_priority.currentRow()-1).setText(textSplit)
+            self.listWidget_priority.setCurrentRow(self.listWidget_priority.currentRow()-1)
     
     @pyqtSlot()
     def on_pushButton_priorityPlus_clicked(self):
@@ -292,15 +296,26 @@ class Fenetre_Principale(QMainWindow, Ui_Fenetre_Principale):
         Slot documentation goes here.
         """
         # TODO: not implemented yet
-        raise NotImplementedError
-    
+        if self.listWidget_priority.currentRow()>0:
+            textSplit=self.listWidget_priority.currentItem().text()
+            self.listWidget_priority.currentItem().setText(self.listWidget_priority.item(self.listWidget_priority.currentRow()-1).text())
+            self.listWidget_priority.item(self.listWidget_priority.currentRow()-1).setText(textSplit)
+            self.listWidget_priority.setCurrentRow(self.listWidget_priority.currentRow()-1)
+        
+        
+        
     @pyqtSlot()
     def on_pushButton_priorityMinus_clicked(self):
         """
         Slot documentation goes here.
         """
         # TODO: not implemented yet
-        raise NotImplementedError
+        if self.listWidget_priority.currentRow()<self.listWidget_priority.count()-1  and self.listWidget_priority.currentRow() >-1:
+            textSplit=self.listWidget_priority.currentItem().text()
+            self.listWidget_priority.currentItem().setText(self.listWidget_priority.item(self.listWidget_priority.currentRow()+1).text())
+            self.listWidget_priority.item(self.listWidget_priority.currentRow()+1).setText(textSplit)
+            self.listWidget_priority.setCurrentRow(self.listWidget_priority.currentRow()+1)
+        
     
     @pyqtSlot()
     def on_pushButton_priorityBottom_clicked(self):
@@ -308,7 +323,11 @@ class Fenetre_Principale(QMainWindow, Ui_Fenetre_Principale):
         Slot documentation goes here.
         """
         # TODO: not implemented yet
-        raise NotImplementedError
+        while self.listWidget_priority.currentRow()<self.listWidget_priority.count()-1 and self.listWidget_priority.currentRow() >-1:
+            textSplit=self.listWidget_priority.currentItem().text()
+            self.listWidget_priority.currentItem().setText(self.listWidget_priority.item(self.listWidget_priority.currentRow()+1).text())
+            self.listWidget_priority.item(self.listWidget_priority.currentRow()+1).setText(textSplit)
+            self.listWidget_priority.setCurrentRow(self.listWidget_priority.currentRow()+1)
     
     @pyqtSlot(int)
     def on_checkBox_windowedMode_stateChanged(self, p0):
