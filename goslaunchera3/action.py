@@ -11,7 +11,7 @@ from . import vars
 from . import language
 from . import priority
 
-from PyQt5.QtCore import Qt, QSettings
+from PyQt5.QtCore import Qt
 
 
 #

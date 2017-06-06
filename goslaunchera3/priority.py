@@ -8,6 +8,11 @@ Module Interface Priority
 
 this module manage the Priority TAB in the
 GOS Launcher Apps.
+           > recupere tous les Mods coché dans une liste
+           >Compare Liste Mods avec Liste Tab prioritaire
+           > Efface ceux qui ne sont plus selectionné
+           > Ajoute ceux qui manque en fin de liste
+           > Affiche la liste par priorité dans la listeBox
 
 """
 
@@ -15,30 +20,6 @@ import os
 import sys
 from PyQt5.QtCore import Qt
 from . import show
-
-
-def genere_list(self):
-    """
-    Manage the list of Mods to add to the different listWidget of the
-    interface.
-
-    :param: self(QTWidget).
-    :return: QTItems list.
-
-    """
-    items = []
-    for widget, prefix in self.var_list_widget:
-        for index in range(widget.count()):
-            if widget.item(index).checkState() == Qt.Checked and \
-             len(self.listWidget_priority.findItems(prefix+widget.item(index).text(), Qt.MatchExactly)) == 0:
-                items.append(prefix+widget.item(index).text())
-            if widget.item(index).checkState() == Qt.Unchecked and \
-                    len(self.listWidget_priority.findItems(prefix+widget.item(index).text(), Qt.MatchExactly)) > 0:
-                for index_priority in range(self.listWidget_priority.count()):
-                        if prefix+widget.item(index).text() == self.listWidget_priority.item(index_priority).text():
-                            self.listWidget_priority.takeItem(index_priority)
-                        break
-    return items
 
 
 def init_priority_tabwidget(self):
@@ -49,23 +30,49 @@ def init_priority_tabwidget(self):
 
     """
     show.genereTabPriority(self.listWidget_priority, genere_list(self))
-    clean_priority_tabwidget(self)
 
-
-def clean_priority_tabwidget(self):
-    """Clean listWidget_Priority item for obsolete Items
+def genere_list(self):
+    """
+    Manage the list of Mods to add to the different listWidget of the
+    interface.
 
     :param: self(QTWidget).
-    :return: none.
+    :return: QTItems list.
 
     """
-    list_bad_index = []
-    for index in range(self.listWidget_priority.count()):
-        if not os.path.exists(self.var_Arma3Path+"/"+self.listWidget_priority.item(index).text()):
-            list_bad_index.append(index)
-    for index in reversed(list_bad_index):
-        self.listWidget_priority.takeItem(index)
+    return list_mod_prioritaire(self)
 
+def list_mod_all(self):
+    #recupere tous les Mods cochés dans une liste
+    list_mod_all=[]
+    for widget, prefix in self.var_list_widget:
+         for index in range(widget.count()):
+            if widget.item(index).checkState() == Qt.Checked:
+                list_mod_all.append(prefix+widget.item(index).text())   
+            
+    return list_mod_all
+
+        
+def list_mod_prioritaire(self):
+    list_mods_priority=[]
+    list_mods = list_mod_all(self)
+    #Conserve dans une liste les Mods deja dans la liste prioritaire et toujours coché
+    for index in range(self.listWidget_priority.count()):
+        if (self.listWidget_priority.item(index).text()) in list_mods:
+            list_mods_priority.append(self.listWidget_priority.item(index).text())
+            list_mods.remove(self.listWidget_priority.item(index).text())
+            
+    # Ajoute a cette liste les Mods coché qui ne sont pas dans la liste prioritaire initial.
+    for mod in list_mods:
+         list_mods_priority.append(mod)
+    
+    return list_mods_priority
+       
+    return 
+
+
+    
+    
 ################################################################
 
 if __name__ == "__main__":

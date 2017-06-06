@@ -61,10 +61,12 @@ def genereTab(self, listeWidget,  repertoire):
 
 
 def genereTabPriority(listeWidget, listeMods):
-    for mods in listeMods:
-        item = QtWidgets.QListWidgetItem()
-        item.setText(mods)
-        listeWidget.addItem(item)
+    if listeMods != []:
+        listeWidget.clear()
+        for mods in listeMods:
+            item = QtWidgets.QListWidgetItem()
+            item.setText(mods)
+            listeWidget.addItem(item)
 
 
 def genereListMods(self, repertoire):

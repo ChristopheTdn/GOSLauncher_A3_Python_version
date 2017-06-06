@@ -192,7 +192,3 @@ class Profil:
             self.SaveGUI(QSettings(self.ProfilDir+nameProfil+".profil.ini",  QSettings.IniFormat))
             self.Ui.comboBox_ChoixProfil.addItem(nameProfil)
             self.Ui.comboBox_ChoixProfil.setCurrentIndex(self.Ui.comboBox_ChoixProfil.findText(nameProfil))
-            
-            
-
-        
