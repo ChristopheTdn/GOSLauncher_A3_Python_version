@@ -131,8 +131,6 @@ def  createListeOptions(self):
         allOptionsListed +="-noCB "  
     if self.checkBox_showScriptError.checkState():
         allOptionsListed +="-showScriptErrors "
-    if self.checkBox_xpMode.checkState():
-        allOptionsListed +="-showScriptErrors "   
     return allOptionsListed
 
 

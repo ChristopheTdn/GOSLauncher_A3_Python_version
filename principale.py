@@ -241,6 +241,7 @@ class Fenetre_Principale(QMainWindow, Ui_Fenetre_Principale):
         """
         Slot documentation goes here.
         """
+        goslaunchera3.action.initPriorityTabWidget(self)
         self.var_Profil.SaveProfil()
     
     @pyqtSlot(str)

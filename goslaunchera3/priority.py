@@ -16,7 +16,6 @@ GOS Launcher Apps.
 
 """
 
-import os
 import sys
 from PyQt5.QtCore import Qt
 from . import show
@@ -49,7 +48,10 @@ def list_mod_all(self):
          for index in range(widget.count()):
             if widget.item(index).checkState() == Qt.Checked:
                 list_mod_all.append(prefix+widget.item(index).text())   
-            
+    # recupere type apparence
+    if self.comboBox_ChoixApparence.currentText() != "":
+        list_mod_all.append("@GOS/@TEMPLATE/@GOSSkin_"+self.comboBox_ChoixApparence.currentText().replace(" ","_"))
+        
     return list_mod_all
 
         
