@@ -143,8 +143,7 @@ class Profil:
                 if value != None:
                     if type(value) == bool :
                         obj.setChecked(value)
-                    else:   
-                        print (type(value), value)
+                    else:  
                         obj.setChecked(strtobool(value))
     
             if isinstance(obj, QtWidgets.QRadioButton) and obj.objectName() not in excludeWidgetList:
@@ -154,7 +153,6 @@ class Profil:
                     if type(value) == bool :
                         obj.setChecked(value)
                     else:   
-                        print (type(value), value)
                         obj.setChecked(strtobool(value))
     
             if isinstance(obj, QtWidgets.QSlider) and obj.objectName() not in excludeWidgetList:

@@ -131,6 +131,13 @@ def  createListeOptions(self):
         allOptionsListed +="-noCB "  
     if self.checkBox_showScriptError.checkState():
         allOptionsListed +="-showScriptErrors "
+    if self.checkBox_windowedMode.checkState():
+        allOptionsListed +="-window  "
+        if self.lineEdit_WindowedModeX.text() != "":
+            allOptionsListed +="-X=" + self.lineEdit_WindowedModeX.text() + " "
+        if  self.lineEdit_WindowedModeY.text() != "":
+            allOptionsListed +="-Y=" +  self.lineEdit_WindowedModeY.text() + " "
+   
     return allOptionsListed
 
 

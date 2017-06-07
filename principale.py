@@ -255,7 +255,8 @@ class Fenetre_Principale(QMainWindow, Ui_Fenetre_Principale):
         try:
             self.var_Profil.RestoreProfil()
         except:
-            print ("haha")
+            print()
+            
             
     @pyqtSlot()
     def on_pushButton_Mods_Workshop_RefreshList_clicked(self):
