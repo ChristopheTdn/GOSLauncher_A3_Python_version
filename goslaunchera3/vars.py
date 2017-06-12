@@ -137,7 +137,15 @@ def  createListeOptions(self):
             allOptionsListed +="-X=" + self.lineEdit_WindowedModeX.text() + " "
         if  self.lineEdit_WindowedModeY.text() != "":
             allOptionsListed +="-Y=" +  self.lineEdit_WindowedModeY.text() + " "
-   
+    if self.checkBox_procNumber.checkState():
+        allOptionsListed +="-cpuCount=" +  self.lineEdit_procNumber.text()+ " "
+    if self.checkBox_maxMemory.checkState():
+        allOptionsListed +="-maxMem=" +  self.lineEdit_maxMemory.text()+ " "
+    if self.checkBox_maxVideoMemory.checkState():
+        allOptionsListed +="-maxVRAM=" +  self.lineEdit_maxVIDEOMemory.text()+ " "
+    if self.checkBox_hyperThreading.checkState():
+        allOptionsListed +="-enableHT "
+        
     return allOptionsListed
 
 

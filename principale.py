@@ -5,6 +5,7 @@ Module implementing Fenetre_Principale.
 """
 from PyQt5.QtCore import pyqtSlot
 from PyQt5.QtWidgets import QMainWindow
+from PyQt5.QtGui import QPixmap
 from Ui_principale import Ui_Fenetre_Principale
 import goslaunchera3
 
@@ -19,10 +20,6 @@ class Fenetre_Principale(QMainWindow, Ui_Fenetre_Principale):
         @param parent reference to the parent widget
         @type QWidget
         """
-        
-
-        
-
         super(Fenetre_Principale, self).__init__(parent)
         self.setupUi(self)
         goslaunchera3.core.init_application(self)
@@ -397,6 +394,7 @@ class Fenetre_Principale(QMainWindow, Ui_Fenetre_Principale):
         # TODO: not implemented yet
         self.horizontalSlider_maxMemory.setEnabled((p0 == 2))
         self.lineEdit_maxMemory.setEnabled((p0 == 2))
+        self.lineEdit_maxMemory.setText(str(self.horizontalSlider_maxMemory.value()))
     
     @pyqtSlot(int)
     def on_checkBox_procNumber_stateChanged(self, p0):
@@ -409,6 +407,7 @@ class Fenetre_Principale(QMainWindow, Ui_Fenetre_Principale):
         # TODO: not implemented yet
         self.horizontalSlider_procNumber.setEnabled((p0 == 2))
         self.lineEdit_procNumber.setEnabled((p0 == 2))
+        self.lineEdit_procNumber.setText(str(self.horizontalSlider_procNumber.value()))
     
     @pyqtSlot(int)
     def on_checkBox_maxVideoMemory_stateChanged(self, p0):
@@ -421,6 +420,7 @@ class Fenetre_Principale(QMainWindow, Ui_Fenetre_Principale):
         # TODO: not implemented yet
         self.horizontalSlider_maxVIDEOMemory.setEnabled((p0 == 2))
         self.lineEdit_maxVIDEOMemory.setEnabled((p0 == 2))
+        self.lineEdit_maxVIDEOMemory.setText(str(self.horizontalSlider_maxVIDEOMemory.value()))
     
 
     
@@ -442,3 +442,50 @@ class Fenetre_Principale(QMainWindow, Ui_Fenetre_Principale):
         """
         # TODO: not implemented yet
         self.var_Profil.AddProfil(self.lineEdit_AddProfilName.text())
+    
+    @pyqtSlot(int)
+    def on_checkBox_extraThreads_stateChanged(self, p0):
+        """
+        Slot documentation goes here.
+        
+        @param p0 DESCRIPTION
+        @type int
+        """
+        # TODO: not implemented yet
+        self.comboBox_extraThreads.setEnabled((p0 == 2))
+        self.label_GFX_geometryLoading.setEnabled((p0 == 2))
+        self.label_GFX_textureLoading.setEnabled((p0 == 2))
+        self.label_GFX_fileOperations.setEnabled((p0 == 2))
+        self.label_geometryLoading.setEnabled((p0 == 2))
+        self.label_textureLoading.setEnabled((p0 == 2))
+        self.label_fileOperations.setEnabled((p0 == 2))
+    
+    @pyqtSlot(str)
+    def on_comboBox_extraThreads_currentIndexChanged(self, p0):
+        """
+        Slot documentation goes here.
+        
+        @param p0 DESCRIPTION
+        @type str
+        """
+        # TODO: not implemented yet
+        if p0 == "0":
+            self.label_GFX_geometryLoading.setPixmap(QPixmap("gfx/supprimer.png"))
+            self.label_GFX_textureLoading.setPixmap(QPixmap("gfx/supprimer.png"))
+            self.label_GFX_fileOperations.setPixmap(QPixmap("gfx/supprimer.png"))
+        if p0 == "1":
+            self.label_GFX_geometryLoading.setPixmap(QPixmap("gfx/supprimer.png"))
+            self.label_GFX_textureLoading.setPixmap(QPixmap("gfx/supprimer.png"))
+            self.label_GFX_fileOperations.setPixmap(QPixmap("gfx/valide.png"))
+        if p0 == "3":
+            self.label_GFX_geometryLoading.setPixmap(QPixmap("gfx/supprimer.png"))
+            self.label_GFX_textureLoading.setPixmap(QPixmap("gfx/valide.png"))
+            self.label_GFX_fileOperations.setPixmap(QPixmap("gfx/valide.png"))
+        if p0 == "5":
+            self.label_GFX_geometryLoading.setPixmap(QPixmap("gfx/valide.png"))
+            self.label_GFX_textureLoading.setPixmap(QPixmap("gfx/supprimer.png"))
+            self.label_GFX_fileOperations.setPixmap(QPixmap("gfx/valide.png"))
+        if p0 == "7":
+            self.label_GFX_geometryLoading.setPixmap(QPixmap("gfx/valide.png"))
+            self.label_GFX_textureLoading.setPixmap(QPixmap("gfx/valide.png"))
+            self.label_GFX_fileOperations.setPixmap(QPixmap("gfx/valide.png"))
