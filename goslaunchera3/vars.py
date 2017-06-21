@@ -145,6 +145,8 @@ def  createListeOptions(self):
         allOptionsListed +="-maxVRAM=" +  self.lineEdit_maxVIDEOMemory.text()+ " "
     if self.checkBox_hyperThreading.checkState():
         allOptionsListed +="-enableHT "
+    if self.checkBox_extraThreads.checkState():        
+        allOptionsListed += "-exThreads="+self.comboBox_extraThreads.currentText() + " "
         
     return allOptionsListed
 

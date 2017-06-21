@@ -489,3 +489,11 @@ class Fenetre_Principale(QMainWindow, Ui_Fenetre_Principale):
             self.label_GFX_geometryLoading.setPixmap(QPixmap("gfx/valide.png"))
             self.label_GFX_textureLoading.setPixmap(QPixmap("gfx/valide.png"))
             self.label_GFX_fileOperations.setPixmap(QPixmap("gfx/valide.png"))
+    
+    @pyqtSlot()
+    def on_pushButton_synchro_template_launch_clicked(self):
+        """
+        Slot documentation goes here.
+        """
+        # TODO: not implemented yet
+        raise NotImplementedError
