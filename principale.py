@@ -496,4 +496,4 @@ class Fenetre_Principale(QMainWindow, Ui_Fenetre_Principale):
         Slot documentation goes here.
         """
         # TODO: not implemented yet
-        raise NotImplementedError
+        goslaunchera3.action.rsyncGos(self, "@TEMPLATE")

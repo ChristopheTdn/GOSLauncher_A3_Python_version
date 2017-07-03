@@ -10,6 +10,7 @@ import subprocess
 from . import vars
 from . import language
 from . import priority
+from . import gos_rsync
 
 from PyQt5.QtCore import Qt
 
@@ -72,8 +73,15 @@ def launch_arma3(self):
         #
         print("execution : " + commandLine)
         subprocess.Popen(commandLine)
+        
+#
+#  Action Interface : RSYNC
+#
 
-
+def rsyncGos(self, syncname):
+    clyde = gos_rsync.GosRsync(self, syncname)
+    print (clyde)
+    
 ################################################################
 
 if __name__ == "__main__":
