@@ -80,7 +80,9 @@ def launch_arma3(self):
 
 def rsyncGos(self, syncname):
     clyde = gos_rsync.GosRsync(self, syncname)
-    print (clyde)
+    print ("Debut du process")
+    clyde.start()
+
     
 ################################################################
 
