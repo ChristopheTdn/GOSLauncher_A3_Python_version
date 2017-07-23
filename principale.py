@@ -496,4 +496,5 @@ class Fenetre_Principale(QMainWindow, Ui_Fenetre_Principale):
         Slot documentation goes here.
         """
         # TODO: not implemented yet
-        goslaunchera3.action.rsyncGos(self, "@TEMPLATE")
+        goslaunchera3.action.rsyncGos(self, "@TEMPLATE",self.label_synchro_template_state, self.progressBar_synchro_template_fichier,self.progressBar_synchro_template_global,self.label_synchro_template_debit,self.pushButton_synchro_template_launch)
+
