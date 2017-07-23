@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'D:\Zone Documents\ToF\Documents\GitHub\GOSLauncher_A3_Python_version\principale.ui'
 #
-# Created by: PyQt5 UI code generator 5.8.2
+# Created by: PyQt5 UI code generator 5.9
 #
 # WARNING! All changes made in this file will be lost!
 
@@ -758,6 +758,7 @@ class Ui_Fenetre_Principale(object):
         self.textEdit_synchro_log = QtWidgets.QTextEdit(self.tab_synchro)
         self.textEdit_synchro_log.setGeometry(QtCore.QRect(10, 230, 461, 221))
         self.textEdit_synchro_log.setReadOnly(True)
+        self.textEdit_synchro_log.setAcceptRichText(False)
         self.textEdit_synchro_log.setObjectName("textEdit_synchro_log")
         self.tabWidget_synchro.addTab(self.tab_synchro, "")
         self.pushButton_LaunchArma3 = QtWidgets.QPushButton(self.centralWidget)

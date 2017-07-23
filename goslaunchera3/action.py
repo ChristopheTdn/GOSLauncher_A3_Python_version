@@ -79,9 +79,8 @@ def launch_arma3(self):
 #
 
 def rsyncGos(self, syncname):
-    clyde = gos_rsync.GosRsync(self, syncname)
-    print ("Debut du process")
-    clyde.start()
+    self.clyde = gos_rsync.GosRsync(self, syncname,self.label_synchro_template_state, self.progressBar_synchro_template_fichier,self.progressBar_synchro_template_global,self.label_synchro_template_debit,self.pushButton_synchro_template_launch)
+
 
     
 ################################################################
