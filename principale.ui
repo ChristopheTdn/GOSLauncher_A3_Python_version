@@ -15,7 +15,7 @@
   </property>
   <property name="windowIcon">
    <iconset>
-    <normaloff>gfx/GOSLauncherA3.ico</normaloff>gfx/GOSLauncherA3.ico</iconset>
+    <normaloff>C:/Users/chris/.designer/backup/gfx/GOSLauncherA3.ico</normaloff>C:/Users/chris/.designer/backup/gfx/GOSLauncherA3.ico</iconset>
   </property>
   <property name="styleSheet">
    <string notr="true">background-color: rgb(236, 236, 236);</string>
@@ -179,7 +179,7 @@ tous</string>
          <string notr="true"/>
         </property>
         <property name="pixmap">
-         <pixmap>gfx/logo-gos.png</pixmap>
+         <pixmap>C:/Users/chris/.designer/backup/gfx/logo-gos.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -272,7 +272,7 @@ liste</string>
          <string notr="true"/>
         </property>
         <property name="pixmap">
-         <pixmap>gfx/atelier.png</pixmap>
+         <pixmap>C:/Users/chris/.designer/backup/gfx/atelier.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -369,7 +369,7 @@ selection</string>
          <string notr="true"/>
         </property>
         <property name="pixmap">
-         <pixmap>gfx/IslandStone.png</pixmap>
+         <pixmap>C:/Users/chris/.designer/backup/gfx/IslandStone.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -428,7 +428,7 @@ liste</string>
          <string notr="true"/>
         </property>
         <property name="pixmap">
-         <pixmap>gfx/units.png</pixmap>
+         <pixmap>C:/Users/chris/.designer/backup/gfx/units.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -544,7 +544,7 @@ tous</string>
          <string notr="true"/>
         </property>
         <property name="pixmap">
-         <pixmap>gfx/hangar.png</pixmap>
+         <pixmap>C:/Users/chris/.designer/backup/gfx/hangar.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -660,7 +660,7 @@ selection</string>
          <string notr="true"/>
         </property>
         <property name="pixmap">
-         <pixmap>gfx/template.png</pixmap>
+         <pixmap>C:/Users/chris/.designer/backup/gfx/template.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -776,7 +776,7 @@ liste</string>
          <string notr="true"/>
         </property>
         <property name="pixmap">
-         <pixmap>gfx/ampoule.png</pixmap>
+         <pixmap>C:/Users/chris/.designer/backup/gfx/ampoule.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -882,7 +882,7 @@ tous</string>
          <string notr="true"/>
         </property>
         <property name="pixmap">
-         <pixmap>gfx/template.png</pixmap>
+         <pixmap>C:/Users/chris/.designer/backup/gfx/template.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -960,7 +960,7 @@ liste</string>
          <string notr="true"/>
         </property>
         <property name="pixmap">
-         <pixmap>gfx/Steam_Icon.png</pixmap>
+         <pixmap>C:/Users/chris/.designer/backup/gfx/Steam_Icon.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -1411,7 +1411,7 @@ tous</string>
          <string notr="true"/>
         </property>
         <property name="pixmap">
-         <pixmap>gfx/profil.png</pixmap>
+         <pixmap>C:/Users/chris/.designer/backup/gfx/profil.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -1473,7 +1473,7 @@ tous</string>
         </property>
         <property name="icon">
          <iconset>
-          <normaloff>gfx/ajouter.png</normaloff>gfx/ajouter.png</iconset>
+          <normaloff>C:/Users/chris/.designer/backup/gfx/ajouter.png</normaloff>C:/Users/chris/.designer/backup/gfx/ajouter.png</iconset>
         </property>
         <property name="iconSize">
          <size>
@@ -1529,7 +1529,7 @@ tous</string>
          <string notr="true"/>
         </property>
         <property name="pixmap">
-         <pixmap>gfx/france.png</pixmap>
+         <pixmap>C:/Users/chris/.designer/backup/gfx/france.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -1548,7 +1548,7 @@ tous</string>
          <string notr="true"/>
         </property>
         <property name="pixmap">
-         <pixmap>gfx/royaumeunis.png</pixmap>
+         <pixmap>C:/Users/chris/.designer/backup/gfx/royaumeunis.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -1567,7 +1567,7 @@ tous</string>
          <string notr="true"/>
         </property>
         <property name="pixmap">
-         <pixmap>gfx/globe.png</pixmap>
+         <pixmap>C:/Users/chris/.designer/backup/gfx/globe.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -1591,7 +1591,7 @@ tous</string>
          <string notr="true"/>
         </property>
         <property name="pixmap">
-         <pixmap>gfx/logo-gos.png</pixmap>
+         <pixmap>C:/Users/chris/.designer/backup/gfx/logo-gos.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -1624,7 +1624,7 @@ tous</string>
         <string notr="true"/>
        </property>
        <property name="pixmap">
-        <pixmap>gfx/danger.png</pixmap>
+        <pixmap>C:/Users/chris/.designer/backup/gfx/danger.png</pixmap>
        </property>
        <property name="scaledContents">
         <bool>true</bool>
@@ -2063,7 +2063,7 @@ tous</string>
         <string notr="true"/>
        </property>
        <property name="pixmap">
-        <pixmap>gfx/valide.png</pixmap>
+        <pixmap>C:/Users/chris/.designer/backup/gfx/valide.png</pixmap>
        </property>
        <property name="scaledContents">
         <bool>true</bool>
@@ -2085,7 +2085,7 @@ tous</string>
         <string notr="true"/>
        </property>
        <property name="pixmap">
-        <pixmap>gfx/valide.png</pixmap>
+        <pixmap>C:/Users/chris/.designer/backup/gfx/valide.png</pixmap>
        </property>
        <property name="scaledContents">
         <bool>true</bool>
@@ -2107,7 +2107,7 @@ tous</string>
         <string notr="true"/>
        </property>
        <property name="pixmap">
-        <pixmap>gfx/valide.png</pixmap>
+        <pixmap>C:/Users/chris/.designer/backup/gfx/valide.png</pixmap>
        </property>
        <property name="scaledContents">
         <bool>true</bool>
@@ -2171,7 +2171,7 @@ tous</string>
       <property name="geometry">
        <rect>
         <x>10</x>
-        <y>140</y>
+        <y>100</y>
         <width>71</width>
         <height>16</height>
        </rect>
@@ -2192,7 +2192,7 @@ tous</string>
       <property name="geometry">
        <rect>
         <x>90</x>
-        <y>140</y>
+        <y>100</y>
         <width>61</width>
         <height>16</height>
        </rect>
@@ -2213,7 +2213,7 @@ tous</string>
       <property name="geometry">
        <rect>
         <x>330</x>
-        <y>140</y>
+        <y>100</y>
         <width>61</width>
         <height>16</height>
        </rect>
@@ -2234,7 +2234,7 @@ tous</string>
       <property name="geometry">
        <rect>
         <x>400</x>
-        <y>140</y>
+        <y>100</y>
         <width>71</width>
         <height>21</height>
        </rect>
@@ -2247,7 +2247,7 @@ tous</string>
       <property name="geometry">
        <rect>
         <x>160</x>
-        <y>140</y>
+        <y>100</y>
         <width>151</width>
         <height>10</height>
        </rect>
@@ -2266,7 +2266,7 @@ tous</string>
       <property name="geometry">
        <rect>
         <x>160</x>
-        <y>150</y>
+        <y>110</y>
         <width>151</width>
         <height>10</height>
        </rect>
@@ -2285,9 +2285,9 @@ tous</string>
       <property name="geometry">
        <rect>
         <x>10</x>
-        <y>230</y>
+        <y>350</y>
         <width>461</width>
-        <height>221</height>
+        <height>101</height>
        </rect>
       </property>
       <property name="documentTitle">
@@ -2298,6 +2298,831 @@ tous</string>
       </property>
       <property name="acceptRichText">
        <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_synchro_islands">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>130</y>
+        <width>71</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>8</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>@ISLANDS :</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QProgressBar" name="progressBar_synchro_islands_fichier">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>130</y>
+        <width>151</width>
+        <height>10</height>
+       </rect>
+      </property>
+      <property name="value">
+       <number>0</number>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="textVisible">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_synchro_islands_debit">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>130</y>
+        <width>61</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>8</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>0.00 Kb/s</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_synchro_islands_state">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>130</y>
+        <width>61</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>8</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>A jour</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QProgressBar" name="progressBar_synchro_islands_global">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>140</y>
+        <width>151</width>
+        <height>10</height>
+       </rect>
+      </property>
+      <property name="value">
+       <number>0</number>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="textVisible">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_synchro_islands_launch">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>130</y>
+        <width>71</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Lancer</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_synchro_materiel_state">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>160</y>
+        <width>61</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>8</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>A jour</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QProgressBar" name="progressBar_synchro_materiel_fichier">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>160</y>
+        <width>151</width>
+        <height>10</height>
+       </rect>
+      </property>
+      <property name="value">
+       <number>0</number>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="textVisible">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_synchro_materiel">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>160</y>
+        <width>71</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>8</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>@MATERIEL :</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_synchro_materiel_debit">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>160</y>
+        <width>61</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>8</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>0.00 Kb/s</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QProgressBar" name="progressBar_synchro_materiel_global">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>170</y>
+        <width>151</width>
+        <height>10</height>
+       </rect>
+      </property>
+      <property name="value">
+       <number>0</number>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="textVisible">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_synchro_materiel_launch">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>160</y>
+        <width>71</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Lancer</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_synchro_framework_debit">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>220</y>
+        <width>61</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>8</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>0.00 Kb/s</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_synchro_framework_launch">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>220</y>
+        <width>71</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Lancer</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_synchro_framework">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>219</y>
+        <width>91</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>8</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>@FRAMEWORK :</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QProgressBar" name="progressBar_synchro_framework_global">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>230</y>
+        <width>151</width>
+        <height>10</height>
+       </rect>
+      </property>
+      <property name="value">
+       <number>0</number>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="textVisible">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_synchro_framework_state">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>220</y>
+        <width>61</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>8</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>A jour</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QProgressBar" name="progressBar_synchro_framework_fichier">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>220</y>
+        <width>151</width>
+        <height>10</height>
+       </rect>
+      </property>
+      <property name="value">
+       <number>0</number>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="textVisible">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_synchro_units_state">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>190</y>
+        <width>61</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>8</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>A jour</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_synchro_units">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>190</y>
+        <width>61</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>8</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>@UNITS :</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_synchro_units_debit">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>190</y>
+        <width>61</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>8</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>0.00 Kb/s</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QProgressBar" name="progressBar_synchro_units_global">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>200</y>
+        <width>151</width>
+        <height>10</height>
+       </rect>
+      </property>
+      <property name="value">
+       <number>0</number>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="textVisible">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QProgressBar" name="progressBar_synchro_units_fichier">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>190</y>
+        <width>151</width>
+        <height>10</height>
+       </rect>
+      </property>
+      <property name="value">
+       <number>0</number>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="textVisible">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_synchro_units_launch">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>190</y>
+        <width>71</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Lancer</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_synchro_client_launch">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>250</y>
+        <width>71</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Lancer</string>
+      </property>
+     </widget>
+     <widget class="QProgressBar" name="progressBar_synchro_client_fichier">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>250</y>
+        <width>151</width>
+        <height>10</height>
+       </rect>
+      </property>
+      <property name="value">
+       <number>0</number>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="textVisible">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_synchro_client">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>249</y>
+        <width>91</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>8</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>@CLIENT :</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QProgressBar" name="progressBar_synchro_client_global">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>260</y>
+        <width>151</width>
+        <height>10</height>
+       </rect>
+      </property>
+      <property name="value">
+       <number>0</number>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="textVisible">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_synchro_client_state">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>250</y>
+        <width>61</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>8</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>A jour</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_synchro_client_debit">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>250</y>
+        <width>61</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>8</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>0.00 Kb/s</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QProgressBar" name="progressBar_synchro_test_global">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>290</y>
+        <width>151</width>
+        <height>10</height>
+       </rect>
+      </property>
+      <property name="value">
+       <number>0</number>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="textVisible">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_synchro_test_launch">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>280</y>
+        <width>71</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Lancer</string>
+      </property>
+     </widget>
+     <widget class="QProgressBar" name="progressBar_synchro_test_fichier">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>280</y>
+        <width>151</width>
+        <height>10</height>
+       </rect>
+      </property>
+      <property name="value">
+       <number>0</number>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="textVisible">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_synchro_test">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>279</y>
+        <width>91</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>8</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>@TEST :</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_synchro_test_state">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>280</y>
+        <width>61</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>8</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>A jour</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_synchro_test_debit">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>280</y>
+        <width>61</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>8</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>0.00 Kb/s</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_synchro_interclan_debit">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>311</y>
+        <width>61</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>8</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>0.00 Kb/s</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_synchro_interclan_state">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>311</y>
+        <width>61</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>8</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>A jour</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QProgressBar" name="progressBar_synchro_interclan_fichier">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>311</y>
+        <width>151</width>
+        <height>10</height>
+       </rect>
+      </property>
+      <property name="value">
+       <number>0</number>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="textVisible">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QProgressBar" name="progressBar_synchro_interclan_global">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>321</y>
+        <width>151</width>
+        <height>10</height>
+       </rect>
+      </property>
+      <property name="value">
+       <number>0</number>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="textVisible">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_synchro_interclan_launch">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>311</y>
+        <width>71</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Lancer</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_synchro_interclan">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>310</y>
+        <width>91</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>8</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>@INTERCLAN :</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_synchro_generale_launch">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>20</y>
+        <width>111</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Synchro
+GENERALE</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_synchro_changelog_launch">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>60</y>
+        <width>111</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Changelog</string>
       </property>
      </widget>
     </widget>
@@ -2366,7 +3191,7 @@ Arma 3</string>
     </property>
     <property name="icon">
      <iconset>
-      <normaloff>gfx/disquette.png</normaloff>gfx/disquette.png</iconset>
+      <normaloff>C:/Users/chris/.designer/backup/gfx/disquette.png</normaloff>C:/Users/chris/.designer/backup/gfx/disquette.png</iconset>
     </property>
     <property name="iconSize">
      <size>

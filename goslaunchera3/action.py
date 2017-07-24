@@ -80,10 +80,33 @@ def launch_arma3(self):
 
 def rsyncGos(self, syncname, label_state, progressbar_fichier,progressbar_global, label_debit, pushbutton):
     arguments = ["--partial", "--inplace","--progress","--delete-after", "--bwlimit=0", "--chmod=ugo=rwX","www.clan-gos.fr::"+syncname,"cygdrive/G/JEUX/steamapps/common/Arma 3/@GOS/"+syncname]
-    self.process = gos_rsync.GosRsync(self, syncname, label_state, progressbar_fichier,progressbar_global, label_debit, pushbutton, arguments)
-    self.process.start()
-
-
+    if syncname=='@TEMPLATE':
+        self.process_TEMPLATE = gos_rsync.GosRsync(self, syncname, label_state, progressbar_fichier,progressbar_global, label_debit, pushbutton, arguments)
+        self.process_TEMPLATE.start()
+    elif syncname=='@ISLANDS':
+        self.process_ISLANDS = gos_rsync.GosRsync(self, syncname, label_state, progressbar_fichier,progressbar_global, label_debit, pushbutton, arguments)
+        self.process_ISLANDS.start()
+    elif syncname=='@MATERIEL':
+        self.process_MATERIEL = gos_rsync.GosRsync(self, syncname, label_state, progressbar_fichier,progressbar_global, label_debit, pushbutton, arguments)
+        self.process_MATERIEL.start()
+    elif syncname=='@UNITS':
+        self.process_UNITS = gos_rsync.GosRsync(self, syncname, label_state, progressbar_fichier,progressbar_global, label_debit, pushbutton, arguments)
+        self.process_UNITS.start()
+    elif syncname=='@FRAMEWORK':
+        self.process_FRAMEWORK = gos_rsync.GosRsync(self, syncname, label_state, progressbar_fichier,progressbar_global, label_debit, pushbutton, arguments)
+        self.process_FRAMEWORK.start()
+    elif syncname=='@CLIENT':
+        self.process_CLIENT = gos_rsync.GosRsync(self, syncname, label_state, progressbar_fichier,progressbar_global, label_debit, pushbutton, arguments)
+        self.process_CLIENT.start()
+    elif syncname=='@TEST':
+        self.process_TEST = gos_rsync.GosRsync(self, syncname, label_state, progressbar_fichier,progressbar_global, label_debit, pushbutton, arguments)
+        self.process_TEST.start()
+    elif syncname=='@GENERALE':
+        self.process_GLOBAL = gos_rsync.GosRsync(self, syncname, label_state, progressbar_fichier,progressbar_global, label_debit, pushbutton, arguments)
+        self.process_GLOBAL.start()
+    elif syncname=='@INTERCLAN':
+        self.process_INTERCLAN = gos_rsync.GosRsync(self, syncname, label_state, progressbar_fichier,progressbar_global, label_debit, pushbutton, arguments)
+        self.process_INTERCLAN.start()    
     
 ################################################################
 
