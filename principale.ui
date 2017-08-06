@@ -2282,6 +2282,9 @@ tous</string>
       </property>
      </widget>
      <widget class="QTextEdit" name="textEdit_synchro_log">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
       <property name="geometry">
        <rect>
         <x>10</x>
@@ -2290,6 +2293,12 @@ tous</string>
         <height>101</height>
        </rect>
       </property>
+      <property name="acceptDrops">
+       <bool>false</bool>
+      </property>
+      <property name="toolTip">
+       <string/>
+      </property>
       <property name="documentTitle">
        <string>Log</string>
       </property>
@@ -2297,7 +2306,7 @@ tous</string>
        <bool>true</bool>
       </property>
       <property name="acceptRichText">
-       <bool>false</bool>
+       <bool>true</bool>
       </property>
      </widget>
      <widget class="QLabel" name="label_synchro_islands">

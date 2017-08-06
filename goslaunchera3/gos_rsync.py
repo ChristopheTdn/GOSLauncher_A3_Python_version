@@ -67,7 +67,9 @@ class GosRsync(QtCore.QObject):
                     self.progressbar_fichier.setValue(0)
                     self.progressbar_global.setValue(0)
                     self.pushbutton.setEnabled(True)
+                    self.pushbutton.setText('Lancer')
                     data="Synchronisation "+self.syncname + " terminée.\n"
+
                     
                 if "receiving file list ..." in info and "DRY RUN" not in info:                    
                     data="Synchronisation "+self.syncname + " en cours. \n"    
@@ -79,8 +81,8 @@ class GosRsync(QtCore.QObject):
             return data
             
         def start(self):  
-            commande = "rsync/rsync.exe"
-            self.pushbutton.setEnabled(False)
+            commande = "rsync/rsync.exe"            
+
             self.process.start(commande, self.argumentdry)  
             self.process.waitForFinished()
             self.process.start(commande, self.argument) 
@@ -88,7 +90,14 @@ class GosRsync(QtCore.QObject):
         def initClass(self):
             self.output = self.Ui.textEdit_synchro_log
             self.process = QtCore.QProcess(self)
-            self.process.readyReadStandardOutput.connect(self.dataReady)
-
+            self.process.readyReadStandardOutput.connect(self.dataReady)            
+            self.pushbutton.setText('Abandonner')
+        
+        def killProcess(self):
+            self.process.kill()
+            self.pushbutton.setText("Lancer")            
+            self.output.insertPlainText("Synchro Abandonné...\n")
+            self.output.ensureCursorVisible()
+    
 
     
