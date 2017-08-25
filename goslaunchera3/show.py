@@ -6,6 +6,7 @@ import os
 import sys
 import inspect
 from PyQt5 import QtCore, QtGui, QtWidgets
+from . import action
 
 def init_app_start(self):
         # Gestion Profil 
@@ -13,7 +14,8 @@ def init_app_start(self):
         
         # Mods @GOS
         #genere_tab_ui(self)
-        
+        #genere size Mods
+        action.rsyncTaille(self)
 
 def genere_tab_ui(self):    
     genereTabTemplate(self)  # Specifique @TEMPLATE GOS

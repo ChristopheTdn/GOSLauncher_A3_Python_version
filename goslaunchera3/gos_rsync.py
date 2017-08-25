@@ -42,8 +42,8 @@ class GosRsync(QtCore.QObject):
                         self.label_debit.setText(segment)
                         data=""
                     if "%" in segment:
-                        valuemoins = int(segments[0].replace(",", ""))
-                        self.label_state.setText(str(round((self.totalFileToTransfer-valuemoins)/1000000, 2))+" Mo")
+                        valuemoins = int(segments[0].replace(",", ""))                        
+                        self.label_state.setText("<font color='red'>"+str(round((self.totalFileToTransfer-valuemoins)/1000000, 2))+" Mo</font>")
                         self.progressbar_fichier.setValue(int(segment.replace("%", "")))
                         value = ((self.totalFileToTransfer-valuemoins)*100)/self.totalFilesize
                         self.progressbar_global.setValue(100-round(value))
@@ -58,8 +58,11 @@ class GosRsync(QtCore.QObject):
                 if "Total transferred file size:" in info:
                     detail = info.split(":")                    
                     self.totalFileToTransfer = int (detail[1].replace(",", "").replace("bytes", ""))
-                    self.totalFilesize = self.totalFileToTransfer                    
-                    self.label_state.setText(str(round(self.totalFileToTransfer/1000000, 2))+" Mo")
+                    self.totalFilesize = self.totalFileToTransfer   
+                    if self.totalFileToTransfer ==0: 
+                        self.label_state.setText("<font color='black'>A jour</font>")
+                    else:
+                        self.label_state.setText("<font color='red'>"+str(round(self.totalFileToTransfer/1000000, 2))+" Mo</font>")
                     data=""
                     
                 if "speedup is" in info and "DRY RUN" not in info:
@@ -81,7 +84,8 @@ class GosRsync(QtCore.QObject):
             return data
             
         def start(self):  
-            commande = "rsync/rsync.exe"     
+            self.pushbutton.setText('Abandonner')
+            commande = "rsync/rsync.exe"
             self.process.start(commande, self.argumentdry)  
             self.process.waitForFinished()
             self.process.start(commande, self.argument) 
@@ -90,13 +94,18 @@ class GosRsync(QtCore.QObject):
             self.output = self.Ui.textEdit_synchro_log
             self.process = QtCore.QProcess(self)
             self.process.readyReadStandardOutput.connect(self.dataReady)            
-            self.pushbutton.setText('Abandonner')
+            
         
         def killProcess(self):
             self.process.kill()
             self.pushbutton.setText("Lancer")            
             self.output.insertPlainText("Synchro Abandonné...\n")
             self.output.ensureCursorVisible()
+        
+        def getsize(self):
+            commande = "rsync/rsync.exe" 
+            self.process.start(commande, self.argumentdry)  
+            
     
 
     

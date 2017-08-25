@@ -77,7 +77,41 @@ def launch_arma3(self):
 #
 #  Action Interface : RSYNC
 #
-
+def rsyncTaille(self):
+    
+    # @TEMPLATE 
+    arguments = ["--partial", "--inplace","--progress","--delete-after", "--bwlimit=0", "--chmod=ugo=rwX","www.clan-gos.fr::@TEMPLATE","cygdrive/G/JEUX/steamapps/common/Arma 3/@GOS/@TEMPLATE"]
+    self.process_TEMPLATE_Taille = gos_rsync.GosRsync(self, "@TEMPLATE",self.label_synchro_template_state, self.progressBar_synchro_template_fichier,self.progressBar_synchro_template_global,self.label_synchro_template_debit,self.pushButton_synchro_template_launch, arguments)
+    self.process_TEMPLATE_Taille.getsize()
+    # @ISLANDS
+    arguments = ["--partial", "--inplace","--progress","--delete-after", "--bwlimit=0", "--chmod=ugo=rwX","www.clan-gos.fr::@ISLANDS","cygdrive/G/JEUX/steamapps/common/Arma 3/@GOS/@ISLANDS"]
+    self.process_ISLANDS_Taille = gos_rsync.GosRsync(self, "@ISLANDS",self.label_synchro_islands_state, self.progressBar_synchro_islands_fichier,self.progressBar_synchro_islands_global,self.label_synchro_islands_debit,self.pushButton_synchro_islands_launch, arguments)
+    self.process_ISLANDS_Taille.getsize()
+    # @MATERIEL
+    arguments = ["--partial", "--inplace","--progress","--delete-after", "--bwlimit=0", "--chmod=ugo=rwX","www.clan-gos.fr::@MATERIEL","cygdrive/G/JEUX/steamapps/common/Arma 3/@GOS/@MATERIEL"]
+    self.process_MATERIEL_Taille = gos_rsync.GosRsync(self, "@MATERIEL",self.label_synchro_materiel_state, self.progressBar_synchro_materiel_fichier,self.progressBar_synchro_materiel_global,self.label_synchro_materiel_debit,self.pushButton_synchro_materiel_launch, arguments)
+    self.process_MATERIEL_Taille.getsize()
+    # @UNITS
+    arguments = ["--partial", "--inplace","--progress","--delete-after", "--bwlimit=0", "--chmod=ugo=rwX","www.clan-gos.fr::@UNITS","cygdrive/G/JEUX/steamapps/common/Arma 3/@GOS/@UNITS"]
+    self.process_UNITS_Taille = gos_rsync.GosRsync(self, "@UNITS",self.label_synchro_units_state, self.progressBar_synchro_units_fichier,self.progressBar_synchro_units_global,self.label_synchro_units_debit,self.pushButton_synchro_units_launch, arguments)
+    self.process_UNITS_Taille.getsize()
+    # @FRAMEWORK
+    arguments = ["--partial", "--inplace","--progress","--delete-after", "--bwlimit=0", "--chmod=ugo=rwX","www.clan-gos.fr::@FRAMEWORK","cygdrive/G/JEUX/steamapps/common/Arma 3/@GOS/@FRAMEWORK"]
+    self.process_FRAMEWORK_Taille = gos_rsync.GosRsync(self, "@FRAMEWORK",self.label_synchro_framework_state, self.progressBar_synchro_framework_fichier,self.progressBar_synchro_framework_global,self.label_synchro_framework_debit,self.pushButton_synchro_framework_launch, arguments)
+    self.process_FRAMEWORK_Taille.getsize()
+    # @CLIENT
+    arguments = ["--partial", "--inplace","--progress","--delete-after", "--bwlimit=0", "--chmod=ugo=rwX","www.clan-gos.fr::@CLIENT","cygdrive/G/JEUX/steamapps/common/Arma 3/@GOS/@CLIENT"]
+    self.process_CLIENT_Taille = gos_rsync.GosRsync(self, "@CLIENT",self.label_synchro_client_state, self.progressBar_synchro_client_fichier,self.progressBar_synchro_client_global,self.label_synchro_client_debit,self.pushButton_synchro_client_launch, arguments)
+    self.process_CLIENT_Taille.getsize()
+    # @TEST
+    arguments = ["--partial", "--inplace","--progress","--delete-after", "--bwlimit=0", "--chmod=ugo=rwX","www.clan-gos.fr::@TEST","cygdrive/G/JEUX/steamapps/common/Arma 3/@GOS/@TEST"]
+    self.process_TEST_Taille = gos_rsync.GosRsync(self, "@TEST",self.label_synchro_test_state, self.progressBar_synchro_test_fichier,self.progressBar_synchro_test_global,self.label_synchro_test_debit,self.pushButton_synchro_test_launch, arguments)
+    self.process_TEST_Taille.getsize()
+    # @INTERCLAN
+    arguments = ["--partial", "--inplace","--progress","--delete-after", "--bwlimit=0", "--chmod=ugo=rwX","www.clan-gos.fr::@INTERCLAN","cygdrive/G/JEUX/steamapps/common/Arma 3/@GOS/@INTERCLAN"]
+    self.process_INTERCLAN_Taille = gos_rsync.GosRsync(self, "@INTERCLAN",self.label_synchro_interclan_state, self.progressBar_synchro_interclan_fichier,self.progressBar_synchro_interclan_global,self.label_synchro_interclan_debit,self.pushButton_synchro_interclan_launch, arguments)
+    self.process_INTERCLAN_Taille.getsize()
+    
 def rsyncGos(self, syncname, label_state, progressbar_fichier,progressbar_global, label_debit, pushbutton):
     arguments = ["--partial", "--inplace","--progress","--delete-after", "--bwlimit=0", "--chmod=ugo=rwX","www.clan-gos.fr::"+syncname,"cygdrive/G/JEUX/steamapps/common/Arma 3/@GOS/"+syncname]
     if pushbutton.text()=="Lancer":
