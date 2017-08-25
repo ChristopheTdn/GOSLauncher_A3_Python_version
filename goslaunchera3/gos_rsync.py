@@ -81,8 +81,7 @@ class GosRsync(QtCore.QObject):
             return data
             
         def start(self):  
-            commande = "rsync/rsync.exe"            
-
+            commande = "rsync/rsync.exe"     
             self.process.start(commande, self.argumentdry)  
             self.process.waitForFinished()
             self.process.start(commande, self.argument) 
