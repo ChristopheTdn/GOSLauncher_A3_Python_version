@@ -15,7 +15,7 @@
   </property>
   <property name="windowIcon">
    <iconset>
-    <normaloff>C:/Users/chris/.designer/backup/gfx/GOSLauncherA3.ico</normaloff>C:/Users/chris/.designer/backup/gfx/GOSLauncherA3.ico</iconset>
+    <normaloff>gfx/GOSLauncherA3.ico</normaloff>gfx/GOSLauncherA3.ico</iconset>
   </property>
   <property name="styleSheet">
    <string notr="true">background-color: rgb(236, 236, 236);</string>
@@ -29,7 +29,7 @@
      <rect>
       <x>10</x>
       <y>50</y>
-      <width>491</width>
+      <width>501</width>
       <height>496</height>
      </rect>
     </property>
@@ -42,7 +42,7 @@
      <string notr="true">background-color: rgb(236, 236, 236);</string>
     </property>
     <property name="currentIndex">
-     <number>4</number>
+     <number>3</number>
     </property>
     <widget class="QWidget" name="Tab_ModsGOS">
      <attribute name="title">
@@ -179,7 +179,7 @@ tous</string>
          <string notr="true"/>
         </property>
         <property name="pixmap">
-         <pixmap>C:/Users/chris/.designer/backup/gfx/logo-gos.png</pixmap>
+         <pixmap>gfx/logo-gos.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -272,7 +272,7 @@ liste</string>
          <string notr="true"/>
         </property>
         <property name="pixmap">
-         <pixmap>C:/Users/chris/.designer/backup/gfx/atelier.png</pixmap>
+         <pixmap>gfx/atelier.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -369,7 +369,7 @@ selection</string>
          <string notr="true"/>
         </property>
         <property name="pixmap">
-         <pixmap>C:/Users/chris/.designer/backup/gfx/IslandStone.png</pixmap>
+         <pixmap>gfx/IslandStone.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -428,7 +428,7 @@ liste</string>
          <string notr="true"/>
         </property>
         <property name="pixmap">
-         <pixmap>C:/Users/chris/.designer/backup/gfx/units.png</pixmap>
+         <pixmap>gfx/units.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -544,7 +544,7 @@ tous</string>
          <string notr="true"/>
         </property>
         <property name="pixmap">
-         <pixmap>C:/Users/chris/.designer/backup/gfx/hangar.png</pixmap>
+         <pixmap>gfx/hangar.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -660,7 +660,7 @@ selection</string>
          <string notr="true"/>
         </property>
         <property name="pixmap">
-         <pixmap>C:/Users/chris/.designer/backup/gfx/template.png</pixmap>
+         <pixmap>gfx/template.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -776,7 +776,7 @@ liste</string>
          <string notr="true"/>
         </property>
         <property name="pixmap">
-         <pixmap>C:/Users/chris/.designer/backup/gfx/ampoule.png</pixmap>
+         <pixmap>gfx/ampoule.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -804,7 +804,7 @@ liste</string>
        </font>
       </property>
       <property name="currentIndex">
-       <number>2</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="tab_Arma3">
        <property name="font">
@@ -882,7 +882,7 @@ tous</string>
          <string notr="true"/>
         </property>
         <property name="pixmap">
-         <pixmap>C:/Users/chris/.designer/backup/gfx/template.png</pixmap>
+         <pixmap>gfx/template.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -960,7 +960,7 @@ liste</string>
          <string notr="true"/>
         </property>
         <property name="pixmap">
-         <pixmap>C:/Users/chris/.designer/backup/gfx/Steam_Icon.png</pixmap>
+         <pixmap>gfx/Steam_Icon.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -1387,7 +1387,7 @@ tous</string>
        </rect>
       </property>
       <property name="currentIndex">
-       <number>1</number>
+       <number>2</number>
       </property>
       <widget class="QWidget" name="tab_outilGOS">
        <attribute name="title">
@@ -1411,7 +1411,7 @@ tous</string>
          <string notr="true"/>
         </property>
         <property name="pixmap">
-         <pixmap>C:/Users/chris/.designer/backup/gfx/profil.png</pixmap>
+         <pixmap>gfx/profil.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -1473,7 +1473,7 @@ tous</string>
         </property>
         <property name="icon">
          <iconset>
-          <normaloff>C:/Users/chris/.designer/backup/gfx/ajouter.png</normaloff>C:/Users/chris/.designer/backup/gfx/ajouter.png</iconset>
+          <normaloff>gfx/ajouter.png</normaloff>gfx/ajouter.png</iconset>
         </property>
         <property name="iconSize">
          <size>
@@ -1529,7 +1529,7 @@ tous</string>
          <string notr="true"/>
         </property>
         <property name="pixmap">
-         <pixmap>C:/Users/chris/.designer/backup/gfx/france.png</pixmap>
+         <pixmap>gfx/france.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -1548,7 +1548,7 @@ tous</string>
          <string notr="true"/>
         </property>
         <property name="pixmap">
-         <pixmap>C:/Users/chris/.designer/backup/gfx/royaumeunis.png</pixmap>
+         <pixmap>gfx/royaumeunis.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -1591,7 +1591,7 @@ tous</string>
          <string notr="true"/>
         </property>
         <property name="pixmap">
-         <pixmap>C:/Users/chris/.designer/backup/gfx/logo-gos.png</pixmap>
+         <pixmap>gfx/logo-gos.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -1624,7 +1624,7 @@ tous</string>
         <string notr="true"/>
        </property>
        <property name="pixmap">
-        <pixmap>C:/Users/chris/.designer/backup/gfx/danger.png</pixmap>
+        <pixmap>gfx/danger.png</pixmap>
        </property>
        <property name="scaledContents">
         <bool>true</bool>
@@ -2063,7 +2063,7 @@ tous</string>
         <string notr="true"/>
        </property>
        <property name="pixmap">
-        <pixmap>C:/Users/chris/.designer/backup/gfx/valide.png</pixmap>
+        <pixmap>gfx/valide.png</pixmap>
        </property>
        <property name="scaledContents">
         <bool>true</bool>
@@ -2085,7 +2085,7 @@ tous</string>
         <string notr="true"/>
        </property>
        <property name="pixmap">
-        <pixmap>C:/Users/chris/.designer/backup/gfx/valide.png</pixmap>
+        <pixmap>gfx/valide.png</pixmap>
        </property>
        <property name="scaledContents">
         <bool>true</bool>
@@ -2107,7 +2107,7 @@ tous</string>
         <string notr="true"/>
        </property>
        <property name="pixmap">
-        <pixmap>C:/Users/chris/.designer/backup/gfx/valide.png</pixmap>
+        <pixmap>gfx/valide.png</pixmap>
        </property>
        <property name="scaledContents">
         <bool>true</bool>
@@ -3200,7 +3200,7 @@ Arma 3</string>
     </property>
     <property name="icon">
      <iconset>
-      <normaloff>C:/Users/chris/.designer/backup/gfx/disquette.png</normaloff>C:/Users/chris/.designer/backup/gfx/disquette.png</iconset>
+      <normaloff>gfx/disquette.png</normaloff>gfx/disquette.png</iconset>
     </property>
     <property name="iconSize">
      <size>
@@ -3208,6 +3208,51 @@ Arma 3</string>
       <height>32</height>
      </size>
     </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_info">
+    <property name="geometry">
+     <rect>
+      <x>335</x>
+      <y>10</y>
+      <width>166</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>16777215</width>
+      <height>16777212</height>
+     </size>
+    </property>
+    <property name="title">
+     <string>Info</string>
+    </property>
+    <widget class="QLabel" name="label_info_arma3">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>15</y>
+       <width>47</width>
+       <height>13</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Arma 3 :</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_info_synchro">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>47</width>
+       <height>13</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Synchro :</string>
+     </property>
+    </widget>
    </widget>
   </widget>
  </widget>
