@@ -14,7 +14,7 @@ class Profil:
         self.Name = "Defaut"
         self.Ui = Ui
         self.ProfilDir = directory + "/userconfig/GOSLauncherA3Py/"        
-        self.excludeWidgetList=["comboBox_ChoixProfil", "lineEdit_AddProfilName"]
+        self.excludeWidgetList=["comboBox_ChoixProfil", "listWidget_profil", "lineEdit_AddProfilName"]
         #Methodes
         self.InitUi()
         self.RestoreProfil()
@@ -186,7 +186,8 @@ class Profil:
         if nameProfil in list_profil:   
             print ("LOG : ajout du profil : IMPOSSIBLE >",nameProfil, " existe déjà")
         else:   
-            show.CleanInterface()
+            show.CleanInterface(self)
             self.SaveGUI(QSettings(self.ProfilDir+nameProfil+".profil.ini",  QSettings.IniFormat))
+            self.Ui.listWidget_profil.addItem(nameProfil)
             self.Ui.comboBox_ChoixProfil.addItem(nameProfil)
             self.Ui.comboBox_ChoixProfil.setCurrentIndex(self.Ui.comboBox_ChoixProfil.findText(nameProfil))

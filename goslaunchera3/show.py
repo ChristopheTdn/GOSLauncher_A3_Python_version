@@ -7,6 +7,7 @@ import sys
 import inspect
 from PyQt5 import QtCore, QtGui, QtWidgets
 from . import action
+from win32api import GetFileVersionInfo, LOWORD, HIWORD
 
 def init_app_start(self):
         # Gestion Profil 
@@ -92,7 +93,16 @@ def genereListMods(self, repertoire):
                           (SearchedDir.lower() != "addons")):
                         listeMods.append(SearchedDir[0: (len(SearchedDir)-7)])
     return listeMods
-
+ 
+def get_version_number (filename):
+    try:
+        info = GetFileVersionInfo (filename, "\\")
+        ms = info['FileVersionMS']
+        ls = info['FileVersionLS']
+        return HIWORD (ms), LOWORD (ms), HIWORD (ls), LOWORD (ls)
+    except:
+        return 0,0,0,0
+ 
 
 def LogoGosSkin(self, name):
     self.label_GFX_Template.setPixmap(QtGui.QPixmap("gfx/camo_image/"+name.replace(" ", "_")+".jpg"))

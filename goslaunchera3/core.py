@@ -8,12 +8,18 @@ from . import show
 from . import vars
 import sys
 
+
 def init_application(self):
     # Définition Constantes
     vars.initVar(self)
     
-    # Gestion affichage
+    # Gestion affichage 
     show.init_app_start(self)
+    # version Arma3 Windows
+    if vars.OSName()=="windows":
+        self.label_info_arma3_version.setText(".".join ([str (i) for i in show.get_version_number ("G:\\JEUX\\steamapps\\common\\Arma 3\\arma3.exe")]))
+    else:
+        self.label_info_arma3_version.setText("Linux version")
     
 
 def info_dialog_windows(self, titre, message, iconMessagebox):

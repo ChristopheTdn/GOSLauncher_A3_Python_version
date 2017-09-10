@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>517</width>
+    <width>525</width>
     <height>623</height>
    </rect>
   </property>
@@ -29,7 +29,7 @@
      <rect>
       <x>10</x>
       <y>50</y>
-      <width>501</width>
+      <width>506</width>
       <height>496</height>
      </rect>
     </property>
@@ -42,7 +42,7 @@
      <string notr="true">background-color: rgb(236, 236, 236);</string>
     </property>
     <property name="currentIndex">
-     <number>3</number>
+     <number>4</number>
     </property>
     <widget class="QWidget" name="Tab_ModsGOS">
      <attribute name="title">
@@ -53,7 +53,7 @@
        <rect>
         <x>10</x>
         <y>10</y>
-        <width>491</width>
+        <width>486</width>
         <height>451</height>
        </rect>
       </property>
@@ -1381,13 +1381,13 @@ tous</string>
       <property name="geometry">
        <rect>
         <x>10</x>
-        <y>305</y>
+        <y>310</y>
         <width>481</width>
-        <height>161</height>
+        <height>156</height>
        </rect>
       </property>
       <property name="currentIndex">
-       <number>2</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="tab_outilGOS">
        <attribute name="title">
@@ -1474,6 +1474,110 @@ tous</string>
         <property name="icon">
          <iconset>
           <normaloff>gfx/ajouter.png</normaloff>gfx/ajouter.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>24</width>
+          <height>24</height>
+         </size>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_copyProfil">
+        <property name="geometry">
+         <rect>
+          <x>435</x>
+          <y>0</y>
+          <width>26</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string notr="true"/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>gfx/copier.png</normaloff>gfx/copier.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>24</width>
+          <height>24</height>
+         </size>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_renameProfil">
+        <property name="geometry">
+         <rect>
+          <x>435</x>
+          <y>25</y>
+          <width>26</width>
+          <height>26</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string notr="true"/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>gfx/rename.png</normaloff>gfx/rename.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>24</width>
+          <height>24</height>
+         </size>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_favorisProfil">
+        <property name="geometry">
+         <rect>
+          <x>435</x>
+          <y>50</y>
+          <width>26</width>
+          <height>26</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string notr="true"/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>gfx/favoris.png</normaloff>gfx/favoris.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>24</width>
+          <height>24</height>
+         </size>
+        </property>
+        <property name="flat">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_deleteProfil">
+        <property name="geometry">
+         <rect>
+          <x>435</x>
+          <y>75</y>
+          <width>26</width>
+          <height>26</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string notr="true"/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>gfx/supprimer.png</normaloff>gfx/supprimer.png</iconset>
         </property>
         <property name="iconSize">
          <size>
@@ -2289,7 +2393,7 @@ tous</string>
        <rect>
         <x>10</x>
         <y>350</y>
-        <width>461</width>
+        <width>476</width>
         <height>101</height>
        </rect>
       </property>
@@ -3212,7 +3316,7 @@ Arma 3</string>
    <widget class="QGroupBox" name="groupBox_info">
     <property name="geometry">
      <rect>
-      <x>335</x>
+      <x>350</x>
       <y>10</y>
       <width>166</width>
       <height>51</height>
@@ -3253,6 +3357,36 @@ Arma 3</string>
       <string>Synchro :</string>
      </property>
     </widget>
+    <widget class="QLabel" name="label_info_arma3_version">
+     <property name="geometry">
+      <rect>
+       <x>65</x>
+       <y>14</y>
+       <width>91</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>v 1.64</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_info_synchro_taille">
+     <property name="geometry">
+      <rect>
+       <x>65</x>
+       <y>25</y>
+       <width>91</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>A jour</string>
+     </property>
+    </widget>
+    <zorder>label_info_arma3</zorder>
+    <zorder>label_info_synchro</zorder>
+    <zorder>label_info_synchro_taille</zorder>
+    <zorder>label_info_arma3_version</zorder>
    </widget>
   </widget>
  </widget>
