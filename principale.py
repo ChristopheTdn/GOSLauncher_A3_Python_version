@@ -608,3 +608,15 @@ class Fenetre_Principale(QMainWindow, Ui_Fenetre_Principale):
         """
         # TODO: not implemented yet
         raise NotImplementedError
+    
+    @pyqtSlot(int)
+    def on_tabWidget_synchro_currentChanged(self, index):
+        """
+        Slot documentation goes here.
+        
+        @param index DESCRIPTION
+        @type int
+        """
+        # TODO: not implemented yet
+        if (index==2):
+            goslaunchera3.action.initPriorityTabWidget(self)
