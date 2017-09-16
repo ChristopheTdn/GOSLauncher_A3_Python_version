@@ -20,6 +20,7 @@ class GosRsync(QtCore.QObject):
             self.argument=["-vza"]+argument
             self.argumentdry =["-vzan","--stats"]+argument
             self.initClass()  
+            self.commande = self.os_cmdLine()
             
         def dataReady(self):
             """Exécuté lorsque le processus envoie des infos à afficher.
@@ -84,11 +85,10 @@ class GosRsync(QtCore.QObject):
             return data
             
         def start(self):  
-            self.pushbutton.setText('Abandonner')
-            commande = "rsync/rsync.exe"
-            self.process.start(commande, self.argumentdry)  
+            self.pushbutton.setText('Abandonner')            
+            self.process.start(self.commande, self.argumentdry)  
             self.process.waitForFinished()
-            self.process.start(commande, self.argument) 
+            self.process.start(self.commande, self.argument) 
              
         def initClass(self):
             self.output = self.Ui.textEdit_synchro_log
@@ -103,8 +103,19 @@ class GosRsync(QtCore.QObject):
             self.output.ensureCursorVisible()
         
         def getsize(self):
-            commande = "rsync/rsync.exe" 
-            self.process.start(commande, self.argumentdry)  
+            
+            self.process.start(self.commande, self.argumentdry)  
+            
+        def os_cmdLine(self):
+            from sys import platform as _platform
+            cmdline = "rsync/rsync.exe"
+            if _platform == "linux" or _platform == "linux2":
+                # linux
+                cmdline="rsync"
+            elif _platform == "win32":
+                # Windows
+                cmdline = "rsync/rsync.exe"
+            return cmdline
             
     
 
