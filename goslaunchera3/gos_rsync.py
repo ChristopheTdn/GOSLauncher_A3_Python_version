@@ -18,7 +18,7 @@ class GosRsync(QtCore.QObject):
             self.totalFileToTransfer = 0
             self.process = None
             self.argument=["-vza"]+argument
-            self.argumentdry =["-vzan","--stats"]+argument
+            self.argumentdry=["-vzan","--stats"]+argument
             self.initClass()  
             self.commande = self.os_cmdLine()
             
@@ -35,45 +35,53 @@ class GosRsync(QtCore.QObject):
             self.output.ensureCursorVisible()
         
         def parserdata(self, data):
+            """
+            Parcours les données renvoyés par Rsync et parse les infos pour mettre a jours 
+            l'interface du GOS LAuncher via les controles QT transmis
+            """
             listinfo= data.split("\n")
             for info in listinfo:
                 segments = info.strip().split(" ")
                 for segment in segments:
-                    if "kB/s" in segment:
+                    if "kB/s" in segment and self.syncname !="@GOS":
                         self.label_debit.setText(segment)
                         data=""
-                    if "%" in segment:
+                    if "%" in segment and self.progressbar_fichier !=None:
                         valuemoins = int(segments[0].replace(",", ""))                        
                         self.label_state.setText("<font color='red'>"+str(round((self.totalFileToTransfer-valuemoins)/1000000, 2))+" Mo</font>")
                         self.progressbar_fichier.setValue(int(segment.replace("%", "")))
                         value = ((self.totalFileToTransfer-valuemoins)*100)/self.totalFilesize
                         self.progressbar_global.setValue(100-round(value))
                         data=""
-                if "xfr" in info:
+                if "xfr" in info and self.label_state !=None:
                     detail = info.strip().split(" ")     
                     self.totalFileToTransfer -= int(detail[0].replace(",", ""))
                     self.label_state.setText(str(round((self.totalFileToTransfer)/1000000, 3))+" Mo")
-                    self.label_debit.setText("0.00Kb/s")
+                    if self.label_debit != None:
+                        self.label_debit.setText("0.00Kb/s")
                     data=""
 
                 if "Total transferred file size:" in info:
                     detail = info.split(":")                    
                     self.totalFileToTransfer = int (detail[1].replace(",", "").replace("bytes", ""))
                     self.totalFilesize = self.totalFileToTransfer   
-                    if self.totalFileToTransfer ==0: 
-                        self.label_state.setText("<font color='black'>A jour</font>")
-                    else:
-                        self.label_state.setText("<font color='red'>"+str(round(self.totalFileToTransfer/1000000, 2))+" Mo</font>")
-                    data=""
+                    if self.label_state.text()!="<font color='red'>***</font>":                        
+                        if self.totalFileToTransfer ==0:
+                            self.label_state.setText("<font color='black'>A jour</font>")
+                        else:
+                            self.label_state.setText("<font color='red'>"+str(round(self.totalFileToTransfer/1000000, 2))+" Mo</font>")
                     
-                if "speedup is" in info and "DRY RUN" not in info:
-                    self.label_state.setText("A jour")
+                    
+                if "speedup is" in info and "DRY RUN" not in info and self.progressbar_fichier !=None:
+                    self.label_state.setText("<font color='black'>A jour</font>")
                     self.progressbar_fichier.setValue(0)
                     self.progressbar_global.setValue(0)
                     self.pushbutton.setEnabled(True)
                     self.pushbutton.setText('Lancer')
                     data="Synchronisation "+self.syncname + " terminée.\n"
 
+                if "deleting" in info:                          
+                    self.label_state.setText("<font color='red'>***</font>")
                     
                 if "receiving file list ..." in info and "DRY RUN" not in info:                    
                     data="Synchronisation "+self.syncname + " en cours. \n"    
@@ -81,11 +89,11 @@ class GosRsync(QtCore.QObject):
                 if info != "": 
                     if info[len(info)-1]=='/' or "files..." in info:
                         data =""
-                
             return data
             
-        def start(self):  
-            self.pushbutton.setText('Abandonner')            
+        def start(self): 
+            if  self.pushbutton != None:
+                self.pushbutton.setText('Abandonner')            
             self.process.start(self.commande, self.argumentdry)  
             self.process.waitForFinished()
             self.process.start(self.commande, self.argument) 
@@ -103,7 +111,6 @@ class GosRsync(QtCore.QObject):
             self.output.ensureCursorVisible()
         
         def getsize(self):
-            
             self.process.start(self.commande, self.argumentdry)  
             
         def os_cmdLine(self):

@@ -11,9 +11,7 @@ from . import vars
 from . import language
 from . import priority
 from . import gos_rsync
-
 from PyQt5.QtCore import Qt
-
 
 #
 #  Action Interface : Liste MODS
@@ -30,7 +28,6 @@ def inv_selection_tous_mods(self, liste_widget_mods):
             liste_widget_mods.item(index).setCheckState(Qt.Unchecked)
         else:
             liste_widget_mods.item(index).setCheckState(Qt.Checked)
-
 
 #
 #  Action Interface : OPTIONS
@@ -111,7 +108,12 @@ def rsyncTaille(self):
     arguments = ["--partial", "--inplace","--progress","--delete-after", "--bwlimit=0", "--chmod=ugo=rwX","www.clan-gos.fr::@INTERCLAN","cygdrive/G/JEUX/steamapps/common/Arma 3/@GOS/@INTERCLAN"]
     self.process_INTERCLAN_Taille = gos_rsync.GosRsync(self, "@INTERCLAN",self.label_synchro_interclan_state, self.progressBar_synchro_interclan_fichier,self.progressBar_synchro_interclan_global,self.label_synchro_interclan_debit,self.pushButton_synchro_interclan_launch, arguments)
     self.process_INTERCLAN_Taille.getsize()
-    
+    # @GENERAL
+    arguments = ["--partial", "--inplace","--progress","--delete-after", "--bwlimit=0", "--chmod=ugo=rwX","www.clan-gos.fr::@GOS","cygdrive/G/JEUX/steamapps/common/Arma 3/@GOS"]
+    self.process_GENERAL_Taille = gos_rsync.GosRsync(self, "@GOS",self.label_info_synchro_taille, None,None,None,None, arguments)
+    self.process_GENERAL_Taille.getsize()
+
+     
 def rsyncGos(self, syncname, label_state, progressbar_fichier,progressbar_global, label_debit, pushbutton):
     arguments = ["--partial", "--inplace","--progress","--delete-after", "--bwlimit=0", "--chmod=ugo=rwX","www.clan-gos.fr::"+syncname,"cygdrive/G/JEUX/steamapps/common/Arma 3/@GOS/"+syncname]
     if pushbutton.text()=="Lancer" or syncname=='@GENERALE':
@@ -172,6 +174,12 @@ def rsyncGos(self, syncname, label_state, progressbar_fichier,progressbar_global
             arguments = ["--partial", "--inplace","--progress","--delete-after", "--bwlimit=0", "--chmod=ugo=rwX","www.clan-gos.fr::@INTERCLAN","cygdrive/G/JEUX/steamapps/common/Arma 3/@GOS/@INTERCLAN"]
             self.process_INTERCLAN = gos_rsync.GosRsync(self, "@INTERCLAN",self.label_synchro_interclan_state, self.progressBar_synchro_interclan_fichier,self.progressBar_synchro_interclan_global,self.label_synchro_interclan_debit,self.pushButton_synchro_interclan_launch, arguments)
             self.process_INTERCLAN.start()
+            # @GENERALE
+            #arguments = ["--exclude '@TEST'"," --exclude '@CLIENT'","--exclude '@FRAMEWORK'","--exclude '@INTERCLAN'","--exclude '@ISLANDS'","--exclude '@MATERIEL'","--exclude '@TEMPLATE'","--exclude '@UNITS'","--partial", "--inplace","--progress","--delete-after", "--bwlimit=0", "--chmod=ugo=rwX","www.clan-gos.fr::@GOS","cygdrive/G/JEUX/steamapps/common/Arma 3/@GOS"]
+            arguments = ["--partial", "--inplace","--progress","--delete-after", "--bwlimit=0", "--chmod=ugo=rwX","www.clan-gos.fr::@GOS","cygdrive/G/JEUX/steamapps/common/Arma 3/@GOS"]
+            self.process_GENERALE = gos_rsync.GosRsync(self, "@GOS",self.label_info_synchro_taille, None,None,None,None, arguments)
+            self.process_GENERALE.start()
+            
     else:
         if syncname=='@TEMPLATE':
             self.process_TEMPLATE.killProcess()
