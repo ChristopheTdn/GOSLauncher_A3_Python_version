@@ -1,4 +1,4 @@
- #! /usr/bin/python3
+    #! /usr/bin/python3
 # -*- coding: utf-8 -*-
 """GOS LAUNCHER Python version.
 
@@ -12,7 +12,7 @@ Attributes:
 
 
 Todo:
-    
+
 
 """
 

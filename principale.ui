@@ -3317,9 +3317,9 @@ Arma 3</string>
     <property name="geometry">
      <rect>
       <x>350</x>
-      <y>10</y>
+      <y>0</y>
       <width>166</width>
-      <height>51</height>
+      <height>71</height>
      </rect>
     </property>
     <property name="maximumSize">
@@ -3335,7 +3335,7 @@ Arma 3</string>
      <property name="geometry">
       <rect>
        <x>10</x>
-       <y>15</y>
+       <y>30</y>
        <width>47</width>
        <height>13</height>
       </rect>
@@ -3348,7 +3348,7 @@ Arma 3</string>
      <property name="geometry">
       <rect>
        <x>10</x>
-       <y>30</y>
+       <y>50</y>
        <width>47</width>
        <height>13</height>
       </rect>
@@ -3360,8 +3360,8 @@ Arma 3</string>
     <widget class="QLabel" name="label_info_arma3_version">
      <property name="geometry">
       <rect>
-       <x>65</x>
-       <y>14</y>
+       <x>60</x>
+       <y>30</y>
        <width>91</width>
        <height>16</height>
       </rect>
@@ -3373,10 +3373,10 @@ Arma 3</string>
     <widget class="QLabel" name="label_info_synchro_taille">
      <property name="geometry">
       <rect>
-       <x>65</x>
-       <y>25</y>
+       <x>60</x>
+       <y>50</y>
        <width>91</width>
-       <height>21</height>
+       <height>16</height>
       </rect>
      </property>
      <property name="text">

@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'D:\Zone Documents\ToF\Documents\GitHub\GOSLauncher_A3_Python_version\principale.ui'
+# Form implementation generated from reading ui file '/home/tof/Documents/Python/GOSLauncher_A3_Python_version/principale.ui'
 #
-# Created by: PyQt5 UI code generator 5.9
+# Created by: PyQt5 UI code generator 5.9.1
 #
 # WARNING! All changes made in this file will be lost!
 
@@ -1086,20 +1086,20 @@ class Ui_Fenetre_Principale(object):
         self.toolButton_saveProfil.setIconSize(QtCore.QSize(32, 32))
         self.toolButton_saveProfil.setObjectName("toolButton_saveProfil")
         self.groupBox_info = QtWidgets.QGroupBox(self.centralWidget)
-        self.groupBox_info.setGeometry(QtCore.QRect(350, 10, 166, 51))
+        self.groupBox_info.setGeometry(QtCore.QRect(350, 0, 166, 71))
         self.groupBox_info.setMaximumSize(QtCore.QSize(16777215, 16777212))
         self.groupBox_info.setObjectName("groupBox_info")
         self.label_info_arma3 = QtWidgets.QLabel(self.groupBox_info)
-        self.label_info_arma3.setGeometry(QtCore.QRect(10, 15, 47, 13))
+        self.label_info_arma3.setGeometry(QtCore.QRect(10, 30, 47, 13))
         self.label_info_arma3.setObjectName("label_info_arma3")
         self.label_info_synchro = QtWidgets.QLabel(self.groupBox_info)
-        self.label_info_synchro.setGeometry(QtCore.QRect(10, 30, 47, 13))
+        self.label_info_synchro.setGeometry(QtCore.QRect(10, 50, 47, 13))
         self.label_info_synchro.setObjectName("label_info_synchro")
         self.label_info_arma3_version = QtWidgets.QLabel(self.groupBox_info)
-        self.label_info_arma3_version.setGeometry(QtCore.QRect(65, 14, 91, 16))
+        self.label_info_arma3_version.setGeometry(QtCore.QRect(60, 30, 91, 16))
         self.label_info_arma3_version.setObjectName("label_info_arma3_version")
         self.label_info_synchro_taille = QtWidgets.QLabel(self.groupBox_info)
-        self.label_info_synchro_taille.setGeometry(QtCore.QRect(65, 25, 91, 21))
+        self.label_info_synchro_taille.setGeometry(QtCore.QRect(60, 50, 91, 16))
         self.label_info_synchro_taille.setObjectName("label_info_synchro_taille")
         self.label_info_arma3.raise_()
         self.label_info_synchro.raise_()

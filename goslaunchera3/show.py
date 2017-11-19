@@ -7,7 +7,7 @@ import sys
 import inspect
 from PyQt5 import QtCore, QtGui, QtWidgets
 from . import action
-from win32api import GetFileVersionInfo, LOWORD, HIWORD
+#from win32api import GetFileVersionInfo, LOWORD, HIWORD
 
 def init_app_start(self):
         # Gestion Profil 
