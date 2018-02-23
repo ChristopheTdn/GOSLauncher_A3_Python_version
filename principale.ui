@@ -42,7 +42,7 @@
      <string notr="true">background-color: rgb(236, 236, 236);</string>
     </property>
     <property name="currentIndex">
-     <number>4</number>
+     <number>1</number>
     </property>
     <widget class="QWidget" name="Tab_ModsGOS">
      <attribute name="title">
@@ -3319,7 +3319,7 @@ Arma 3</string>
       <x>350</x>
       <y>0</y>
       <width>166</width>
-      <height>71</height>
+      <height>61</height>
      </rect>
     </property>
     <property name="maximumSize">
@@ -3334,8 +3334,8 @@ Arma 3</string>
     <widget class="QLabel" name="label_info_arma3">
      <property name="geometry">
       <rect>
-       <x>10</x>
-       <y>30</y>
+       <x>15</x>
+       <y>20</y>
        <width>47</width>
        <height>13</height>
       </rect>
@@ -3348,7 +3348,7 @@ Arma 3</string>
      <property name="geometry">
       <rect>
        <x>10</x>
-       <y>50</y>
+       <y>40</y>
        <width>47</width>
        <height>13</height>
       </rect>
@@ -3360,8 +3360,8 @@ Arma 3</string>
     <widget class="QLabel" name="label_info_arma3_version">
      <property name="geometry">
       <rect>
-       <x>60</x>
-       <y>30</y>
+       <x>65</x>
+       <y>20</y>
        <width>91</width>
        <height>16</height>
       </rect>
@@ -3373,8 +3373,8 @@ Arma 3</string>
     <widget class="QLabel" name="label_info_synchro_taille">
      <property name="geometry">
       <rect>
-       <x>60</x>
-       <y>50</y>
+       <x>65</x>
+       <y>40</y>
        <width>91</width>
        <height>16</height>
       </rect>
