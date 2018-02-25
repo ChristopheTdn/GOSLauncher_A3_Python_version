@@ -1,1 +1,5 @@
 pyinstaller --path "F:\Programmes DEVELOPPEMENT\Python\Python35\Lib\site-packages\PyQt5\Qt\bin" goslauncher.py
+
+linux version:
+
+pyinstaller --onefile --path "/usr/local/lib/python3.5/dist-packages/PyQt5/Qt/bin" goslauncher.py
