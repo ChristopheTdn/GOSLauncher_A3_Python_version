@@ -10,3 +10,5 @@
 profil/défaut.ini
 /rsync
 /dist
+/.eric6project/
+/.vscode/
