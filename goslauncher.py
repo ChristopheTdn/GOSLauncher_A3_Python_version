@@ -23,7 +23,7 @@ from principale import Fenetre_Principale
 if __name__ == "__main__":
     APP = QtWidgets.QApplication(sys.argv)
     TRANSLATOR = QtCore.QTranslator()
-    TRANSLATOR.load("languages/principale_en.qm")
+    TRANSLATOR.load("languages/principale_fr.qm")
     APP.installTranslator(TRANSLATOR)
     MAINFORM = Fenetre_Principale()
     MAINFORM.show()
