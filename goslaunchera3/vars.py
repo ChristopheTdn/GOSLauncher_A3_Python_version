@@ -13,6 +13,7 @@ from . import  profil
 def initVar(self):
     createConfFile()
     self.var_Arma3Path=configArma3Dir(self) 
+    self.var_RsyncPath=configRsyncPath(self)
     # Genere List Widget 
     self.var_list_widget = [[self.listWidget_Template, "@GOS/@TEMPLATE/"],
                    [self.listWidget_Islands, "@GOS/@ISLANDS/"],
@@ -71,6 +72,20 @@ def configArma3Dir(self):
                 cfg.set("Directory",'Arma3Dir', Arma3Dir)
             cfg.write(open('goslaunchera3.cfg', "w"))
         return Arma3Dir
+
+def configRsyncPath(self):
+    '''
+    Create rsyncPath in Windows or Linux environnement 
+    Add  cygdrive/<DRIVE>/ in link in windows environment
+    '''
+    link=self.var_Arma3Path
+    if OSName()=="windows":
+        chemin = os.path.splitdrive(self.var_Arma3Path)
+        link = "cydrive/"+chemin[0].replace(":", "")+chemin[1].replace("\\", "/")
+        
+    return link
+        
+        
 
 def OSName():
     from sys import platform as _platform
