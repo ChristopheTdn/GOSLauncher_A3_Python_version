@@ -110,6 +110,7 @@ def rsyncTaille(self):
     self.process_INTERCLAN_Taille.getsize()
     # @GENERAL
     arguments = ["--partial", "--inplace","--progress","--delete-after", "--bwlimit=0", "--chmod=ugo=rwX","www.clan-gos.fr::@GOS",self.var_RsyncPath+"/@GOS"]
+    arguments= gestion_exclude(self, arguments)
     self.process_GENERAL_Taille = gos_rsync.GosRsync(self, "@GOS",self.label_info_synchro_taille, None,None,None,None, arguments)
     self.process_GENERAL_Taille.getsize()
 
@@ -198,6 +199,16 @@ def rsyncGos(self, syncname, label_state, progressbar_fichier,progressbar_global
         elif syncname=='@INTERCLAN':
             self.process_INTERCLAN.killProcess()      
     
+def  gestion_exclude(self, arguments):
+    
+    if  not self.checkBox_SynchroBeta.isChecked() :
+        arguments.insert(0,"--exclude '@TEST/'")
+        
+    if  not self.checkBox_SynchroInterclan.isChecked() :
+        arguments.insert(0,"--exclude '@TEST/'")
+     
+    return arguments    
+
 ################################################################
 
 if __name__ == "__main__":
