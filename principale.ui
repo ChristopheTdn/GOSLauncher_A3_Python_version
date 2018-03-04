@@ -42,7 +42,7 @@
      <string notr="true">background-color: rgb(236, 236, 236);</string>
     </property>
     <property name="currentIndex">
-     <number>1</number>
+     <number>4</number>
     </property>
     <widget class="QWidget" name="Tab_ModsGOS">
      <attribute name="title">
@@ -2297,7 +2297,7 @@ tous</string>
        <rect>
         <x>90</x>
         <y>100</y>
-        <width>61</width>
+        <width>76</width>
         <height>16</height>
        </rect>
       </property>
@@ -2350,9 +2350,9 @@ tous</string>
      <widget class="QProgressBar" name="progressBar_synchro_template_fichier">
       <property name="geometry">
        <rect>
-        <x>160</x>
+        <x>170</x>
         <y>100</y>
-        <width>151</width>
+        <width>141</width>
         <height>10</height>
        </rect>
       </property>
@@ -2369,9 +2369,9 @@ tous</string>
      <widget class="QProgressBar" name="progressBar_synchro_template_global">
       <property name="geometry">
        <rect>
-        <x>160</x>
+        <x>170</x>
         <y>110</y>
-        <width>151</width>
+        <width>141</width>
         <height>10</height>
        </rect>
       </property>
@@ -2437,9 +2437,9 @@ tous</string>
      <widget class="QProgressBar" name="progressBar_synchro_islands_fichier">
       <property name="geometry">
        <rect>
-        <x>160</x>
+        <x>170</x>
         <y>130</y>
-        <width>151</width>
+        <width>141</width>
         <height>10</height>
        </rect>
       </property>
@@ -2479,7 +2479,7 @@ tous</string>
        <rect>
         <x>90</x>
         <y>130</y>
-        <width>61</width>
+        <width>76</width>
         <height>16</height>
        </rect>
       </property>
@@ -2498,9 +2498,9 @@ tous</string>
      <widget class="QProgressBar" name="progressBar_synchro_islands_global">
       <property name="geometry">
        <rect>
-        <x>160</x>
+        <x>170</x>
         <y>140</y>
-        <width>151</width>
+        <width>141</width>
         <height>10</height>
        </rect>
       </property>
@@ -2532,7 +2532,7 @@ tous</string>
        <rect>
         <x>90</x>
         <y>160</y>
-        <width>61</width>
+        <width>76</width>
         <height>16</height>
        </rect>
       </property>
@@ -2551,9 +2551,9 @@ tous</string>
      <widget class="QProgressBar" name="progressBar_synchro_materiel_fichier">
       <property name="geometry">
        <rect>
-        <x>160</x>
+        <x>170</x>
         <y>160</y>
-        <width>151</width>
+        <width>141</width>
         <height>10</height>
        </rect>
       </property>
@@ -2612,9 +2612,9 @@ tous</string>
      <widget class="QProgressBar" name="progressBar_synchro_materiel_global">
       <property name="geometry">
        <rect>
-        <x>160</x>
+        <x>170</x>
         <y>170</y>
-        <width>151</width>
+        <width>141</width>
         <height>10</height>
        </rect>
       </property>
@@ -2699,9 +2699,9 @@ tous</string>
      <widget class="QProgressBar" name="progressBar_synchro_framework_global">
       <property name="geometry">
        <rect>
-        <x>160</x>
+        <x>170</x>
         <y>230</y>
-        <width>151</width>
+        <width>141</width>
         <height>10</height>
        </rect>
       </property>
@@ -2720,7 +2720,7 @@ tous</string>
        <rect>
         <x>90</x>
         <y>220</y>
-        <width>61</width>
+        <width>76</width>
         <height>16</height>
        </rect>
       </property>
@@ -2739,9 +2739,9 @@ tous</string>
      <widget class="QProgressBar" name="progressBar_synchro_framework_fichier">
       <property name="geometry">
        <rect>
-        <x>160</x>
+        <x>170</x>
         <y>220</y>
-        <width>151</width>
+        <width>141</width>
         <height>10</height>
        </rect>
       </property>
@@ -2760,7 +2760,7 @@ tous</string>
        <rect>
         <x>90</x>
         <y>190</y>
-        <width>61</width>
+        <width>76</width>
         <height>16</height>
        </rect>
       </property>
@@ -2821,9 +2821,9 @@ tous</string>
      <widget class="QProgressBar" name="progressBar_synchro_units_global">
       <property name="geometry">
        <rect>
-        <x>160</x>
+        <x>170</x>
         <y>200</y>
-        <width>151</width>
+        <width>141</width>
         <height>10</height>
        </rect>
       </property>
@@ -2840,9 +2840,9 @@ tous</string>
      <widget class="QProgressBar" name="progressBar_synchro_units_fichier">
       <property name="geometry">
        <rect>
-        <x>160</x>
+        <x>170</x>
         <y>190</y>
-        <width>151</width>
+        <width>141</width>
         <height>10</height>
        </rect>
       </property>
@@ -2885,9 +2885,9 @@ tous</string>
      <widget class="QProgressBar" name="progressBar_synchro_client_fichier">
       <property name="geometry">
        <rect>
-        <x>160</x>
+        <x>170</x>
         <y>250</y>
-        <width>151</width>
+        <width>141</width>
         <height>10</height>
        </rect>
       </property>
@@ -2925,9 +2925,9 @@ tous</string>
      <widget class="QProgressBar" name="progressBar_synchro_client_global">
       <property name="geometry">
        <rect>
-        <x>160</x>
+        <x>170</x>
         <y>260</y>
-        <width>151</width>
+        <width>141</width>
         <height>10</height>
        </rect>
       </property>
@@ -2946,7 +2946,7 @@ tous</string>
        <rect>
         <x>90</x>
         <y>250</y>
-        <width>61</width>
+        <width>76</width>
         <height>16</height>
        </rect>
       </property>
@@ -2986,9 +2986,9 @@ tous</string>
      <widget class="QProgressBar" name="progressBar_synchro_test_global">
       <property name="geometry">
        <rect>
-        <x>160</x>
+        <x>170</x>
         <y>290</y>
-        <width>151</width>
+        <width>141</width>
         <height>10</height>
        </rect>
       </property>
@@ -3018,9 +3018,9 @@ tous</string>
      <widget class="QProgressBar" name="progressBar_synchro_test_fichier">
       <property name="geometry">
        <rect>
-        <x>160</x>
+        <x>170</x>
         <y>280</y>
-        <width>151</width>
+        <width>141</width>
         <height>10</height>
        </rect>
       </property>
@@ -3060,7 +3060,7 @@ tous</string>
        <rect>
         <x>90</x>
         <y>280</y>
-        <width>61</width>
+        <width>76</width>
         <height>16</height>
        </rect>
       </property>
@@ -3123,7 +3123,7 @@ tous</string>
        <rect>
         <x>90</x>
         <y>311</y>
-        <width>61</width>
+        <width>76</width>
         <height>16</height>
        </rect>
       </property>
@@ -3142,9 +3142,9 @@ tous</string>
      <widget class="QProgressBar" name="progressBar_synchro_interclan_fichier">
       <property name="geometry">
        <rect>
-        <x>160</x>
+        <x>170</x>
         <y>311</y>
-        <width>151</width>
+        <width>141</width>
         <height>10</height>
        </rect>
       </property>
@@ -3161,9 +3161,9 @@ tous</string>
      <widget class="QProgressBar" name="progressBar_synchro_interclan_global">
       <property name="geometry">
        <rect>
-        <x>160</x>
+        <x>170</x>
         <y>321</y>
-        <width>151</width>
+        <width>141</width>
         <height>10</height>
        </rect>
       </property>
@@ -3343,6 +3343,9 @@ Arma 3</string>
      <property name="text">
       <string>Arma 3 :</string>
      </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+     </property>
     </widget>
     <widget class="QLabel" name="label_info_synchro">
      <property name="geometry">
@@ -3355,6 +3358,9 @@ Arma 3</string>
      </property>
      <property name="text">
       <string>Synchro :</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
      </property>
     </widget>
     <widget class="QLabel" name="label_info_arma3_version">
@@ -3369,6 +3375,9 @@ Arma 3</string>
      <property name="text">
       <string>v 1.64</string>
      </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+     </property>
     </widget>
     <widget class="QLabel" name="label_info_synchro_taille">
      <property name="geometry">
@@ -3381,6 +3390,9 @@ Arma 3</string>
      </property>
      <property name="text">
       <string>A jour</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
      </property>
     </widget>
     <zorder>label_info_arma3</zorder>

@@ -47,8 +47,11 @@ class GosRsync(QtCore.QObject):
                                         self.label_debit.setText(segment)
                                         data=""
                                 if "%" in segment and self.progressbar_fichier !=None:
-                                        valuemoins = int(segments[0].replace(",", ""))                        
-                                        self.label_state.setText("<font color='red'>"+str(round((self.totalFileToTransfer-valuemoins)/1000000, 2))+" Mo</font>")
+                                        valuemoins = int(segments[0].replace(",", "")) 
+                                        if round(self.totalFileToTransfer/1000000, 2)  < 10000 :
+                                            self.label_state.setText("<font color='red'>"+str(round(self.totalFileToTransfer/1000000, 2))+" Mo</font>")
+                                        else :
+                                            self.label_state.setText("<font color='red'>"+str(round(self.totalFileToTransfer/1000000000, 2))+" Go</font>")  
                                         self.progressbar_fichier.setValue(int(segment.replace("%", "")))
                                         value = ((self.totalFileToTransfer-valuemoins)*100)/self.totalFilesize
                                         self.progressbar_global.setValue(100-round(value))
