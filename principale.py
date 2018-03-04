@@ -620,3 +620,39 @@ class Fenetre_Principale(QMainWindow, Ui_Fenetre_Principale):
         # TODO: not implemented yet
         if (index==2):
             goslaunchera3.action.initPriorityTabWidget(self)
+   
+    @pyqtSlot(int)
+    def on_checkBox_SynchroBeta_stateChanged(self, p0):
+        """
+        Slot documentation goes here.
+        
+        @param p0 DESCRIPTION
+        @type int
+        """
+        # TODO: not implemented yet
+       
+        self.label_synchro_test.setVisible (p0)
+        self.label_synchro_test_state.setVisible (p0)  
+        self.progressBar_synchro_test_fichier.setVisible (p0)  
+        self.progressBar_synchro_test_global.setVisible (p0)  
+        self.label_synchro_test_debit.setVisible (p0) 
+        self.pushButton_synchro_test_launch.setVisible (p0)  
+    
+    @pyqtSlot(int)
+    def on_checkBox_SynchroInterclan_stateChanged(self, p0):
+        """
+        Slot documentation goes here.
+        
+        @param p0 DESCRIPTION
+        @type int
+        """
+        # TODO: not implemented yet
+        self.label_synchro_interclan.setVisible (p0)    
+        self.label_synchro_interclan_state.setVisible (p0)    
+        self.progressBar_synchro_interclan_fichier.setVisible (p0)    
+        self.progressBar_synchro_interclan_global.setVisible (p0)    
+        self.label_synchro_interclan_debit.setVisible (p0)    
+        self.pushButton_synchro_interclan_launch.setVisible (p0)
+    
+        
+    

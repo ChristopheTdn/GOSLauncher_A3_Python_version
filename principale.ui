@@ -2394,7 +2394,7 @@ tous</string>
         <x>10</x>
         <y>350</y>
         <width>476</width>
-        <height>101</height>
+        <height>111</height>
        </rect>
       </property>
       <property name="acceptDrops">
@@ -3236,6 +3236,38 @@ GENERALE</string>
       </property>
       <property name="text">
        <string>Changelog</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBox_SynchroBeta">
+      <property name="geometry">
+       <rect>
+        <x>405</x>
+        <y>20</y>
+        <width>70</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Beta</string>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBox_SynchroInterclan">
+      <property name="geometry">
+       <rect>
+        <x>405</x>
+        <y>45</y>
+        <width>70</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Interclan</string>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
       </property>
      </widget>
     </widget>
