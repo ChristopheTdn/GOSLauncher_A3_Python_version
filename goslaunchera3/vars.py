@@ -81,10 +81,9 @@ def configRsyncPath(self):
     link=self.var_Arma3Path
     if OSName()=="windows":
         chemin = os.path.splitdrive(self.var_Arma3Path)
-        link = "cydrive/"+chemin[0].replace(":", "")+chemin[1].replace("\\", "/")
+        link = "cygdrive/"+chemin[0].replace(":", "")+chemin[1]
         
-    return link
-        
+    return link       
         
 
 def OSName():
