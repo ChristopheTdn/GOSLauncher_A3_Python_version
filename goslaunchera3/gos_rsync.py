@@ -69,7 +69,10 @@ class GosRsync(QtCore.QObject):
                                         if self.totalFileToTransfer ==0:
                                                 self.label_state.setText("<font color='black'>A jour</font>")
                                         else:
-                                                self.label_state.setText("<font color='red'>"+str(round(self.totalFileToTransfer/1000000, 2))+" Mo</font>")
+                                                if round(self.totalFileToTransfer/1000000, 2)  < 10000 :
+                                                    self.label_state.setText("<font color='red'>"+str(round(self.totalFileToTransfer/1000000, 2))+" Mo</font>")
+                                                else :
+                                                    self.label_state.setText("<font color='red'>"+str(round(self.totalFileToTransfer/1000000000, 2))+" Go</font>")
 
 
                         if "speedup is" in info and "DRY RUN" not in info and self.progressbar_fichier !=None:
