@@ -48,7 +48,7 @@ class GosRsync(QtCore.QObject):
                                         data=""
                                 if "%" in segment and self.progressbar_fichier !=None:
                                         valuemoins = int(segments[0].replace(",", "")) 
-                                        if round(self.totalFileToTransfer/1000000, 2)  < 10000 :
+                                        if round(self.totalFileToTransfer/1000000, 2)  < 1000 :
                                             self.label_state.setText("<font color='red'>"+str(round(self.totalFileToTransfer/1000000, 2))+" Mo</font>")
                                         else :
                                             self.label_state.setText("<font color='red'>"+str(round(self.totalFileToTransfer/1000000000, 2))+" Go</font>")  
@@ -59,7 +59,10 @@ class GosRsync(QtCore.QObject):
                         if "xfr" in info and self.label_state !=None:
                                 detail = info.strip().split(" ")     
                                 self.totalFileToTransfer -= int(detail[0].replace(",", ""))
-                                self.label_state.setText(str(round((self.totalFileToTransfer)/1000000, 3))+" Mo")
+                                if round(self.totalFileToTransfer/1000000, 2)  < 1000 :
+                                        self.label_state.setText("<font color='red'>"+str(round(self.totalFileToTransfer/1000000, 2))+" Mo</font>")
+                                else :
+                                    self.label_state.setText("<font color='red'>"+str(round(self.totalFileToTransfer/1000000000, 2))+" Go</font>")      
                                 if self.label_debit != None:
                                         self.label_debit.setText("0.00Kb/s")
                                 data=""
@@ -72,7 +75,7 @@ class GosRsync(QtCore.QObject):
                                         if self.totalFileToTransfer ==0:
                                                 self.label_state.setText("<font color='black'>A jour</font>")
                                         else:
-                                                if round(self.totalFileToTransfer/1000000, 2)  < 10000 :
+                                                if round(self.totalFileToTransfer/1000000, 2)  < 1000 :
                                                     self.label_state.setText("<font color='red'>"+str(round(self.totalFileToTransfer/1000000, 2))+" Mo</font>")
                                                 else :
                                                     self.label_state.setText("<font color='red'>"+str(round(self.totalFileToTransfer/1000000000, 2))+" Go</font>")
