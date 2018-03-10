@@ -22,6 +22,7 @@ def initVar(self):
                    [self.listWidget_Units, "@GOS/@UNITS/"],
                    [self.listWidget_Test, "@GOS/@TEST/"],
                    [self.listWidget_Client, "@GOS/@CLIENT/"],
+                   [self.listWidget_Interclan, "@GOS/@INTERCLAN/"],
                    [self.listWidget_Arma3, ""],
                    [self.listWidget_Workshop, "!Workshop/"]]
     #Genere Class PROFIL

@@ -1155,7 +1155,7 @@ class Ui_Fenetre_Principale(object):
 
         self.retranslateUi(Fenetre_Principale)
         self.tabWidget_synchro.setCurrentIndex(0)
-        self.tabWidget_GOS.setCurrentIndex(7)
+        self.tabWidget_GOS.setCurrentIndex(0)
         self.tabWidget_MODs.setCurrentIndex(0)
         self.tabWidget_options.setCurrentIndex(0)
         QtCore.QMetaObject.connectSlotsByName(Fenetre_Principale)

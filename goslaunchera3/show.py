@@ -25,7 +25,8 @@ def genere_tab_ui(self):
     genereTab(self, self.listWidget_Units, self.var_Arma3Path+"/@GOS/@UNITS/")
     genereTab(self, self.listWidget_Materiel, self.var_Arma3Path+"/@GOS/@MATERIEL/")
     genereTab(self, self.listWidget_Client, self.var_Arma3Path+"/@GOS/@CLIENT/")
-    genereTab(self, self.listWidget_Test, self.var_Arma3Path+"/@GOS/@TEST/")
+    genereTab(self, self.listWidget_Test, self.var_Arma3Path+"/@GOS/@TEST/")    
+    genereTab(self, self.listWidget_Interclan, self.var_Arma3Path+"/@GOS/@INTERCLAN/")
     # Mods @Arma3
     genereTab(self, self.listWidget_Arma3, self.var_Arma3Path+"/")
     # Mods @WorkShop

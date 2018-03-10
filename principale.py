@@ -660,7 +660,7 @@ class Fenetre_Principale(QMainWindow, Ui_Fenetre_Principale):
         Slot documentation goes here.
         """
         # TODO: not implemented yet
-        raise NotImplementedError
+        goslaunchera3.action.selection_tous_mods(self,self.listWidget_Interclan)
     
     @pyqtSlot()
     def on_pushButton_Mods_Interclan_RefreshList_clicked(self):
@@ -676,4 +676,4 @@ class Fenetre_Principale(QMainWindow, Ui_Fenetre_Principale):
         Slot documentation goes here.
         """
         # TODO: not implemented yet
-        raise NotImplementedError
+        goslaunchera3.action.inv_selection_tous_mods(self,self.listWidget_Interclan)
