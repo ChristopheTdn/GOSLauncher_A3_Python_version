@@ -654,5 +654,26 @@ class Fenetre_Principale(QMainWindow, Ui_Fenetre_Principale):
         self.label_synchro_interclan_debit.setVisible (p0)    
         self.pushButton_synchro_interclan_launch.setVisible (p0)
     
-        
+    @pyqtSlot()
+    def on_pushButton_Mods_Interclan_SelectAll_clicked(self):
+        """
+        Slot documentation goes here.
+        """
+        # TODO: not implemented yet
+        raise NotImplementedError
     
+    @pyqtSlot()
+    def on_pushButton_Mods_Interclan_RefreshList_clicked(self):
+        """
+        Slot documentation goes here.
+        """
+        # TODO: not implemented yet
+        raise NotImplementedError
+    
+    @pyqtSlot()
+    def on_pushButton_Mods_Interclan_InvSelect_clicked(self):
+        """
+        Slot documentation goes here.
+        """
+        # TODO: not implemented yet
+        raise NotImplementedError

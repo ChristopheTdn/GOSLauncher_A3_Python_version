@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>525</width>
+    <width>587</width>
     <height>623</height>
    </rect>
   </property>
@@ -29,7 +29,7 @@
      <rect>
       <x>10</x>
       <y>55</y>
-      <width>506</width>
+      <width>571</width>
       <height>501</height>
      </rect>
     </property>
@@ -51,9 +51,9 @@
      <widget class="QTabWidget" name="tabWidget_GOS">
       <property name="geometry">
        <rect>
-        <x>10</x>
+        <x>5</x>
         <y>10</y>
-        <width>486</width>
+        <width>556</width>
         <height>451</height>
        </rect>
       </property>
@@ -72,7 +72,7 @@
        <bool>false</bool>
       </property>
       <property name="currentIndex">
-       <number>6</number>
+       <number>7</number>
       </property>
       <property name="elideMode">
        <enum>Qt::ElideNone</enum>
@@ -95,7 +95,7 @@
          <rect>
           <x>10</x>
           <y>10</y>
-          <width>341</width>
+          <width>396</width>
           <height>401</height>
          </rect>
         </property>
@@ -112,8 +112,8 @@
        <widget class="QPushButton" name="pushButton_Mods_Template_RefreshList">
         <property name="geometry">
          <rect>
-          <x>370</x>
-          <y>370</y>
+          <x>425</x>
+          <y>365</y>
           <width>101</width>
           <height>41</height>
          </rect>
@@ -131,8 +131,8 @@ liste</string>
        <widget class="QPushButton" name="pushButton_Mods_Template_InvSelect">
         <property name="geometry">
          <rect>
-          <x>370</x>
-          <y>70</y>
+          <x>425</x>
+          <y>65</y>
           <width>101</width>
           <height>38</height>
          </rect>
@@ -150,8 +150,8 @@ selection</string>
        <widget class="QPushButton" name="pushButton_Mods_Template_SelectAll">
         <property name="geometry">
          <rect>
-          <x>370</x>
-          <y>20</y>
+          <x>425</x>
+          <y>15</y>
           <width>101</width>
           <height>38</height>
          </rect>
@@ -169,8 +169,8 @@ tous</string>
        <widget class="QLabel" name="label_GFX_Template">
         <property name="geometry">
          <rect>
-          <x>370</x>
-          <y>190</y>
+          <x>425</x>
+          <y>185</y>
           <width>101</width>
           <height>101</height>
          </rect>
@@ -188,8 +188,8 @@ tous</string>
        <widget class="QComboBox" name="comboBox_ChoixApparence">
         <property name="geometry">
          <rect>
-          <x>360</x>
-          <y>140</y>
+          <x>415</x>
+          <y>135</y>
           <width>121</width>
           <height>22</height>
          </rect>
@@ -210,7 +210,7 @@ tous</string>
          <rect>
           <x>10</x>
           <y>10</y>
-          <width>341</width>
+          <width>406</width>
           <height>401</height>
          </rect>
         </property>
@@ -224,8 +224,8 @@ tous</string>
        <widget class="QPushButton" name="pushButton_Mods_Framework_SelectAll">
         <property name="geometry">
          <rect>
-          <x>370</x>
-          <y>20</y>
+          <x>435</x>
+          <y>15</y>
           <width>101</width>
           <height>38</height>
          </rect>
@@ -243,8 +243,8 @@ tous</string>
        <widget class="QPushButton" name="pushButton_Mods_Framework_RefreshList">
         <property name="geometry">
          <rect>
-          <x>370</x>
-          <y>250</y>
+          <x>435</x>
+          <y>245</y>
           <width>101</width>
           <height>41</height>
          </rect>
@@ -262,8 +262,8 @@ liste</string>
        <widget class="QLabel" name="label_GFX_Framework">
         <property name="geometry">
          <rect>
-          <x>370</x>
-          <y>140</y>
+          <x>435</x>
+          <y>135</y>
           <width>101</width>
           <height>91</height>
          </rect>
@@ -281,8 +281,8 @@ liste</string>
        <widget class="QPushButton" name="pushButton_Mods_Framework_InvSelect">
         <property name="geometry">
          <rect>
-          <x>370</x>
-          <y>70</y>
+          <x>435</x>
+          <y>65</y>
           <width>101</width>
           <height>38</height>
          </rect>
@@ -307,7 +307,7 @@ selection</string>
          <rect>
           <x>10</x>
           <y>10</y>
-          <width>341</width>
+          <width>411</width>
           <height>401</height>
          </rect>
         </property>
@@ -321,7 +321,7 @@ selection</string>
        <widget class="QPushButton" name="pushButton_Mods_Islands_SelectAll">
         <property name="geometry">
          <rect>
-          <x>370</x>
+          <x>435</x>
           <y>20</y>
           <width>101</width>
           <height>38</height>
@@ -340,7 +340,7 @@ tous</string>
        <widget class="QPushButton" name="pushButton_Mods_Islands_InvSelect">
         <property name="geometry">
          <rect>
-          <x>370</x>
+          <x>435</x>
           <y>70</y>
           <width>101</width>
           <height>38</height>
@@ -359,7 +359,7 @@ selection</string>
        <widget class="QLabel" name="label_GFX_Islands">
         <property name="geometry">
          <rect>
-          <x>370</x>
+          <x>435</x>
           <y>130</y>
           <width>101</width>
           <height>101</height>
@@ -378,7 +378,7 @@ selection</string>
        <widget class="QPushButton" name="pushButton_Mods_Islands_RefreshList">
         <property name="geometry">
          <rect>
-          <x>370</x>
+          <x>435</x>
           <y>250</y>
           <width>101</width>
           <height>41</height>
@@ -404,7 +404,7 @@ liste</string>
          <rect>
           <x>10</x>
           <y>10</y>
-          <width>341</width>
+          <width>401</width>
           <height>401</height>
          </rect>
         </property>
@@ -418,7 +418,7 @@ liste</string>
        <widget class="QLabel" name="label_GFX_Units">
         <property name="geometry">
          <rect>
-          <x>360</x>
+          <x>420</x>
           <y>150</y>
           <width>101</width>
           <height>81</height>
@@ -437,7 +437,7 @@ liste</string>
        <widget class="QPushButton" name="pushButton_Mods_Units_InvSelect">
         <property name="geometry">
          <rect>
-          <x>370</x>
+          <x>430</x>
           <y>70</y>
           <width>101</width>
           <height>38</height>
@@ -456,7 +456,7 @@ selection</string>
        <widget class="QPushButton" name="pushButton_Mods_Units_RefreshList">
         <property name="geometry">
          <rect>
-          <x>370</x>
+          <x>430</x>
           <y>250</y>
           <width>101</width>
           <height>41</height>
@@ -475,7 +475,7 @@ liste</string>
        <widget class="QPushButton" name="pushButton_Mods_Units_SelectAll">
         <property name="geometry">
          <rect>
-          <x>370</x>
+          <x>430</x>
           <y>20</y>
           <width>101</width>
           <height>38</height>
@@ -501,7 +501,7 @@ tous</string>
          <rect>
           <x>10</x>
           <y>10</y>
-          <width>341</width>
+          <width>421</width>
           <height>401</height>
          </rect>
         </property>
@@ -515,7 +515,7 @@ tous</string>
        <widget class="QPushButton" name="pushButton_Mods_Materiel_SelectAll">
         <property name="geometry">
          <rect>
-          <x>370</x>
+          <x>440</x>
           <y>20</y>
           <width>101</width>
           <height>38</height>
@@ -534,7 +534,7 @@ tous</string>
        <widget class="QLabel" name="label_GFX_Materiel">
         <property name="geometry">
          <rect>
-          <x>370</x>
+          <x>440</x>
           <y>130</y>
           <width>101</width>
           <height>101</height>
@@ -553,7 +553,7 @@ tous</string>
        <widget class="QPushButton" name="pushButton_Mods_Materiel_RefreshList">
         <property name="geometry">
          <rect>
-          <x>370</x>
+          <x>440</x>
           <y>250</y>
           <width>101</width>
           <height>41</height>
@@ -572,7 +572,7 @@ liste</string>
        <widget class="QPushButton" name="pushButton_Mods_Materiel_InvSelect">
         <property name="geometry">
          <rect>
-          <x>370</x>
+          <x>440</x>
           <y>70</y>
           <width>101</width>
           <height>38</height>
@@ -598,7 +598,7 @@ selection</string>
          <rect>
           <x>10</x>
           <y>10</y>
-          <width>341</width>
+          <width>411</width>
           <height>401</height>
          </rect>
         </property>
@@ -612,7 +612,7 @@ selection</string>
        <widget class="QPushButton" name="pushButton_Mods_Client_SelectAll">
         <property name="geometry">
          <rect>
-          <x>370</x>
+          <x>430</x>
           <y>20</y>
           <width>101</width>
           <height>38</height>
@@ -631,7 +631,7 @@ tous</string>
        <widget class="QPushButton" name="pushButton_Mods_Client_InvSelect">
         <property name="geometry">
          <rect>
-          <x>370</x>
+          <x>430</x>
           <y>70</y>
           <width>101</width>
           <height>38</height>
@@ -650,7 +650,7 @@ selection</string>
        <widget class="QLabel" name="label_GFX_Client">
         <property name="geometry">
          <rect>
-          <x>370</x>
+          <x>430</x>
           <y>130</y>
           <width>101</width>
           <height>101</height>
@@ -669,7 +669,7 @@ selection</string>
        <widget class="QPushButton" name="pushButton_Mods_Client_RefreshList">
         <property name="geometry">
          <rect>
-          <x>370</x>
+          <x>430</x>
           <y>250</y>
           <width>101</width>
           <height>41</height>
@@ -695,7 +695,7 @@ liste</string>
          <rect>
           <x>10</x>
           <y>10</y>
-          <width>341</width>
+          <width>401</width>
           <height>401</height>
          </rect>
         </property>
@@ -709,7 +709,7 @@ liste</string>
        <widget class="QPushButton" name="pushButton_Mods_Test_SelectAll">
         <property name="geometry">
          <rect>
-          <x>370</x>
+          <x>430</x>
           <y>20</y>
           <width>101</width>
           <height>38</height>
@@ -728,7 +728,7 @@ tous</string>
        <widget class="QPushButton" name="pushButton_Mods_Test_InvSelect">
         <property name="geometry">
          <rect>
-          <x>370</x>
+          <x>430</x>
           <y>70</y>
           <width>101</width>
           <height>38</height>
@@ -747,7 +747,7 @@ selection</string>
        <widget class="QPushButton" name="pushButton_Mods_Test_RefreshList">
         <property name="geometry">
          <rect>
-          <x>370</x>
+          <x>430</x>
           <y>250</y>
           <width>101</width>
           <height>41</height>
@@ -766,7 +766,7 @@ liste</string>
        <widget class="QLabel" name="label_GFX_Test">
         <property name="geometry">
          <rect>
-          <x>370</x>
+          <x>430</x>
           <y>130</y>
           <width>101</width>
           <height>101</height>
@@ -783,6 +783,103 @@ liste</string>
         </property>
        </widget>
       </widget>
+      <widget class="QWidget" name="tab">
+       <attribute name="title">
+        <string>INTERCLAN</string>
+       </attribute>
+       <widget class="QPushButton" name="pushButton_Mods_Interclan_SelectAll">
+        <property name="geometry">
+         <rect>
+          <x>430</x>
+          <y>20</y>
+          <width>101</width>
+          <height>38</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Selectionner
+tous</string>
+        </property>
+       </widget>
+       <widget class="QListWidget" name="listWidget_Interclan">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>401</width>
+          <height>401</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>MS Shell Dlg 2</family>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_Mods_Interclan_RefreshList">
+        <property name="geometry">
+         <rect>
+          <x>430</x>
+          <y>250</y>
+          <width>101</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Rafraichir
+liste</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_GFX_Interclan">
+        <property name="geometry">
+         <rect>
+          <x>430</x>
+          <y>130</y>
+          <width>101</width>
+          <height>101</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string notr="true"/>
+        </property>
+        <property name="pixmap">
+         <pixmap>gfx/globe.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_Mods_Interclan_InvSelect">
+        <property name="geometry">
+         <rect>
+          <x>430</x>
+          <y>70</y>
+          <width>101</width>
+          <height>38</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Inverser
+selection</string>
+        </property>
+       </widget>
+      </widget>
      </widget>
     </widget>
     <widget class="QWidget" name="tab_MODs">
@@ -794,7 +891,7 @@ liste</string>
        <rect>
         <x>10</x>
         <y>10</y>
-        <width>481</width>
+        <width>551</width>
         <height>451</height>
        </rect>
       </property>
@@ -820,8 +917,8 @@ liste</string>
          <rect>
           <x>10</x>
           <y>10</y>
-          <width>341</width>
-          <height>401</height>
+          <width>411</width>
+          <height>411</height>
          </rect>
         </property>
         <property name="font">
@@ -834,7 +931,7 @@ liste</string>
        <widget class="QPushButton" name="pushButton_Mods_A3_InvSelect">
         <property name="geometry">
          <rect>
-          <x>370</x>
+          <x>430</x>
           <y>70</y>
           <width>101</width>
           <height>38</height>
@@ -853,7 +950,7 @@ selection</string>
        <widget class="QPushButton" name="pushButton_Mods_A3_SelectAll">
         <property name="geometry">
          <rect>
-          <x>370</x>
+          <x>430</x>
           <y>20</y>
           <width>101</width>
           <height>38</height>
@@ -872,7 +969,7 @@ tous</string>
        <widget class="QLabel" name="label_GFX_Arma3">
         <property name="geometry">
          <rect>
-          <x>370</x>
+          <x>430</x>
           <y>130</y>
           <width>101</width>
           <height>101</height>
@@ -891,7 +988,7 @@ tous</string>
        <widget class="QPushButton" name="pushButton_Mods_A3_RefreshList">
         <property name="geometry">
          <rect>
-          <x>370</x>
+          <x>430</x>
           <y>250</y>
           <width>101</width>
           <height>41</height>
@@ -917,7 +1014,7 @@ liste</string>
          <rect>
           <x>10</x>
           <y>10</y>
-          <width>341</width>
+          <width>411</width>
           <height>401</height>
          </rect>
         </property>
@@ -931,7 +1028,7 @@ liste</string>
        <widget class="QPushButton" name="pushButton_Mods_Workshop_RefreshList">
         <property name="geometry">
          <rect>
-          <x>370</x>
+          <x>430</x>
           <y>250</y>
           <width>101</width>
           <height>41</height>
@@ -950,7 +1047,7 @@ liste</string>
        <widget class="QLabel" name="label_GFX_Workshop">
         <property name="geometry">
          <rect>
-          <x>370</x>
+          <x>430</x>
           <y>130</y>
           <width>101</width>
           <height>101</height>
@@ -969,7 +1066,7 @@ liste</string>
        <widget class="QPushButton" name="pushButton_Mods_Workshop_InvSelect">
         <property name="geometry">
          <rect>
-          <x>370</x>
+          <x>430</x>
           <y>70</y>
           <width>101</width>
           <height>38</height>
@@ -988,7 +1085,7 @@ selection</string>
        <widget class="QPushButton" name="pushButton_Mods_Workshop_SelectAll">
         <property name="geometry">
          <rect>
-          <x>370</x>
+          <x>430</x>
           <y>20</y>
           <width>101</width>
           <height>38</height>
@@ -1099,8 +1196,8 @@ tous</string>
        <rect>
         <x>10</x>
         <y>10</y>
-        <width>241</width>
-        <height>291</height>
+        <width>271</width>
+        <height>301</height>
        </rect>
       </property>
       <property name="title">
@@ -1381,13 +1478,13 @@ tous</string>
       <property name="geometry">
        <rect>
         <x>10</x>
-        <y>310</y>
-        <width>481</width>
+        <y>320</y>
+        <width>551</width>
         <height>151</height>
        </rect>
       </property>
       <property name="currentIndex">
-       <number>1</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="tab_outilGOS">
        <attribute name="title">
@@ -1422,7 +1519,7 @@ tous</string>
          <rect>
           <x>110</x>
           <y>5</y>
-          <width>321</width>
+          <width>391</width>
           <height>71</height>
          </rect>
         </property>
@@ -1430,7 +1527,7 @@ tous</string>
        <widget class="QLineEdit" name="lineEdit_AddProfilName">
         <property name="geometry">
          <rect>
-          <x>210</x>
+          <x>240</x>
           <y>80</y>
           <width>161</width>
           <height>20</height>
@@ -1446,7 +1543,7 @@ tous</string>
        <widget class="QLabel" name="label_addAProfil">
         <property name="geometry">
          <rect>
-          <x>90</x>
+          <x>110</x>
           <y>80</y>
           <width>111</width>
           <height>21</height>
@@ -1462,7 +1559,7 @@ tous</string>
        <widget class="QPushButton" name="pushButton_AddProfil">
         <property name="geometry">
          <rect>
-          <x>370</x>
+          <x>410</x>
           <y>80</y>
           <width>31</width>
           <height>21</height>
@@ -1488,8 +1585,8 @@ tous</string>
        <widget class="QPushButton" name="pushButton_copyProfil">
         <property name="geometry">
          <rect>
-          <x>435</x>
-          <y>0</y>
+          <x>510</x>
+          <y>-5</y>
           <width>26</width>
           <height>31</height>
          </rect>
@@ -1514,8 +1611,8 @@ tous</string>
        <widget class="QPushButton" name="pushButton_renameProfil">
         <property name="geometry">
          <rect>
-          <x>435</x>
-          <y>25</y>
+          <x>510</x>
+          <y>20</y>
           <width>26</width>
           <height>26</height>
          </rect>
@@ -1540,8 +1637,8 @@ tous</string>
        <widget class="QPushButton" name="pushButton_favorisProfil">
         <property name="geometry">
          <rect>
-          <x>435</x>
-          <y>50</y>
+          <x>510</x>
+          <y>45</y>
           <width>26</width>
           <height>26</height>
          </rect>
@@ -1566,8 +1663,8 @@ tous</string>
        <widget class="QPushButton" name="pushButton_deleteProfil">
         <property name="geometry">
          <rect>
-          <x>435</x>
-          <y>75</y>
+          <x>510</x>
+          <y>70</y>
           <width>26</width>
           <height>26</height>
          </rect>
@@ -1706,10 +1803,10 @@ tous</string>
      <widget class="QGroupBox" name="groupBox_parametreExpert">
       <property name="geometry">
        <rect>
-        <x>270</x>
+        <x>300</x>
         <y>10</y>
-        <width>221</width>
-        <height>291</height>
+        <width>251</width>
+        <height>301</height>
        </rect>
       </property>
       <property name="title">
@@ -1718,7 +1815,7 @@ tous</string>
       <widget class="QLabel" name="label_GFX_parametresExperts">
        <property name="geometry">
         <rect>
-         <x>20</x>
+         <x>40</x>
          <y>20</y>
          <width>31</width>
          <height>31</height>
@@ -1737,7 +1834,7 @@ tous</string>
       <widget class="QLabel" name="label_avertissementExpertParam">
        <property name="geometry">
         <rect>
-         <x>60</x>
+         <x>90</x>
          <y>20</y>
          <width>131</width>
          <height>36</height>
@@ -1807,7 +1904,7 @@ tous</string>
         <rect>
          <x>100</x>
          <y>75</y>
-         <width>101</width>
+         <width>131</width>
          <height>22</height>
         </rect>
        </property>
@@ -1841,7 +1938,7 @@ tous</string>
         <rect>
          <x>100</x>
          <y>120</y>
-         <width>101</width>
+         <width>131</width>
          <height>22</height>
         </rect>
        </property>
@@ -1975,7 +2072,7 @@ tous</string>
         <rect>
          <x>100</x>
          <y>165</y>
-         <width>101</width>
+         <width>131</width>
          <height>22</height>
         </rect>
        </property>
@@ -3275,9 +3372,9 @@ GENERALE</string>
    <widget class="QPushButton" name="pushButton_LaunchArma3">
     <property name="geometry">
      <rect>
-      <x>420</x>
-      <y>560</y>
-      <width>81</width>
+      <x>440</x>
+      <y>570</y>
+      <width>121</width>
       <height>41</height>
      </rect>
     </property>
@@ -3312,7 +3409,7 @@ Arma 3</string>
      <rect>
       <x>20</x>
       <y>565</y>
-      <width>121</width>
+      <width>131</width>
       <height>21</height>
      </rect>
     </property>
@@ -3325,7 +3422,7 @@ Arma 3</string>
    <widget class="QToolButton" name="toolButton_saveProfil">
     <property name="geometry">
      <rect>
-      <x>150</x>
+      <x>160</x>
       <y>560</y>
       <width>31</width>
       <height>31</height>
@@ -3348,9 +3445,9 @@ Arma 3</string>
    <widget class="QGroupBox" name="groupBox_info">
     <property name="geometry">
      <rect>
-      <x>350</x>
+      <x>390</x>
       <y>0</y>
-      <width>166</width>
+      <width>181</width>
       <height>71</height>
      </rect>
     </property>
@@ -3400,7 +3497,7 @@ Arma 3</string>
       <rect>
        <x>60</x>
        <y>30</y>
-       <width>91</width>
+       <width>111</width>
        <height>16</height>
       </rect>
      </property>
@@ -3416,7 +3513,7 @@ Arma 3</string>
       <rect>
        <x>60</x>
        <y>50</y>
-       <width>91</width>
+       <width>111</width>
        <height>16</height>
       </rect>
      </property>
