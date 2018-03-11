@@ -17,7 +17,7 @@ def init_application(self):
     show.init_app_start(self)
     # version Arma3 Windows
     if vars.OSName()=="windows":
-        self.label_info_arma3_version.setText(".".join ([str (i) for i in show.get_version_number ("G:\\JEUX\\steamapps\\common\\Arma 3\\arma3.exe")]))
+        self.label_info_arma3_version.setText(".".join ([str (i) for i in show.get_version_number (self.var_Arma3Path+"/arma3.exe")]))
     else:
         self.label_info_arma3_version.setText("Linux version")
     

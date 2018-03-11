@@ -7,7 +7,6 @@ import sys
 import inspect
 from PyQt5 import QtCore, QtGui, QtWidgets
 from . import action
-#from win32api import GetFileVersionInfo, LOWORD, HIWORD
 
 def init_app_start(self):
         # Gestion Profil 
@@ -96,7 +95,8 @@ def genereListMods(self, repertoire):
     return listeMods
  
 def get_version_number (filename):
-    try:
+    try:        
+        from win32api import GetFileVersionInfo, LOWORD, HIWORD
         info = GetFileVersionInfo (filename, "\\")
         ms = info['FileVersionMS']
         ls = info['FileVersionLS']
