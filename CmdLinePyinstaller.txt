@@ -2,4 +2,4 @@
 
 linux version:
 
-pyinstaller --onefile --path "/usr/local/lib/python3.5/dist-packages/PyQt5/Qt/bin" goslauncher.py
+pyinstaller --onefile --noconsole --path "/usr/local/lib/python3.5/dist-packages/PyQt5/Qt/bin" goslauncher.py
