@@ -115,6 +115,9 @@ def CleanInterface(self):
             obj.setChecked(False)
         if isinstance(obj, QtWidgets.QListWidget) and obj.objectName() not in self.excludeWidgetList:
             obj.clear()
+        if isinstance(obj, QtWidgets.QComboBox) and obj.objectName() not in self.excludeWidgetList:
+            obj.clear()
+        
     genere_tab_ui(self.Ui)
     
 ################################################################

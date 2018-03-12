@@ -3,7 +3,7 @@
 """
 Module implementing Fenetre_Principale.
 """
-from PyQt5.QtCore import pyqtSlot
+from PyQt5.QtCore import pyqtSlot, QTimer
 from PyQt5.QtWidgets import QMainWindow
 from PyQt5.QtGui import QPixmap
 from Ui_principale import Ui_Fenetre_Principale
@@ -238,6 +238,13 @@ class Fenetre_Principale(QMainWindow, Ui_Fenetre_Principale):
         """
         Slot documentation goes here.
         """
+        def timerClearLabel():
+            self.label_Done.setText("") 
+         
+        self.timer = QTimer()
+        self.timer.timeout.connect(timerClearLabel)
+        self.timer.start(2000)  
+        self.label_Done.setText("Done") 
         goslaunchera3.action.initPriorityTabWidget(self)
         self.var_Profil.SaveProfil()
     

@@ -11,8 +11,7 @@ import sys
 
 def init_application(self):
     # Définition Constantes
-    vars.initVar(self)
-    
+    vars.initVar(self)    
     # Gestion affichage 
     show.init_app_start(self)
     # version Arma3 Windows

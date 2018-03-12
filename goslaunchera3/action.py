@@ -18,6 +18,12 @@ from PyQt5.QtCore import Qt
 #
 
 def selection_tous_mods(self, liste_widget_mods):
+
+    ''' Selectionne L'ensemble des Mods en fonction d'un List_Widget    
+    PARAM : List_widget
+    RETURN : Nothing    
+    '''    
+    
     for index in range(liste_widget_mods.count()):
         liste_widget_mods.item(index).setCheckState(Qt.Checked)
 
@@ -52,6 +58,7 @@ def initPriorityTabWidget(self):
 
 
 def launch_arma3(self):
+    initPriorityTabWidget(self)
     newLine = '\n'
     # Linux version
     if vars.OSName() == "linux":

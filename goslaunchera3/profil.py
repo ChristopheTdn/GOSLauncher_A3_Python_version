@@ -3,7 +3,7 @@
 import os
 import inspect
 from distutils.util import strtobool
-from PyQt5.QtCore import QSettings
+from PyQt5 import QtCore
 from PyQt5 import QtWidgets
 from . import show
 
@@ -48,13 +48,16 @@ class Profil:
             for profil in FichList:
                 self.Ui.listWidget_profil.addItem(profil)                
                 self.Ui.comboBox_ChoixProfil.addItem(profil)
-
+                
+            
     def SaveProfil(self):
+        from . import priority
+        priority.init_priority_tabwidget(self.Ui)
         self.Name = self.Ui.comboBox_ChoixProfil.currentText()
-        self.SaveGUI(QSettings(self.ProfilDir+self.Name+".profil.ini",  QSettings.IniFormat))
+        self.SaveGUI(QtCore.QSettings(self.ProfilDir+self.Name+".profil.ini", QtCore.QSettings.IniFormat))
         show.CleanInterface(self)
         self.RestoreProfil()
-        
+           
     def SaveGUI(self, settings):
         excludeWidgetList= self.excludeWidgetList
         #for child in ui.children():  # works like getmembers, but because it traverses the hierarachy, you would have to call guisave recursively to traverse down the tree
@@ -102,7 +105,7 @@ class Profil:
     def RestoreProfil(self):
         show.CleanInterface(self)
         self.Name = self.Ui.comboBox_ChoixProfil.currentText()
-        self.RestoreGUI(QSettings(self.ProfilDir+self.Name+".profil.ini",  QSettings.IniFormat))
+        self.RestoreGUI(QtCore.QSettings(self.ProfilDir+self.Name+".profil.ini",  QtCore.QSettings.IniFormat))
         show.genere_tab_ui(self.Ui)
         
     #===================================================================
