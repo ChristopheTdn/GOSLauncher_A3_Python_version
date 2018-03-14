@@ -60,11 +60,15 @@ def initPriorityTabWidget(self):
 def launch_arma3(self):
     initPriorityTabWidget(self)
     newLine = '\n'
+
     # Linux version
     if vars.OSName() == "linux":
+        arma3_exe="arma3" # Aucun environnement 64 bit sous Linux
+        battle_eye_exe = "" # Aucun environnement 64 bit sous Linux
+        
         fichier = open("runArma3", "w")
         fichier.write('cd "' + self.var_Arma3Path + '" ' + newLine)
-        fichier.write('./arma3' + ' "-MOD=' + vars.createListeModsLaunch(self) + '" ' + vars.createListeOptions(self))
+        fichier.write('./' + arma3_exe +' '+ vars.createListeOptions(self) + ' "-MOD=' + vars.createListeModsLaunch(self) + '" ' )
         fichier.close()
         os.chmod('runArma3', stat.S_IRWXU)
         # TODO: change os.system Obsolete
@@ -72,8 +76,18 @@ def launch_arma3(self):
 
     # Windows version
     if vars.OSName() == "windows":
-        commandLine = '"' + self.var_Arma3Path + '/arma3.exe" "-MOD=' + vars.createListeModsLaunch(
-            self) + '" ' + vars.createListeOptions(self)
+        
+        if self.checkBox_arma3_64bit.checkState():
+            arma3_exe="arma3_x64.exe"
+        else : 
+            arma3_exe="arma3.exe"
+            
+        if self.checkBox_Arma3BattleEyes.checkState():    
+            arma3_exe = 'arma3battleye.exe" 2 1 0 -exe '+arma3_exe
+        else:
+            arma3_exe = arma3_exe+'" '
+            
+        commandLine = '"' + self.var_Arma3Path + '/'+arma3_exe+'  '+ vars.createListeOptions(self) +' "-MOD=' + vars.createListeModsLaunch(self) + '" ' 
         #
         print("execution : " + commandLine)
         subprocess.Popen(commandLine)

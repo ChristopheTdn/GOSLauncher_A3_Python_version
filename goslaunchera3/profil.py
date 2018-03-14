@@ -190,7 +190,7 @@ class Profil:
             print ("LOG : ajout du profil : IMPOSSIBLE >",nameProfil, " existe déjà")
         else:   
             show.CleanInterface(self)
-            self.SaveGUI(QSettings(self.ProfilDir+nameProfil+".profil.ini",  QSettings.IniFormat))
+            self.SaveGUI(QtCore.QSettings(self.ProfilDir+nameProfil+".profil.ini",  QtCore.QSettings.IniFormat))
             self.Ui.listWidget_profil.addItem(nameProfil)
             self.Ui.comboBox_ChoixProfil.addItem(nameProfil)
             self.Ui.comboBox_ChoixProfil.setCurrentIndex(self.Ui.comboBox_ChoixProfil.findText(nameProfil))
