@@ -54,9 +54,6 @@ def initPriorityTabWidget(self):
 #  Action Interface : GENERAL
 #
 
-
-
-
 def launch_arma3(self):
     initPriorityTabWidget(self)
     newLine = '\n'
@@ -64,7 +61,6 @@ def launch_arma3(self):
     # Linux version
     if vars.OSName() == "linux":
         arma3_exe="arma3" # Aucun environnement 64 bit sous Linux
-        battle_eye_exe = "" # Aucun environnement 64 bit sous Linux
         
         fichier = open("runArma3", "w")
         fichier.write('cd "' + self.var_Arma3Path + '" ' + newLine)
@@ -88,13 +84,21 @@ def launch_arma3(self):
             arma3_exe = arma3_exe+'" '
             
         commandLine = '"' + self.var_Arma3Path + '/'+arma3_exe+'  '+ vars.createListeOptions(self) +' "-MOD=' + vars.createListeModsLaunch(self) + '" ' 
-        #
-        print("execution : " + commandLine)
         subprocess.Popen(commandLine)
         
 #
 #  Action Interface : RSYNC
 #
+def affiche_changelog(self):
+    try:
+        with open(self.var_Arma3Path+'/@GOS/changelog.txt', "r", encoding="utf-8") as changelog:
+            self.textEdit_synchro_log.clear()
+            cursor = self.textEdit_synchro_log.textCursor()            
+            self.textEdit_synchro_log.insertPlainText(changelog.read())   
+            cursor.movePosition(cursor.Start)
+    except IOError:
+        print ("Erreur! Le fichier changelog n'a pas pu être ouvert")
+
 def rsyncTaille(self):
     
     # @TEMPLATE 
