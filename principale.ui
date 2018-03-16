@@ -42,7 +42,7 @@
      <string notr="true">background-color: rgb(236, 236, 236);</string>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>4</number>
     </property>
     <widget class="QWidget" name="Tab_ModsGOS">
      <attribute name="title">
@@ -183,7 +183,7 @@ tous</string>
          <string notr="true"/>
         </property>
         <property name="pixmap">
-         <pixmap>gfx/logo-gos.png</pixmap>
+         <pixmap resource="ressources.qrc">:/gfx/logo-goslauncher.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -276,7 +276,7 @@ liste</string>
          <string notr="true"/>
         </property>
         <property name="pixmap">
-         <pixmap>gfx/atelier.png</pixmap>
+         <pixmap resource="ressources.qrc">:/gfx/atelier.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -373,7 +373,7 @@ selection</string>
          <string notr="true"/>
         </property>
         <property name="pixmap">
-         <pixmap>gfx/IslandStone.png</pixmap>
+         <pixmap resource="ressources.qrc">:/gfx/IslandStone.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -423,16 +423,16 @@ liste</string>
         <property name="geometry">
          <rect>
           <x>420</x>
-          <y>150</y>
-          <width>101</width>
-          <height>81</height>
+          <y>125</y>
+          <width>116</width>
+          <height>106</height>
          </rect>
         </property>
         <property name="text">
          <string notr="true"/>
         </property>
         <property name="pixmap">
-         <pixmap>gfx/units.png</pixmap>
+         <pixmap resource="ressources.qrc">:/gfx/units.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -548,7 +548,7 @@ tous</string>
          <string notr="true"/>
         </property>
         <property name="pixmap">
-         <pixmap>gfx/hangar.png</pixmap>
+         <pixmap resource="ressources.qrc">:/gfx/hangar.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -664,7 +664,7 @@ selection</string>
          <string notr="true"/>
         </property>
         <property name="pixmap">
-         <pixmap>gfx/template.png</pixmap>
+         <pixmap resource="ressources.qrc">:/gfx/template.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -780,7 +780,7 @@ liste</string>
          <string notr="true"/>
         </property>
         <property name="pixmap">
-         <pixmap>gfx/ampoule.png</pixmap>
+         <pixmap resource="ressources.qrc">:/gfx/ampoule.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -858,7 +858,7 @@ liste</string>
          <string notr="true"/>
         </property>
         <property name="pixmap">
-         <pixmap>gfx/globe.png</pixmap>
+         <pixmap resource="ressources.qrc">:/gfx/globe.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -905,7 +905,7 @@ selection</string>
        </font>
       </property>
       <property name="currentIndex">
-       <number>0</number>
+       <number>2</number>
       </property>
       <widget class="QWidget" name="tab_Arma3">
        <property name="font">
@@ -983,7 +983,7 @@ tous</string>
          <string notr="true"/>
         </property>
         <property name="pixmap">
-         <pixmap>gfx/template.png</pixmap>
+         <pixmap resource="ressources.qrc">:/gfx/template.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -1061,7 +1061,7 @@ liste</string>
          <string notr="true"/>
         </property>
         <property name="pixmap">
-         <pixmap>gfx/Steam_Icon.png</pixmap>
+         <pixmap resource="ressources.qrc">:/gfx/Steam_Icon.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -1127,7 +1127,7 @@ tous</string>
        <rect>
         <x>10</x>
         <y>10</y>
-        <width>361</width>
+        <width>436</width>
         <height>446</height>
        </rect>
       </property>
@@ -1141,8 +1141,8 @@ tous</string>
      <widget class="QPushButton" name="pushButton_priorityTop">
       <property name="geometry">
        <rect>
-        <x>390</x>
-        <y>25</y>
+        <x>455</x>
+        <y>20</y>
         <width>91</width>
         <height>41</height>
        </rect>
@@ -1154,8 +1154,8 @@ tous</string>
      <widget class="QPushButton" name="pushButton_priorityPlus">
       <property name="geometry">
        <rect>
-        <x>390</x>
-        <y>75</y>
+        <x>455</x>
+        <y>70</y>
         <width>91</width>
         <height>41</height>
        </rect>
@@ -1167,8 +1167,8 @@ tous</string>
      <widget class="QPushButton" name="pushButton_priorityMinus">
       <property name="geometry">
        <rect>
-        <x>390</x>
-        <y>125</y>
+        <x>455</x>
+        <y>120</y>
         <width>91</width>
         <height>41</height>
        </rect>
@@ -1180,8 +1180,8 @@ tous</string>
      <widget class="QPushButton" name="pushButton_priorityBottom">
       <property name="geometry">
        <rect>
-        <x>390</x>
-        <y>180</y>
+        <x>455</x>
+        <y>175</y>
         <width>91</width>
         <height>41</height>
        </rect>
@@ -1512,7 +1512,7 @@ tous</string>
          <string notr="true"/>
         </property>
         <property name="pixmap">
-         <pixmap>gfx/profil.png</pixmap>
+         <pixmap resource="ressources.qrc">:/gfx/profil.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -1566,7 +1566,7 @@ tous</string>
           <x>410</x>
           <y>80</y>
           <width>31</width>
-          <height>21</height>
+          <height>26</height>
          </rect>
         </property>
         <property name="text">
@@ -1574,7 +1574,8 @@ tous</string>
         </property>
         <property name="icon">
          <iconset>
-          <normaloff>gfx/ajouter.png</normaloff>gfx/ajouter.png</iconset>
+          <normalon>:/gfx/ajouter.png</normalon>
+         </iconset>
         </property>
         <property name="iconSize">
          <size>
@@ -1600,7 +1601,8 @@ tous</string>
         </property>
         <property name="icon">
          <iconset>
-          <normaloff>gfx/copier.png</normaloff>gfx/copier.png</iconset>
+          <normalon>:/gfx/copier.png</normalon>
+         </iconset>
         </property>
         <property name="iconSize">
          <size>
@@ -1652,7 +1654,8 @@ tous</string>
         </property>
         <property name="icon">
          <iconset>
-          <normaloff>gfx/favoris.png</normaloff>gfx/favoris.png</iconset>
+          <normalon>:/gfx/favoris.png</normalon>
+         </iconset>
         </property>
         <property name="iconSize">
          <size>
@@ -1678,7 +1681,8 @@ tous</string>
         </property>
         <property name="icon">
          <iconset>
-          <normaloff>gfx/supprimer.png</normaloff>gfx/supprimer.png</iconset>
+          <normalon>:/gfx/supprimer.png</normalon>
+         </iconset>
         </property>
         <property name="iconSize">
          <size>
@@ -1734,7 +1738,7 @@ tous</string>
          <string notr="true"/>
         </property>
         <property name="pixmap">
-         <pixmap>gfx/france.png</pixmap>
+         <pixmap resource="ressources.qrc">:/gfx/france.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -1753,7 +1757,7 @@ tous</string>
          <string notr="true"/>
         </property>
         <property name="pixmap">
-         <pixmap>gfx/royaumeunis.png</pixmap>
+         <pixmap resource="ressources.qrc">:/gfx/royaumeunis.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -1772,7 +1776,7 @@ tous</string>
          <string notr="true"/>
         </property>
         <property name="pixmap">
-         <pixmap>gfx/globe.png</pixmap>
+         <pixmap resource="ressources.qrc">:/gfx/globe.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -1789,14 +1793,14 @@ tous</string>
           <x>20</x>
           <y>5</y>
           <width>111</width>
-          <height>106</height>
+          <height>116</height>
          </rect>
         </property>
         <property name="text">
          <string notr="true"/>
         </property>
         <property name="pixmap">
-         <pixmap>gfx/logo-gos.png</pixmap>
+         <pixmap resource="ressources.qrc">:/gfx/logo-goslauncher.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -1829,7 +1833,7 @@ tous</string>
         <string notr="true"/>
        </property>
        <property name="pixmap">
-        <pixmap>gfx/danger.png</pixmap>
+        <pixmap resource="ressources.qrc">:/gfx/danger.png</pixmap>
        </property>
        <property name="scaledContents">
         <bool>true</bool>
@@ -3437,7 +3441,8 @@ Arma 3</string>
     </property>
     <property name="icon">
      <iconset>
-      <normaloff>gfx/disquette.png</normaloff>gfx/disquette.png</iconset>
+      <normalon>:/gfx/disquette.png</normalon>
+     </iconset>
     </property>
     <property name="iconSize">
      <size>
@@ -3599,6 +3604,8 @@ Arma 3</string>
    </widget>
   </widget>
  </widget>
- <resources/>
+ <resources>
+  <include location="ressources.qrc"/>
+ </resources>
  <connections/>
 </ui>

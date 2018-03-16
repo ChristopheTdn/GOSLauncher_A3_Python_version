@@ -106,7 +106,7 @@ def get_version_number (filename):
  
 
 def LogoGosSkin(self, name):
-    self.label_GFX_Template.setPixmap(QtGui.QPixmap("gfx/camo_image/"+name.replace(" ", "_")+".jpg"))
+    self.label_GFX_Template.setPixmap(QtGui.QPixmap(":/gfx/camo_image/"+name.replace(" ", "_")+".jpg"))
 
 
 def CleanInterface(self):        

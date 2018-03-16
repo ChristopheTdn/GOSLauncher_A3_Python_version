@@ -3,7 +3,7 @@
 """GOS LAUNCHER Python version.
 
 This app is a Python Version of GOS LAuncher C# program.
-Initially developpe for Clan GOS by ToF and ELDoktor.
+Initially developped for Clan GOS by ToF and ELDoktor.
 
 Example:
         $ python goslauncher.py
