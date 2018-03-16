@@ -12,6 +12,9 @@ class Ui_Fenetre_Principale(object):
     def setupUi(self, Fenetre_Principale):
         Fenetre_Principale.setObjectName("Fenetre_Principale")
         Fenetre_Principale.resize(587, 658)
+        Fenetre_Principale.setMinimumSize(QtCore.QSize(587, 658))
+        Fenetre_Principale.setMaximumSize(QtCore.QSize(587, 658))
+        Fenetre_Principale.setBaseSize(QtCore.QSize(587, 658))
         icon = QtGui.QIcon()
         icon.addPixmap(QtGui.QPixmap("gfx/GOSLauncherA3.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         Fenetre_Principale.setWindowIcon(icon)

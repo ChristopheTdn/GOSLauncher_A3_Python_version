@@ -10,6 +10,24 @@
     <height>658</height>
    </rect>
   </property>
+  <property name="minimumSize">
+   <size>
+    <width>587</width>
+    <height>658</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>587</width>
+    <height>658</height>
+   </size>
+  </property>
+  <property name="baseSize">
+   <size>
+    <width>587</width>
+    <height>658</height>
+   </size>
+  </property>
   <property name="windowTitle">
    <string>GOS Launcher A3</string>
   </property>
