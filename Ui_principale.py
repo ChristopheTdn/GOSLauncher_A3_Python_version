@@ -16,7 +16,7 @@ class Ui_Fenetre_Principale(object):
         Fenetre_Principale.setMaximumSize(QtCore.QSize(587, 658))
         Fenetre_Principale.setBaseSize(QtCore.QSize(587, 658))
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("gfx/GOSLauncherA3.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon.addPixmap(QtGui.QPixmap(":/gfx/GOSLauncherA3.ico"), QtGui.QIcon.Normal, QtGui.QIcon.On)
         Fenetre_Principale.setWindowIcon(icon)
         Fenetre_Principale.setStyleSheet("background-color: rgb(236, 236, 236);")
         Fenetre_Principale.setTabShape(QtWidgets.QTabWidget.Triangular)
@@ -1184,7 +1184,6 @@ class Ui_Fenetre_Principale(object):
 
     def retranslateUi(self, Fenetre_Principale):
         _translate = QtCore.QCoreApplication.translate
-        Fenetre_Principale.setWindowTitle(_translate("Fenetre_Principale", "GOS Launcher A3"))
         self.pushButton_Mods_Template_RefreshList.setText(_translate("Fenetre_Principale", "Rafraichir\n"
 "liste"))
         self.pushButton_Mods_Template_InvSelect.setText(_translate("Fenetre_Principale", "Inverser\n"
