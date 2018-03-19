@@ -26,7 +26,7 @@ if __name__ == "__main__":
     # récupère arguments
     updater = False
     for arg in sys.argv:
-        if arg == "--updater" :
+        if arg == "-updater" or   arg == "-u":
             updater = True
     
     if updater :
