@@ -7,6 +7,7 @@ import os
 import stat
 import sys
 import subprocess
+import shutil
 from . import vars
 from . import language
 from . import priority
@@ -84,10 +85,36 @@ def launch_arma3(self):
             
         commandLine = '"' + self.var_Arma3Path + '/'+arma3_exe+'  '+ vars.createListeOptions(self) +' "-MOD=' + vars.createListeModsLaunch(self) + '" ' 
         subprocess.Popen(commandLine)
-        
+      
+def launch_Gos_launcher_updater(self):
+    ''' GOS Launcher updater
+       - réalise une copie de l'executable 'goslaunchera3'' dans le repertoire 'tmp'
+       - lance avec le parametre '--updater'
+       - ferme l'application courante.'
+           '''
+    from sys import platform as _platform
+    if _platform == "linux" or _platform == "linux2": # environnement Linux
+        executable="goslauncher"
+    else : 
+       executable="goslauncher.exe" # environnement windows
+    # création repertoire tmp
+    if not os.path.exists('tmp'):
+        os.makedirs('tmp') 
+    #copie executable goslauncher
+    shutil.copyfile(executable, 'tmp/'+executable)
+    #Lance Goslauncher --updater
+    if _platform == "linux" or _platform == "linux2":
+        os.system('./tmp/goslauncher --updater')
+    elif _platform == "win32":
+        # Windows
+        import subprocess
+        subprocess.Popen(['tmp/goslauncher.exe','--updater'])
+    #quitte l'application en cours
+    sys.exit()
 #
 #  Action Interface : RSYNC
 #
+
 def affiche_changelog(self):
     try:
         with open(self.var_Arma3Path+'/@GOS/changelog.txt', "r", encoding="utf-8") as changelog:
