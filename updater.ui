@@ -125,7 +125,6 @@
  </widget>
  <resources>
   <include location="ressources.qrc"/>
-  <include location="mw_ressource.qrc"/>
  </resources>
  <connections/>
 </ui>

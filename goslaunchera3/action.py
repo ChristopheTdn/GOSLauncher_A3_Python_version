@@ -108,7 +108,7 @@ def launch_Gos_launcher_updater(self):
     elif _platform == "win32":
         # Windows
         import subprocess
-        subprocess.Popen(['tmp/goslauncher.exe','--updater'])
+        subprocess.Popen(['tmp/goslauncher.exe','-updater'])
     #quitte l'application en cours
     sys.exit()
 #

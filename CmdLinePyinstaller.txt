@@ -1,4 +1,4 @@
- pyinstaller --onefile --noconsole --path "F:\Programmes DEVELOPPEMENT\Python\Python35\Lib\site-packages\PyQt5\Qt\bin" goslauncher.py
+ pyinstaller --onefile --noconsole --path "F:\Programmes DEVELOPPEMENT\Python\Python35\Lib\site-packages\PyQt5\Qt\bin" --icon=goslauncher.ico goslauncher.py
 
 linux version:
 

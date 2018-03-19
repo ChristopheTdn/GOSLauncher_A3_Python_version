@@ -58,7 +58,7 @@
      <string notr="true">background-color: rgb(236, 236, 236);</string>
     </property>
     <property name="currentIndex">
-     <number>4</number>
+     <number>3</number>
     </property>
     <widget class="QWidget" name="Tab_ModsGOS">
      <attribute name="title">
@@ -1504,12 +1504,44 @@ tous</string>
        </rect>
       </property>
       <property name="currentIndex">
-       <number>3</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="tab_outilGOS">
        <attribute name="title">
         <string>Outils GOS</string>
        </attribute>
+       <widget class="QLabel" name="label_GFX_OutilsGos">
+        <property name="geometry">
+         <rect>
+          <x>25</x>
+          <y>15</y>
+          <width>91</width>
+          <height>91</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string notr="true"/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="ressources.qrc">:/gfx/danger.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_Maj_goslauncher">
+        <property name="geometry">
+         <rect>
+          <x>170</x>
+          <y>40</y>
+          <width>146</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Mise a jour Gos Launcher</string>
+        </property>
+       </widget>
       </widget>
       <widget class="QWidget" name="tab_GestionProfil">
        <attribute name="title">
