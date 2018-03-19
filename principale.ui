@@ -28,12 +28,10 @@
     <height>658</height>
    </size>
   </property>
-  <property name="windowTitle">
-   <string>GOS Launcher A3</string>
-  </property>
   <property name="windowIcon">
    <iconset>
-    <normaloff>gfx/GOSLauncherA3.ico</normaloff>gfx/GOSLauncherA3.ico</iconset>
+    <normalon>:/gfx/GOSLauncherA3.ico</normalon>
+   </iconset>
   </property>
   <property name="styleSheet">
    <string notr="true">background-color: rgb(236, 236, 236);</string>
