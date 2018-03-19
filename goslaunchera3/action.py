@@ -57,9 +57,9 @@ def initPriorityTabWidget(self):
 def launch_arma3(self):
     initPriorityTabWidget(self)
     newLine = '\n'
-
+    from sys import platform as _platform
     # Linux version
-    if vars.OSName() == "linux":
+    if _platform == "linux" or _platform == "linux2":
         arma3_exe="arma3" # Aucun environnement 64 bit sous Linux
         
         fichier = open("runArma3", "w")
@@ -71,8 +71,7 @@ def launch_arma3(self):
         os.system('./runArma3')
 
     # Windows version
-    if vars.OSName() == "windows":
-        
+    if _platform == "win32":        
         if self.checkBox_arma3_64bit.checkState():
             arma3_exe="arma3_x64.exe"
         else : 
