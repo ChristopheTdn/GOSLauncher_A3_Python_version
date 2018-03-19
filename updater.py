@@ -8,6 +8,7 @@ from PyQt5.QtCore import pyqtSlot
 from PyQt5.QtWidgets import QMainWindow
 
 from Ui_updater import Ui_MainWindow
+import gos_updater
 
 
 class Mw_updater(QMainWindow, Ui_MainWindow):
@@ -30,4 +31,4 @@ class Mw_updater(QMainWindow, Ui_MainWindow):
         Slot documentation goes here.
         """
         # TODO: not implemented yet
-        raise NotImplementedError
+        gos_updater.core.init_maj_process(self, "http://www.clan-gign.net/goslaunchera3py/goslauncher.zip", "tmp", "goslauncher.zip")
