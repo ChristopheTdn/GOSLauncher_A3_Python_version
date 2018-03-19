@@ -684,3 +684,11 @@ class Fenetre_Principale(QMainWindow, Ui_Fenetre_Principale):
         """
         # TODO: not implemented yet
         goslaunchera3.action.inv_selection_tous_mods(self,self.listWidget_Interclan)
+    
+    @pyqtSlot()
+    def on_pushButton_Maj_goslauncher_clicked(self):
+        """
+        Slot documentation goes here.
+        """
+        # TODO: not implemented yet
+        raise NotImplementedError
