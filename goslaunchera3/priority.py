@@ -3,8 +3,8 @@
 #
 # Module ** INTERFACE PRIORITY **
 
-"""
-Module Interface Priority
+u"""
+Module Interface Priority.
 
 this module manage the Priority TAB in the
 GOS Launcher Apps.
@@ -30,6 +30,7 @@ def init_priority_tabwidget(self):
     """
     show.genereTabPriority(self.listWidget_priority, genere_list(self))
 
+
 def genere_list(self):
     """
     Manage the list of Mods to add to the different listWidget of the
@@ -41,40 +42,38 @@ def genere_list(self):
     """
     return list_mod_prioritaire(self)
 
+
 def list_mod_all(self):
     #recupere tous les Mods cochés dans une liste
-    list_mod_all=[]
+    list_mod_all = []
     for widget, prefix in self.var_list_widget:
-         for index in range(widget.count()):
+        for index in range(widget.count()):
             if widget.item(index).checkState() == Qt.Checked:
-                list_mod_all.append(prefix+widget.item(index).text())   
+                list_mod_all.append(prefix+widget.item(index).text())
     # recupere type apparence
     if self.comboBox_ChoixApparence.currentText() != "":
-        list_mod_all.append("@GOS/@TEMPLATE/@GOSSkin_"+self.comboBox_ChoixApparence.currentText().replace(" ","_"))
-        
+        list_mod_all.append("@GOS/@TEMPLATE/@GOSSkin_"+self.comboBox_ChoixApparence.currentText().replace(" ", "_"))
+
     return list_mod_all
 
-        
+
 def list_mod_prioritaire(self):
-    list_mods_priority=[]
+    list_mods_priority = []
     list_mods = list_mod_all(self)
     #Conserve dans une liste les Mods deja dans la liste prioritaire et toujours coché
     for index in range(self.listWidget_priority.count()):
         if (self.listWidget_priority.item(index).text()) in list_mods:
             list_mods_priority.append(self.listWidget_priority.item(index).text())
             list_mods.remove(self.listWidget_priority.item(index).text())
-            
+
     # Ajoute a cette liste les Mods coché qui ne sont pas dans la liste prioritaire initial.
     for mod in list_mods:
-         list_mods_priority.append(mod)
-    
+        list_mods_priority.append(mod)
+
     return list_mods_priority
-       
-    return 
 
+    return
 
-    
-    
 ################################################################
 
 if __name__ == "__main__":

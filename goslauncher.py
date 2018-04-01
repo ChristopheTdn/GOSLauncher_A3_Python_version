@@ -21,21 +21,21 @@ from PyQt5 import QtWidgets, QtCore
 
 
 if __name__ == "__main__":
-    
+
     APP = QtWidgets.QApplication(sys.argv)
     # récupère arguments
     updater = False
     for arg in sys.argv:
-        if arg == "-updater" or   arg == "-u":
+        if arg == "-updater" or arg == "-u":
             updater = True
-    
-    if updater :
+
+    if updater:
         from updater import Mw_updater
         MAINFORM = Mw_updater()
         MAINFORM.show()
         sys.exit(APP.exec_())
-    else :
-        from principale import Fenetre_Principale        
+    else:
+        from principale import Fenetre_Principale
         TRANSLATOR = QtCore.QTranslator()
         TRANSLATOR.load("languages/principale_fr.qm")
         APP.installTranslator(TRANSLATOR)

@@ -8,28 +8,31 @@ import inspect
 from PyQt5 import QtCore, QtGui, QtWidgets
 from . import action
 
+
 def init_app_start(self):
-        # Gestion Profil 
+        # Gestion Profil
         """ Affiche Liste Mods."""
-        
+
         # Mods @GOS
         #genere_tab_ui(self)
         #genere size Mods
         action.rsyncTaille(self)
 
-def genere_tab_ui(self):    
+
+def genere_tab_ui(self):
     genereTabTemplate(self)  # Specifique @TEMPLATE GOS
     genereTab(self, self.listWidget_Framework, self.var_Arma3Path+"/@GOS/@FRAMEWORK/")
     genereTab(self, self.listWidget_Islands, self.var_Arma3Path+"/@GOS/@ISLANDS/")
     genereTab(self, self.listWidget_Units, self.var_Arma3Path+"/@GOS/@UNITS/")
     genereTab(self, self.listWidget_Materiel, self.var_Arma3Path+"/@GOS/@MATERIEL/")
     genereTab(self, self.listWidget_Client, self.var_Arma3Path+"/@GOS/@CLIENT/")
-    genereTab(self, self.listWidget_Test, self.var_Arma3Path+"/@GOS/@TEST/")    
+    genereTab(self, self.listWidget_Test, self.var_Arma3Path+"/@GOS/@TEST/")
     genereTab(self, self.listWidget_Interclan, self.var_Arma3Path+"/@GOS/@INTERCLAN/")
     # Mods @Arma3
     genereTab(self, self.listWidget_Arma3, self.var_Arma3Path+"/")
     # Mods @WorkShop
     genereTab(self, self.listWidget_Workshop, self.var_Arma3Path+"/!Workshop/")
+
 
 def itemCheckState(self, mods):
     if len(self.listWidget_priority.findItems(mods, QtCore.Qt.MatchExactly)) > 0:
@@ -73,7 +76,7 @@ def genereTabPriority(listeWidget, listeMods):
 
 
 def genereListMods(self, repertoire):
-    listeMods = []    
+    listeMods = []
     for root, dirs,  files in os.walk(repertoire):
         for i in files:
                 SearchedDir = root.replace(repertoire, "")
@@ -82,44 +85,45 @@ def genereListMods(self, repertoire):
                     if ((root.find("@GOS") != -1) and (repertoire != self.var_Arma3Path+"/")):
                         listeMods.append(SearchedDir[0: (len(SearchedDir)-7)])
                     #test #Arma
-                    if ((root.find("@GOS") == -1 ) and
-                          (repertoire == self.var_Arma3Path+"/") and
+                    if ((root.find("@GOS") == -1) and
+                        (repertoire == self.var_Arma3Path+"/") and
                           ("!Workshop" not in root) and
                           (SearchedDir.lower() != "addons")):
                         listeMods.append(SearchedDir[0: (len(SearchedDir)-7)])
                     #test #Workshop
-                    if ((root.find("@GOS") == -1 ) and
-                          ("/!Workshop/" in repertoire) and
+                    if ((root.find("@GOS") == -1) and
+                        ("/!Workshop/" in repertoire) and
                           (SearchedDir.lower() != "addons")):
                         listeMods.append(SearchedDir[0: (len(SearchedDir)-7)])
     return listeMods
- 
-def get_version_number (filename):
-    try:        
+
+
+def get_version_number(filename):
+    try:
         from win32api import GetFileVersionInfo, LOWORD, HIWORD
-        info = GetFileVersionInfo (filename, "\\")
+        info = GetFileVersionInfo(filename, "\\")
         ms = info['FileVersionMS']
         ls = info['FileVersionLS']
-        return HIWORD (ms), LOWORD (ms), HIWORD (ls), LOWORD (ls)
+        return HIWORD(ms), LOWORD(ms), HIWORD(ls), LOWORD(ls)
     except:
-        return 0,0,0,0
- 
+        return 0, 0, 0, 0
+
 
 def LogoGosSkin(self, name):
     self.label_GFX_Template.setPixmap(QtGui.QPixmap(":/gfx/camo_image/"+name.replace(" ", "_")+".jpg"))
 
 
-def CleanInterface(self):        
-    for name, obj in inspect.getmembers(self.Ui):  
+def CleanInterface(self):
+    for name, obj in inspect.getmembers(self.Ui):
         if isinstance(obj, QtWidgets.QCheckBox) and obj.objectName() not in self.excludeWidgetList:
             obj.setChecked(False)
         if isinstance(obj, QtWidgets.QListWidget) and obj.objectName() not in self.excludeWidgetList:
             obj.clear()
         if isinstance(obj, QtWidgets.QComboBox) and obj.objectName() not in self.excludeWidgetList:
             obj.clear()
-        
+
     genere_tab_ui(self.Ui)
-    
+
 ################################################################
 
 if __name__ == "__main__":

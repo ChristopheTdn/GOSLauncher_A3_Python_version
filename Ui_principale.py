@@ -18,7 +18,8 @@ class Ui_Fenetre_Principale(object):
         icon = QtGui.QIcon()
         icon.addPixmap(QtGui.QPixmap(":/gfx/GOSLauncherA3.ico"), QtGui.QIcon.Normal, QtGui.QIcon.On)
         Fenetre_Principale.setWindowIcon(icon)
-        Fenetre_Principale.setStyleSheet("background-color: rgb(236, 236, 236);")
+        Fenetre_Principale.setStyleSheet("background-color: rgb(236, 236, 236);\n"
+"background:transparent")
         Fenetre_Principale.setTabShape(QtWidgets.QTabWidget.Triangular)
         self.centralWidget = QtWidgets.QWidget(Fenetre_Principale)
         self.centralWidget.setObjectName("centralWidget")

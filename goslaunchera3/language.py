@@ -5,11 +5,12 @@
 
 import sys
 
+
 def change_language(self, langue):
     #ToDo : Gestion modification Langage
     self.close()
     exit()
-    
+
 ################################################################
 
 if __name__ == "__main__":
@@ -19,4 +20,4 @@ if __name__ == "__main__":
 
     #print "running directly, not as a module!"
 
-    sys.exit() 
+    sys.exit()
