@@ -12,14 +12,13 @@ class Ui_Fenetre_Principale(object):
     def setupUi(self, Fenetre_Principale):
         Fenetre_Principale.setObjectName("Fenetre_Principale")
         Fenetre_Principale.resize(587, 658)
-        Fenetre_Principale.setMinimumSize(QtCore.QSize(587, 658))
+        Fenetre_Principale.setMinimumSize(QtCore.QSize(585, 658))
         Fenetre_Principale.setMaximumSize(QtCore.QSize(587, 658))
         Fenetre_Principale.setBaseSize(QtCore.QSize(587, 658))
         icon = QtGui.QIcon()
         icon.addPixmap(QtGui.QPixmap(":/gfx/GOSLauncherA3.ico"), QtGui.QIcon.Normal, QtGui.QIcon.On)
         Fenetre_Principale.setWindowIcon(icon)
-        Fenetre_Principale.setStyleSheet("background-color: rgb(236, 236, 236);\n"
-"background:transparent")
+        Fenetre_Principale.setStyleSheet("background-color: rgb(236, 236, 236);")
         Fenetre_Principale.setTabShape(QtWidgets.QTabWidget.Triangular)
         self.centralWidget = QtWidgets.QWidget(Fenetre_Principale)
         self.centralWidget.setObjectName("centralWidget")
@@ -1186,7 +1185,7 @@ class Ui_Fenetre_Principale(object):
         Fenetre_Principale.setCentralWidget(self.centralWidget)
 
         self.retranslateUi(Fenetre_Principale)
-        self.tabWidget_synchro.setCurrentIndex(3)
+        self.tabWidget_synchro.setCurrentIndex(0)
         self.tabWidget_GOS.setCurrentIndex(7)
         self.tabWidget_MODs.setCurrentIndex(2)
         self.tabWidget_options.setCurrentIndex(0)

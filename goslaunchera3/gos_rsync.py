@@ -1,7 +1,7 @@
 #! /usr/bin/python3
 # -*- coding: utf-8 -*-
 #from PyQt5.QtCore import QSettings
-from PyQt5 import QtCore
+from PyQt5 import QtCore, QtWidgets
 
 
 class GosRsync(QtCore.QObject):
@@ -86,9 +86,9 @@ class GosRsync(QtCore.QObject):
                         if "speedup is" in info and "DRY RUN" not in info and self.progressbar_fichier is not None:
                                 self.label_state.setText("<font color='black'>A jour</font>")
                                 self.progressbar_fichier.setValue(0)
-                                self.progressbar_global.setValue(0)
-                                self.pushbutton.setEnabled(True)
-                                self.pushbutton.setText('Lancer')
+                                self.progressbar_global.setValue(0)                                
+                                self.cancelbuton.setVisible(False)
+                                self.pushbutton.setVisible(True)
                                 data = "Synchronisation "+self.syncname + " terminée.\n"
 
                         if "deleting" in info:
@@ -103,8 +103,14 @@ class GosRsync(QtCore.QObject):
                 return data
 
         def start(self):
-                if self.pushbutton is not None:
-                        self.pushbutton.setText('Abandonner')
+                # Gestion affichage bouton Cancel
+                self.pushbutton.setVisible(False)
+                self.cancelbuton = QtWidgets.QPushButton(self.Ui.tab_synchro)
+                self.cancelbuton.setGeometry(QtCore.QRect(self.pushbutton.geometry().x(), self.pushbutton.geometry().y(), self.pushbutton.geometry().width(), self.pushbutton.geometry().height()))
+                self.cancelbuton.setText('Cancel')                
+                self.cancelbuton.show()
+                self.cancelbuton.clicked.connect(self.killProcess)
+                # Lance Process
                 self.process.start(self.commande, self.argumentdry)
                 self.process.waitForFinished()
                 self.process.start(self.commande, self.argument)
@@ -115,8 +121,12 @@ class GosRsync(QtCore.QObject):
                 self.process.readyReadStandardOutput.connect(self.dataReady)
 
         def killProcess(self):
+                # détruit le process
                 self.process.kill()
-                self.pushbutton.setText("Lancer")
+                # gestion bouton Cancel
+                self.cancelbuton.setVisible(False)
+                self.pushbutton.setVisible(True)
+                
                 self.output.insertPlainText("Synchro Abandonné...\n")
                 self.output.ensureCursorVisible()
 

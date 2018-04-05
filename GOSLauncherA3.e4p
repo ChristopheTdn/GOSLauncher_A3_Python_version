@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE Project SYSTEM "Project-5.1.dtd">
 <!-- eric project file for project GOSLauncherA3 -->
-<!-- Saved: 2018-03-19, 11:59:23 -->
+<!-- Saved: 2018-04-04, 23:15:59 -->
 <!-- Copyright (C) 2018 ToF, Christophe.Taudin@gmail.com -->
 <Project version="5.1">
   <Language>en_US</Language>
@@ -47,6 +47,9 @@
   <Resources>
     <Resource>ressources.qrc</Resource>
   </Resources>
+  <Others>
+    <Other>goslauncher.spec</Other>
+  </Others>
   <MainScript>goslauncher.py</MainScript>
   <Vcs>
     <VcsType>Git</VcsType>
@@ -222,6 +225,55 @@
       </dict>
     </DocumentationParams>
   </Documentation>
+  <Packagers>
+    <PackagersParams>
+      <dict>
+        <key>
+          <string>PYINSTALLER</string>
+        </key>
+        <value>
+          <dict>
+            <key>
+              <string>cleanBeforeBuilding</string>
+            </key>
+            <value>
+              <bool>True</bool>
+            </value>
+            <key>
+              <string>consoleApplication</string>
+            </key>
+            <value>
+              <bool>False</bool>
+            </value>
+            <key>
+              <string>iconFile</string>
+            </key>
+            <value>
+              <string>D:\Zone Documents\ToF\Documents\GitHub\GOSLauncher_A3_Python_version\goslauncher.ico</string>
+            </value>
+            <key>
+              <string>iconId</string>
+            </key>
+            <value>
+              <string></string>
+            </value>
+            <key>
+              <string>oneDirectory</string>
+            </key>
+            <value>
+              <bool>False</bool>
+            </value>
+            <key>
+              <string>pyinstaller</string>
+            </key>
+            <value>
+              <string>F:\Programmes_DEVELOPPEMENT\Python\Python36\Scripts\pyinstaller.exe</string>
+            </value>
+          </dict>
+        </value>
+      </dict>
+    </PackagersParams>
+  </Packagers>
   <Checkers>
     <CheckersParams>
       <dict>
