@@ -228,7 +228,7 @@ def rsyncGos(self, syncname, label_state, progressbar_fichier,progressbar_global
         self.process_INTERCLAN.start()
         # @GENERALE
         #arguments = ["--exclude '@TEST'"," --exclude '@CLIENT'","--exclude '@FRAMEWORK'","--exclude '@INTERCLAN'","--exclude '@ISLANDS'","--exclude '@MATERIEL'","--exclude '@TEMPLATE'","--exclude '@UNITS'","--partial", "--inplace","--progress","--delete-after", "--bwlimit=0", "--chmod=ugo=rwX","www.clan-gos.fr::@GOS","cygdrive/G/JEUX/steamapps/common/Arma 3/@GOS"]
-        arguments = ["--partial", "--inplace","--progress","--delete-after", "--bwlimit=0", "--chmod=ugo=rwX","www.clan-gos.fr::@GOS",self.var_RsyncPath+"/@GOS"]
+        arguments = ["--exclude '@TEST'"," --exclude '@CLIENT'","--exclude '@FRAMEWORK'","--exclude '@INTERCLAN'","--exclude '@ISLANDS'","--exclude '@MATERIEL'","--exclude '@TEMPLATE'","--exclude '@UNITS'","--partial", "--inplace","--progress","--delete-after", "--bwlimit=0", "--chmod=ugo=rwX","www.clan-gos.fr::@GOS",self.var_RsyncPath+"/@GOS"]
         self.process_GENERALE = gos_rsync.GosRsync(self, "@GOS",self.label_info_synchro_taille, None,None,None,None, arguments)
         self.process_GENERALE.start()
         

@@ -4,6 +4,7 @@
 from PyQt5 import QtCore, QtWidgets
 
 
+
 class GosRsync(QtCore.QObject):
         def __init__(self,  Ui, syncName, label_state, progressbar_fichier, progressbar_global, label_debit, pushbutton, argument):
                 super(GosRsync, self).__init__()
@@ -23,7 +24,7 @@ class GosRsync(QtCore.QObject):
                 self.commande = self.os_cmdLine()
 
         def dataReady(self):
-                u"""Exécuté lorsque le processus envoie des infos à afficher.
+                """Exécuté lorsque le processus envoie des infos à afficher.
 
                    La chaine renvoyée par data() est de type byte, terminée
                    par une fin de ligne.
@@ -100,16 +101,18 @@ class GosRsync(QtCore.QObject):
                         if info != "":
                                 if info[len(info)-1] == '/' or "files..." in info:
                                         data = ""
+                QtWidgets.QApplication.processEvents()
                 return data
 
         def start(self):
                 # Gestion affichage bouton Cancel
-                self.pushbutton.setVisible(False)
-                self.cancelbuton = QtWidgets.QPushButton(self.Ui.tab_synchro)
-                self.cancelbuton.setGeometry(QtCore.QRect(self.pushbutton.geometry().x(), self.pushbutton.geometry().y(), self.pushbutton.geometry().width(), self.pushbutton.geometry().height()))
-                self.cancelbuton.setText('Cancel')                
-                self.cancelbuton.show()
-                self.cancelbuton.clicked.connect(self.killProcess)
+                if self.pushbutton != None:
+                    self.pushbutton.setVisible(False)
+                    self.cancelbuton = QtWidgets.QPushButton(self.Ui.tab_synchro)
+                    self.cancelbuton.setGeometry(QtCore.QRect(self.pushbutton.geometry().x(), self.pushbutton.geometry().y(), self.pushbutton.geometry().width(), self.pushbutton.geometry().height()))
+                    self.cancelbuton.setText('Cancel')                
+                    self.cancelbuton.show()
+                    self.cancelbuton.clicked.connect(self.killProcess)
                 # Lance Process
                 self.process.start(self.commande, self.argumentdry)
                 self.process.waitForFinished()
