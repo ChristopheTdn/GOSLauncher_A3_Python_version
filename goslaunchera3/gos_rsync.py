@@ -1,9 +1,6 @@
 #! /usr/bin/python3
 # -*- coding: utf-8 -*-
-#from PyQt5.QtCore import QSettings
 from PyQt5 import QtCore, QtWidgets
-
-
 
 class GosRsync(QtCore.QObject):
         def __init__(self,  Ui, syncName, label_state, progressbar_fichier, progressbar_global, label_debit, pushbutton, argument):

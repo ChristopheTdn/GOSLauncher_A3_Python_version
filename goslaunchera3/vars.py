@@ -62,10 +62,11 @@ def locateArma3():
 
 
 def configArma3Dir(self):
+        from os.path import join
         Arma3Dir = askConfig('Directory', 'Arma3Dir')
-        if (os.path.isfile(Arma3Dir+"/"+OSpec_ArmaName()) is False):
+        if (os.path.isfile(join(Arma3Dir,OSpec_ArmaName())) is False):
             Arma3Dir = locateArma3()
-            if (os.path.isfile(Arma3Dir+"/"+OSpec_ArmaName()) is False):
+            if (os.path.isfile(join(Arma3Dir,OSpec_ArmaName())) is False):
                 core. info_dialog_windows(self, "Critical error", "IMPOSSIBLE DE LOCALISER ARMA 3\n\nLe programme va maintenant se terminer...", QMessageBox.Critical)
             cfg = configparser.ConfigParser()
             cfg.read("goslaunchera3.cfg")
